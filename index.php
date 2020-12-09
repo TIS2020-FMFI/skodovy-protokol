@@ -29,6 +29,10 @@ if (isset($_SESSION['username'])) {
     <input name="logout" type="submit" id="logout" value="Log out"> 
   </p> 
 </form> 
+<ul> 
+<li><a href="protocol.php?type=opel">Opel</a> </li> 
+<li><a href="protocol.php?type=peugeot">Peugeot</a> </li> 
+</ul>
 <?php
 
 }  else {

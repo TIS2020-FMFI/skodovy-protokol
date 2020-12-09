@@ -16,33 +16,22 @@ header('Index');
 
 <section>
 <?php
-if (isset($_POST["next"])) {
+if (isset($_POST["submit"])) {
     // Load HTML content 
     ob_start();
     include('opel.php');
     $html = ob_get_clean();
-    $dompdf->loadHtml($html); 
- 
+    $dompdf->loadHtml($html);  
     // (Optional) Setup the paper size and orientation 
-    $dompdf->setPaper('A4', 'landscape'); 
- 
+    //$dompdf->setPaper('A4', 'landscape');  
     // Render the HTML as PDF 
-    $dompdf->render(); 
- 
+    $dompdf->render();  
     // Output the generated PDF to Browser 
     $dompdf->stream();
 }
-else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
+if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
     include('opel.php');
 }
 ?>
 	
-<form method="post"> 
-  <p> 
-    <input name="next" type="submit" id="next" value="NEXT"> 
-  </p> 
-</form> 
 </section>
-<?php
-    include('pata.php');
-?>

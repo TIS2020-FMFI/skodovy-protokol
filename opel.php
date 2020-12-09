@@ -1,32 +1,41 @@
+<?php if (isset($_POST["submit"])) { ?>
 <style>
-#o-back {		
-	<?php
-	$path = './opel/VLDR - OPEL-1.png';
+	img {
+		position: fixed; 
+		width: 720px; 
+		height: 1017px; 
+		margin: 0px; 
+		z-index: -1; 
+	}
+	#model {
+		position: fixed;  
+		top: 140px; 		
+		left: 60ani px; 
+		width: 700px; 	
+	}
+</style>
+<?php } else { ?>
+<style>
+	#model {
+		position: absolute;  
+		top: 250px; 		
+		left: 160px; 
+		width: 700px; 	
+	}
+</style>
+<?php } ?>
+
+<?php
+	$path = './pictures/opel-protocol.png';
 	$type = pathinfo($path, PATHINFO_EXTENSION);
 	$data = file_get_contents($path);
 	$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-	?>	
-	background-image: url("<?php echo $base64?>"); 		
-	height: 2337px; 
-	
-	width: 100%; 
-}
-#o-model {
-	position: absolute; 
-	top: 250px; 
-	left: 160px; 
-	width: 700px; 
-	
-}
-#watermark { position: fixed; bottom: 0px; right: 0px; width: 200px; height: 200px; opacity: .1; }
-
-</style>
-<div id="watermark"><img src="obr.jpg" height="100%" width="100%"></div>
-
+?>	
+	<img src="<?php echo $base64?>">
   <div id="o-back">
-    <form method="post">
+    <form method="post">			
+	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; ?>" size="20" maxlength="20">
 	
-	<input name="model" type="text" id="o-model" value="" size="20" maxlength="20">	
 
 	<br>
 	
