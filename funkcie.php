@@ -71,8 +71,35 @@ function user_right($mysqli, $username, $pass) {
 	}
 }
 
-
-
+function fileToServer($subor) {
+	$novy_nazov = '';
+	// spracuj uploadovaný súbor 
+	if (!empty($subor) && !empty($subor['name'])) {
+		//echo 'nieco sa odosiela';
+		
+		if ($subor['error'] == UPLOAD_ERR_OK) {
+			if (is_uploaded_file($subor['tmp_name'])) {
+				$novy_nazov = 'photos/' . $subor['name'];
+				$ok = move_uploaded_file($subor['tmp_name'], $novy_nazov);
+				if ($ok) {
+					echo '<p>Súbor bol nahratý na server.</p>';
+				} else {
+					echo '<p>Súbor NEbol nahratý na server.</p>';
+					$novy_nazov = '';
+				}
+			} else {
+				echo '<p>Súbor je podvrh.</p>';
+			}
+		} else { 
+			// nastane, ak bol uploadovaný súbor väcší ako upload_max_filesize (chyba 2)
+			// nastane aj vtedy, ak bol uploadovaný súbor väcší ako post_max_size (chyba 2)
+			echo '<p class="chyba">Nastal problém pri uploadovaní súboru ' . $subor['name'] . ' - ' . $subor['error'] . '</p>';
+		}
+	}
+	else {
+		echo '<p>Súbor je prázdny</p>';
+	}
+}
 
 
 

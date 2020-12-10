@@ -13,6 +13,9 @@
 		left: 60ani px; 
 		width: 700px; 	
 	}
+	form {
+		font-size: 0.5em; 
+	}
 </style>
 <?php } else { ?>
 <style>
@@ -39,6 +42,7 @@
 
 	<br>
 	
-<p><input name="submit" type="submit" id="submit" value="OK"></p>
+<p><input name="submit" type="submit" id="submit" value="Dowland PDF"></p>
+<p><input name="next" type="submit" id="next" value="Next"></p>
 </form>
   </div>

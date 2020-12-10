@@ -29,9 +29,21 @@ if (isset($_POST["submit"])) {
     // Output the generated PDF to Browser 
     $dompdf->stream();
 }
-if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
+else if (isset($_POST["upload"])) {
+    fileToServer(isset($_FILES) ? $_FILES["photo1"] : ''); 
+    echo '<p>upload...</p>';
+}
+else if (isset($_POST["next"])) {
+    include('upload.php');
+}
+else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
     include('opel.php');
 }
+else if (isset($_POST["next"])) {
+    include('upload.php');
+}
+
+
 ?>
 	
 </section>
