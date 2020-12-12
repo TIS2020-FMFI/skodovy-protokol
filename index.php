@@ -52,6 +52,9 @@ if (isset($_SESSION['username'])) {
 
 ?>
 </section>
+<<<<<<< HEAD
+=======
 <footer>
 	<p>MMLC</p>
 </footer>
+>>>>>>> master
