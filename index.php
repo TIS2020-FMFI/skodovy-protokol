@@ -52,3 +52,6 @@ if (isset($_SESSION['username'])) {
 
 ?>
 </section>
+<footer>
+	<p>MMLC</p>
+</footer>
