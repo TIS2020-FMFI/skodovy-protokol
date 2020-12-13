@@ -19,7 +19,21 @@ header('Index');
 if (isset($_POST["submit"])) {
     // Load HTML content 
     ob_start();
-    include('opel.php');
+    if (isset($_GET['type']) && strcmp($_GET['type'], "jaguar") == 0) {
+        include('jaguar.php');
+    }    
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
+        include('opel.php');
+    }
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "peugeot") == 0) {
+        include('peugeot.php');
+    }
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
+        include('renault.php');
+    }
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
+        include('skoda.php');
+    }
     $html = ob_get_clean();
     $dompdf->loadHtml($html);  
     // (Optional) Setup the paper size and orientation 
@@ -36,8 +50,20 @@ else if (isset($_POST["upload"])) {
 else if (isset($_POST["next"])) {
     include('upload.php');
 }
+else if (isset($_GET['type']) && strcmp($_GET['type'], "jaguar") == 0) {
+    include('jaguar.php');
+}    
 else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
     include('opel.php');
+}
+else if (isset($_GET['type']) && strcmp($_GET['type'], "peugeot") == 0) {
+    include('peugeot.php');
+}
+else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
+    include('renault.php');
+}
+else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
+    include('skoda.php');
 }
 else if (isset($_POST["next"])) {
     include('upload.php');
