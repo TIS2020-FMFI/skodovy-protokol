@@ -32,11 +32,9 @@ p a {
   border: none;
   border-bottom: 3px solid grey;
 }
-.spodok:focus,
-.spodok:hover {
+.spodok:focus {
   outline: none;
   border-bottom: 3px solid #f85f6a;
-  transition: 1s;
 }
 
 #login {
