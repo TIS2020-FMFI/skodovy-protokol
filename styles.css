@@ -21,7 +21,7 @@ section {
   font-weight: bold;
 }
 
-input {
+.spodok {
   width: 100%;
   padding: 20px;
   margin: 10px 0;
@@ -29,10 +29,11 @@ input {
   border: none;
   border-bottom: 3px solid grey;
 }
-input:focus,
-input:hover {
+.spodok:focus,
+.spodok:hover {
   outline: none;
   border-bottom: 3px solid #f85f6a;
+  transition: 1s;
 }
 
 #login {

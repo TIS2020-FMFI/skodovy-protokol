@@ -58,7 +58,7 @@ function user_right($mysqli, $username, $pass) {
 	if (!$mysqli->connect_errno) {		
 		$sql = "SELECT * FROM users WHERE username='$username' AND password='$pass'";  		
 //		echo "sql = $sql <br>";
-		echo "OK3"; 
+		// echo "OK3"; 
 		if (($result = $mysqli->query($sql)) && ($result->num_rows > 0)) {  						
 			$row = $result->fetch_assoc();
 			$result->free();						
