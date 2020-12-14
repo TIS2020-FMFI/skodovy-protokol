@@ -25,6 +25,13 @@ input {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
+  border: none;
+  border-bottom: 3px solid grey;
+}
+input:focus,
+input:hover {
+  outline: none;
+  border-bottom: 3px solid #f85f6a;
 }
 
 #login {
