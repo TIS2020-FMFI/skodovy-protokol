@@ -58,7 +58,7 @@ if (isset($_SESSION['username'])) {
 		<input name="password" type="password" size="30" maxlength="30" id="password"> 
 		</p>
 		<p>
-			<input name="submit" type="submit" id="submit" value="Log in">
+			<input name="login" type="submit" id="login" value="Log in">
 		</p>
 	</form>
 <?php
