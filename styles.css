@@ -20,6 +20,9 @@ section {
   color: #f85f6a;
   font-weight: bold;
 }
+p a {
+  color: #f85f6a;
+}
 
 .spodok {
   width: 100%;

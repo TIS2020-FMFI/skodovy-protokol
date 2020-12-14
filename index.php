@@ -59,6 +59,7 @@ if (isset($_SESSION['username'])) {
 		<input class="spodok" name="username" type="text" size="30" maxlength="30" id="username" placeholder="username" value="<?php if (isset($_POST["username"])) echo $_POST["username"]; ?>" />
 		<p><label for="password">Prihlasovacie heslo</label> </p>
 		<input class="spodok" name="password" type="password" size="30" placeholder="password" maxlength="30" id="password"/> 
+		<p><a href="zmen_heslo.php">Zabudol som heslo</a></p>
 		<p>
 			<input name="login" type="submit" id="login" value="Log in">
 		</p>
