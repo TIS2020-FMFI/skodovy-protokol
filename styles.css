@@ -2,6 +2,10 @@
   outline: 3px solid black;
 } */
 
+h1 {
+  padding: 20px 0;
+  text-align: left;
+}
 body {
   width: 60%;
   margin: auto;
@@ -11,7 +15,11 @@ body {
 section {
   /* outline: 3px solid red; */
   height: 500px;
+  text-align: left;
+  color: #f85f6a;
+  font-weight: bold;
 }
+
 input {
   width: 100%;
   padding: 12px 20px;
