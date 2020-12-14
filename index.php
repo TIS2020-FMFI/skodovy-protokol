@@ -53,10 +53,9 @@ if (isset($_SESSION['username'])) {
 ?>
 	<form method="post">
 		<p><label for="username">Prihlasovacie meno</label></p>
-		<input name="username" type="text" size="30" maxlength="30" id="username" placeholder="username" value="<?php if (isset($_POST["username"])) echo $_POST["username"]; ?>" ><br>
+		<input name="username" type="text" size="30" maxlength="30" id="username" placeholder="username" value="<?php if (isset($_POST["username"])) echo $_POST["username"]; ?>" />
 		<p><label for="password">Prihlasovacie heslo</label> </p>
-		<input name="password" type="password" size="30" placeholder="password" maxlength="30" id="password"> 
-		</>
+		<input name="password" type="password" size="30" placeholder="password" maxlength="30" id="password"/> 
 		<p>
 			<input name="login" type="submit" id="login" value="Log in">
 		</p>
