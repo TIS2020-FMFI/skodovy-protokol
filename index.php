@@ -30,8 +30,11 @@ if (isset($_SESSION['username'])) {
   </p> 
 </form> 
 <ul> 
+<li><a href="protocol.php?type=jaguar">Jaguar</a> </li> 
 <li><a href="protocol.php?type=opel">Opel</a> </li> 
 <li><a href="protocol.php?type=peugeot">Peugeot</a> </li> 
+<li><a href="protocol.php?type=renault">Renault</a> </li> 
+<li><a href="protocol.php?type=skoda">Škoda</a> </li> 
 </ul>
 <?php
 
