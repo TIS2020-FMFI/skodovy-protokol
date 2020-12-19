@@ -16,15 +16,16 @@ header('Index');
 
 <body>
 	<?php
+		
+	
 	if (isset($_POST["username"]) && isset($_POST["password"]) && $user = user_right($mysqli, $_POST["username"], $_POST["password"])) {
 		$_SESSION['user_id'] = $user['user_id'];
-		$_SESSION['username'] = $user['username'];				
-		echo "<h1>Prihlásenie prebehlo úspešne</h1>"; 
+		$_SESSION['username'] = $user['username'];				 
 		
 	} elseif (isset($_POST['logout'])) { 
 		session_unset();
 		session_destroy();
-		echo "<h1>Odhlásenie prebehlo úspešne</h1>"; 
+		echo "<h1>Prihlásiť sa</h1>"; 
 	} else {
 		echo "<h1>Prihlásiť sa</h1>"; 
 	}
@@ -35,7 +36,6 @@ header('Index');
 if (isset($_SESSION['username'])) {
 	
 ?>
-<p>User <strong><?php echo $_SESSION['username'] ?></strong>.</p>
 	
 <form method="post"> 
   <p> 
@@ -54,6 +54,7 @@ if (isset($_SESSION['username'])) {
 
 }  else {
 ?>
+
 	<form method="post">
 		<p><label for="username">Prihlasovacie meno</label></p>
 		<input class="spodok" name="username" type="text" size="30" maxlength="30" id="username" placeholder="meno" value="<?php if (isset($_POST["username"])) echo $_POST["username"]; ?>" />
