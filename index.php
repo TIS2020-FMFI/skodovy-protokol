@@ -26,7 +26,7 @@ header('Index');
 		session_unset();
 		session_destroy();
 		echo "<h1>Prihlásiť sa</h1>"; 
-	} else {
+	}  elseif (!(isset($_SESSION['username']))) {
 		echo "<h1>Prihlásiť sa</h1>"; 
 	}
 	?>
