@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protokol</title>
+</head>
+<body>
+
 <?php
 // Include autoloader 
 require_once 'dompdf/autoload.inc.php'; 
@@ -15,6 +24,7 @@ header('Index');
 ?>
 
 <section>
+<h1>Protokol</h1>
 <?php
 if (isset($_POST["submit"])) {
     // Load HTML content 
@@ -73,3 +83,5 @@ else if (isset($_POST["next"])) {
 ?>
 	
 </section>
+</body>
+</html>

@@ -48,6 +48,7 @@ if (isset($_SESSION['username'])) {
 <li><a href="protocol.php?type=peugeot">Peugeot</a> </li> 
 <li><a href="protocol.php?type=renault">Renault</a> </li> 
 <li><a href="protocol.php?type=skoda">Škoda</a> </li> 
+<li><a href="protocol.php">Protokol</a> </li>
 </ul>
 <?php
 
