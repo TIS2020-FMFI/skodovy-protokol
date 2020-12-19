@@ -45,9 +45,9 @@ if (isset($_SESSION['username'])) {
     <input name="logout" type="submit" id="logout" value="Odhlásiť sa"> 
   </p> 
 <input class="cislo" name="cislo" type="text" size="30" placeholder="Výrobné číslo auta" maxlength="30" id="cislo"/> 
-<p> 
+ 
     <input name="hladat" type="submit" id="hladat" value="Hľadať"> 
-  </p> 
+  
 </form> 
 <ul> 
 <li><a href="protocol.php?type=jaguar">Jaguar</a> </li> 
