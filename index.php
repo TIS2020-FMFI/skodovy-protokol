@@ -39,7 +39,7 @@ if (isset($_SESSION['username'])) {
 	
 <form method="post"> 
   <p> 
-    <input name="logout" type="submit" id="logout" value="Log out"> 
+    <input name="logout" type="submit" id="logout" value="Odhlásiť sa"> 
   </p> 
 </form> 
 <ul> 
@@ -60,7 +60,7 @@ if (isset($_SESSION['username'])) {
 		<p><label for="password">Prihlasovacie heslo</label> </p>
 		<input class="spodok" name="password" type="password" size="30" placeholder="heslo" maxlength="30" id="password"/> 
 		<p>
-			<input name="login" type="submit" id="login" value="Log in">
+			<input name="login" type="submit" id="login" value="Prihlásiť sa">
 		</p>
 	</form>
 <?php
