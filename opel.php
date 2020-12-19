@@ -140,7 +140,186 @@
 		left: 897px; 
 		width: 50px; 	
 	}
-	
+	#deliveringA {
+		position: absolute;  
+		top: 1830px; 		
+		left: 500px; 
+		width: 207px; 	
+	}
+	#deliveringB {
+		position: absolute;  
+		top: 1830px; 		
+		left: 715px; 
+		width: 207px; 	
+	}
+	#deliveringC {
+		position: absolute;  
+		top: 1830px; 		
+		left: 930px; 
+		width: 207px; 	
+	}
+	#deliveringD {
+		position: absolute;  
+		top: 1830px; 		
+		left: 1145px; 
+		width: 207px; 	
+	}
+	#deliveringE {
+		position: absolute;  
+		top: 1830px; 		
+		left: 1360px; 
+		width: 207px; 	
+	}
+	#trucknoA {
+		position: absolute;  
+		top: 1880px; 		
+		left: 500px; 
+		width: 207px;	
+	}
+	#trucknoB {
+		position: absolute;  
+		top: 1880px; 		
+		left: 715px; 
+		width: 207px;	
+	}
+	#trucknoC {
+		position: absolute;  
+		top: 1880px; 		
+		left: 930px; 
+		width: 207px;	
+	}
+	#trucknoD {
+		position: absolute;  
+		top: 1880px; 		
+		left: 1145px; 
+		width: 207px;	
+	}
+	#trucknoE {
+		position: absolute;  
+		top: 1880px; 		
+		left: 1360px; 
+		width: 207px;	
+	}
+	#nameA {
+		position: absolute;  
+		top: 1970px; 		
+		left: 500px; 
+		width: 207px;	
+	}
+	#nameB {
+		position: absolute;  
+		top: 1970px; 		
+		left: 715px; 
+		width: 207px;	
+	}
+	#nameC {
+		position: absolute;  
+		top: 1970px; 		
+		left: 930px; 
+		width: 207px;	
+	}
+	#nameD {
+		position: absolute;  
+		top: 1970px; 		
+		left: 1145px; 
+		width: 207px;	
+	}
+	#nameE {
+		position: absolute;  
+		top: 1970px; 		
+		left: 1360px; 
+		width: 207px;	
+	}
+	#recievingA {
+		position: absolute;  
+		top: 2020px; 		
+		left: 500px; 
+		width: 207px;	
+	}
+	#recievingB {
+		position: absolute;  
+		top: 2020px; 		
+		left: 715px; 
+		width: 207px;	
+	}
+	#recievingC {
+		position: absolute;  
+		top: 2020px; 		
+		left: 930px; 
+		width: 207px;	
+	}
+	#recievingD {
+		position: absolute;  
+		top: 2020px; 		
+		left: 1145px; 
+		width: 207px;	
+	}
+	#recievingE {
+		position: absolute;  
+		top: 2020px; 		
+		left: 1360px; 
+		width: 207px;	
+	}
+	#nameofinspectorA {
+		position: absolute;  
+		top: 2070px; 		
+		left: 500px; 
+		width: 207px;	
+	}
+	#nameofinspectorB {
+		position: absolute;  
+		top: 2070px; 		
+		left: 715px; 
+		width: 207px;	
+	}
+	#nameofinspectorC {
+		position: absolute;  
+		top: 2070px; 		
+		left: 930px; 
+		width: 207px;	
+	}
+	#nameofinspectorD {
+		position: absolute;  
+		top: 2070px; 		
+		left: 1145px; 
+		width: 207px;	
+	}
+	#nameofinspectorE {
+		position: absolute;  
+		top: 2070px; 		
+		left: 1360px; 
+		width: 207px;	
+	}
+	#dateA {
+		position: absolute;  
+		top: 2160px; 		
+		left: 500px; 
+		width: 207px;	
+	}
+	#dateB {
+		position: absolute;  
+		top: 2160px; 		
+		left: 715px; 
+		width: 207px;	
+	}
+	#dateC {
+		position: absolute;  
+		top: 2160px; 		
+		left: 930px; 
+		width: 207px;	
+	}
+	#dateD {
+		position: absolute;  
+		top: 2160px; 		
+		left: 1145px; 
+		width: 207px;	
+	}
+	#dateE {
+		position: absolute;  
+		top: 2160px; 		
+		left: 1360px; 
+		width: 207px;	
+	}
 
 
 
@@ -191,12 +370,48 @@
 <input name="chassis14" type="text" id="chassis14" value="<?php if (isset($_POST["chassis14"])) echo $_POST["chassis14"]; ?>" size="3" maxlength="3">
 <input name="chassis15" type="text" id="chassis15" value="<?php if (isset($_POST["chassis15"])) echo $_POST["chassis15"]; ?>" size="3" maxlength="3">
 	
-
-
-
 <!-- tabulka napravo -->
 
 <!-- transportation section dole -->
+<input name="deliveringA" type="text" id="deliveringA" value="<?php if (isset($_POST["deliveringA"])) echo $_POST["deliveringA"]; ?>" size="25" maxlength="25">
+<input name="deliveringB" type="text" id="deliveringB" value="<?php if (isset($_POST["deliveringB"])) echo $_POST["deliveringB"]; ?>" size="25" maxlength="25">
+<input name="deliveringC" type="text" id="deliveringC" value="<?php if (isset($_POST["deliveringC"])) echo $_POST["deliveringC"]; ?>" size="25" maxlength="25">
+<input name="deliveringD" type="text" id="deliveringD" value="<?php if (isset($_POST["deliveringD"])) echo $_POST["deliveringD"]; ?>" size="25" maxlength="25">
+<input name="deliveringE" type="text" id="deliveringE" value="<?php if (isset($_POST["deliveringE"])) echo $_POST["deliveringE"]; ?>" size="25" maxlength="25">
+
+<input name="trucknoA" type="text" id="trucknoA" value="<?php if (isset($_POST["trucknoA"])) echo $_POST["trucknoA"]; ?>" size="25" maxlength="25">
+<input name="trucknoB" type="text" id="trucknoB" value="<?php if (isset($_POST["trucknoB"])) echo $_POST["trucknoB"]; ?>" size="25" maxlength="25">
+<input name="trucknoC" type="text" id="trucknoC" value="<?php if (isset($_POST["trucknoC"])) echo $_POST["trucknoC"]; ?>" size="25" maxlength="25">
+<input name="trucknoD" type="text" id="trucknoD" value="<?php if (isset($_POST["trucknoD"])) echo $_POST["trucknoD"]; ?>" size="25" maxlength="25">
+<input name="trucknoE" type="text" id="trucknoE" value="<?php if (isset($_POST["trucknoE"])) echo $_POST["trucknoE"]; ?>" size="25" maxlength="25">
+
+<input name="nameA" type="text" id="nameA" value="<?php if (isset($_POST["nameA"])) echo $_POST["nameA"]; ?>" size="25" maxlength="25">
+<input name="nameB" type="text" id="nameB" value="<?php if (isset($_POST["nameB"])) echo $_POST["nameB"]; ?>" size="25" maxlength="25">
+<input name="nameC" type="text" id="nameC" value="<?php if (isset($_POST["nameC"])) echo $_POST["nameC"]; ?>" size="25" maxlength="25">
+<input name="nameD" type="text" id="nameD" value="<?php if (isset($_POST["nameD"])) echo $_POST["nameD"]; ?>" size="25" maxlength="25">
+<input name="nameE" type="text" id="nameE" value="<?php if (isset($_POST["nameE"])) echo $_POST["nameE"]; ?>" size="25" maxlength="25">
+
+<input name="recievingA" type="text" id="recievingA" value="<?php if (isset($_POST["recievingA"])) echo $_POST["recievingA"]; ?>" size="25" maxlength="25">
+<input name="recievingB" type="text" id="recievingB" value="<?php if (isset($_POST["recievingB"])) echo $_POST["recievingB"]; ?>" size="25" maxlength="25">
+<input name="recievingC" type="text" id="recievingC" value="<?php if (isset($_POST["recievingC"])) echo $_POST["recievingC"]; ?>" size="25" maxlength="25">
+<input name="recievingD" type="text" id="recievingD" value="<?php if (isset($_POST["recievingD"])) echo $_POST["recievingD"]; ?>" size="25" maxlength="25">
+<input name="recievingE" type="text" id="recievingE" value="<?php if (isset($_POST["recievingE"])) echo $_POST["recievingE"]; ?>" size="25" maxlength="25">
+
+<input name="nameofinspectorA" type="text" id="nameofinspectorA" value="<?php if (isset($_POST["nameofinspectorA"])) echo $_POST["nameofinspectorA"]; ?>" size="25" maxlength="25">
+<input name="nameofinspectorB" type="text" id="nameofinspectorB" value="<?php if (isset($_POST["nameofinspectorB"])) echo $_POST["nameofinspectorB"]; ?>" size="25" maxlength="25">
+<input name="nameofinspectorC" type="text" id="nameofinspectorC" value="<?php if (isset($_POST["nameofinspectorC"])) echo $_POST["nameofinspectorC"]; ?>" size="25" maxlength="25">
+<input name="nameofinspectorD" type="text" id="nameofinspectorD" value="<?php if (isset($_POST["nameofinspectorD"])) echo $_POST["nameofinspectorD"]; ?>" size="25" maxlength="25">
+<input name="nameofinspectorE" type="text" id="nameofinspectorE" value="<?php if (isset($_POST["nameofinspectorE"])) echo $_POST["nameofinspectorE"]; ?>" size="25" maxlength="25">
+
+<input name="dateA" type="text" id="dateA" value="<?php if (isset($_POST["dateA"])) echo $_POST["dateA"]; ?>" size="25" maxlength="25">
+<input name="dateB" type="text" id="dateB" value="<?php if (isset($_POST["dateB"])) echo $_POST["dateB"]; ?>" size="25" maxlength="25">
+<input name="dateC" type="text" id="dateC" value="<?php if (isset($_POST["dateC"])) echo $_POST["dateC"]; ?>" size="25" maxlength="25">
+<input name="dateD" type="text" id="dateD" value="<?php if (isset($_POST["dateD"])) echo $_POST["dateD"]; ?>" size="25" maxlength="25">
+<input name="dateE" type="text" id="dateE" value="<?php if (isset($_POST["dateE"])) echo $_POST["dateE"]; ?>" size="25" maxlength="25">
+
+
+
+
 
 <!-- pridany kod koniec -->
 	
