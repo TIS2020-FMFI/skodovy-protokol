@@ -10,7 +10,10 @@ header('Index');
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<style>
+		<?php include "styles.css" ?>
+	</style>
 	<title>Škodový protokol</title>
 </head>
 
@@ -40,6 +43,10 @@ if (isset($_SESSION['username'])) {
 <form method="post"> 
   <p> 
     <input name="logout" type="submit" id="logout" value="Odhlásiť sa"> 
+  </p> 
+<input class="cislo" name="cislo" type="text" size="30" placeholder="Výrobné číslo auta" maxlength="30" id="cislo"/> 
+<p> 
+    <input name="hladat" type="submit" id="hladat" value="Hľadať"> 
   </p> 
 </form> 
 <ul> 

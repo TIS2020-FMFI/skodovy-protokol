@@ -1,3 +1,7 @@
+/* * {
+  outline: 3px solid black;
+} */
+
 h1 {
   padding: 20px 0;
   margin-top: 150px;
@@ -45,12 +49,25 @@ p a {
   cursor: pointer;
 }
 
-#login:hover {
+#login:hover,
+#logout:hover {
   background-color: #c54b53;
 }
 
 #logout {
-  width: 100%;
+  background-color: #f85f6a;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+
+#hladat {
   background-color: #f85f6a;
   color: white;
   font-weight: bold;
@@ -60,7 +77,14 @@ p a {
   border-radius: 4px;
   cursor: pointer;
 }
+.cislo {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  display: inline-block;
+  text-align: center;
+}
 
-#logout:hover {
-  background-color: #c54b53;
+form {
+  text-align: center;
 }
