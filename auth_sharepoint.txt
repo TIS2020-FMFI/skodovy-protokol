@@ -1,6 +1,0 @@
-Identifikátor aplikácie bol úspešne vytvorený.
-Identifikácia klienta:  	964c908f-f1b6-4a7f-a8e3-f17b0aa02529
-Kľúč klienta:  	kLTFoKc8BM/u87YQ9wQjxhspK7pSGj2NqJcwlz9lL7Y=
-Názov:  	prptokoly
-Doména aplikácie:  	localhost
-Identifikátor URI presmerovania:  	https://localhost/skodovy-protokol/

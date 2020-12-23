@@ -1,15 +1,27 @@
 <form method="post" enctype="multipart/form-data">			
-    	<p><label for="photo1">Fotografia č. 1:</label>
-			<input type="file" name="photo1" id="photo1">
+		<?php 
+		for ($x = 1; $x <= 3; $x++) {
+			$name = "photo" . $x; 	?>
+			<p><label for="<?php echo $name; ?>">Fotografia č. <?php echo $x; ?>:</label>
+			<input type="file" name="<?php echo $name; ?>" id="<?php echo $name; ?>" onchange="submitForm();" style="display: none;" accept=".jpg, .png">
+			<input type="button" value="Browse..." onclick="document.getElementById('<?php echo $name; ?>').click();" />
+			<?php 
+			if (file_exists("protocol_data/" . $name . ".jpg")) {
+				echo '<img src="protocol_data/' . $name . '.jpg" alt="Photo1" width="42" height="42">'; 				
+			} ?>
 		</p>
-		<p><label for="photo2">Fotografia č. 2:</label>
-			<input type="file" name="photo2" id="photo2">
-		</p>
-		<p><label for="photo3">Fotografia č. 3:</label>
-			<input type="file" name="photo3" id="photo3">
-		</p>
+		<?php } ?>
+		
+		
 	<br>
 	
 <p><input name="upload" type="submit" id="upload" value="upload"></p>
 <p><input name="send" type="submit" id="send" value="Send to Sharepoint"></p>
 </form>
+
+<script type="text/javascript">
+    function submitForm() {
+        // However you need to submit the form
+        document.getElementById("upload").click(); // Or whatever
+    }
+</script>
