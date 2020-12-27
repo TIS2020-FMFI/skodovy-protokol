@@ -1,5 +1,9 @@
 <?php
 date_default_timezone_set('Europe/Bratislava');
+require_once 'vendor/autoload.php';
+use Office365\Runtime\Auth\ClientCredential;
+use Office365\SharePoint\FileCreationInformation;
+use Office365\SharePoint\ClientContext;
 	
 function head($tittle) {
 ?>
@@ -71,22 +75,19 @@ function user_right($mysqli, $username, $pass) {
 	}
 }
 
-function fileToServer($subor) {
-	$novy_nazov = '';
-	// spracuj uploadovaný súbor 
-	if (!empty($subor) && !empty($subor['name'])) {
-		//echo 'nieco sa odosiela';
-		
-		if ($subor['error'] == UPLOAD_ERR_OK) {
-			if (is_uploaded_file($subor['tmp_name'])) {
-				$novy_nazov = 'photos/' . $subor['name'];
-				$ok = move_uploaded_file($subor['tmp_name'], $novy_nazov);
-				if ($ok) {
+function fileToServer($file, $newName) {
+	$new_name = '';	
+	if (!empty($file) && !empty($file['name'])) {				
+		if ($file['error'] == UPLOAD_ERR_OK) {
+			if (is_uploaded_file($file['tmp_name'])) {
+				$new_name = 'protocol_data/' . $newName . fileFormat($file['name']);								
+				$ok = move_uploaded_file($file['tmp_name'], $new_name);
+				/*if ($ok) {
 					echo '<p>Súbor bol nahratý na server.</p>';
 				} else {
 					echo '<p>Súbor NEbol nahratý na server.</p>';
-					$novy_nazov = '';
-				}
+					$new_name = ''; 
+				}*/
 			} else {
 				echo '<p>Súbor je podvrh.</p>';
 			}
@@ -95,12 +96,57 @@ function fileToServer($subor) {
 			// nastane aj vtedy, ak bol uploadovaný súbor väcší ako post_max_size (chyba 2)
 			echo '<p class="chyba">Nastal problém pri uploadovaní súboru ' . $subor['name'] . ' - ' . $subor['error'] . '</p>';
 		}
-	}
-	else {
-		echo '<p>Súbor je prázdny</p>';
-	}
+	}	
 }
 
+function fileFormat($filename) {
+	$result = ''; 
+	$add = false; 
+	foreach (str_split($filename) as $s) {
+		if ($s == '.')
+			$add = true; 
+		if ($add) 
+			$result = $result . $s; 
+	}
+	return $result; 
+}
 
+function packToZIP() {
+	$zip = new ZipArchive();
+	$filename = "result.zip";
+
+	if ($zip->open($filename, ZipArchive::CREATE)!==TRUE) {
+		exit("cannot open <$filename>\n");
+	}
+	$zip->addFile("protocol_data/protocol.pdf");        
+	for ($x = 1; $x <= 3; $x++) {
+		$name = "protocol_data/photo" . $x . ".jpg"; 
+		if (file_exists($name))
+			$zip->addFile($name);            
+	}    
+	$zip->close();
+}
+
+function uploadToSharepoint() {
+	try {
+		$clientId = "---userID---";
+		$clientSecret = "---password---";
+		$webUrl = "https://liveuniba.sharepoint.com/sites/MartinKristak/";
+		$credentials = new ClientCredential($clientId, $clientSecret);
+		$ctx = (new ClientContext($webUrl))->withCredentials($credentials);
+		$targetFolderUrl = "Shared%20Documents";
+		$localPath = "result.zip";
+		$fileName = basename($localPath);
+		$fileCreationInformation = new FileCreationInformation();
+		$fileCreationInformation->Content = file_get_contents($localPath);
+		$fileCreationInformation->Url = $fileName;
+		$uploadFile = $ctx->getWeb()->getFolderByServerRelativeUrl($targetFolderUrl)->getFiles()->add($fileCreationInformation);
+		$ctx->executeQuery();
+		print "File has been uploaded\r\n";
+	}
+	catch (Exception $e) {
+		echo 'Error: ',  $e->getMessage(), "\n";
+	}
+}
 
 ?>
