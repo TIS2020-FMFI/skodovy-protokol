@@ -42,7 +42,7 @@
 
 	<br>
 	
-<p><input name="submit" type="submit" id="submit" value="Dowland PDF"></p>
+<p><input name="submit" type="submit" id="submit" value="Download PDF"></p>
 <p><input name="next" type="submit" id="next" value="Next"></p>
 </form>
   </div>
