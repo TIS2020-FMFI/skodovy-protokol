@@ -413,6 +413,62 @@
 		left: 130px; 
 		width: 1410px; 	
 	}
+	#com-1 {
+		position: absolute;  
+		top: 1850px; 		
+		left: 400px; 
+		width: 370px; 	
+	}
+	#com-2 {
+		position: absolute;  
+		top: 1850px; 		
+		left: 1040px; 
+		width: 550px; 	
+	}
+	#lorry-1 {
+		position: absolute;  
+		top: 1900px; 		
+		left: 400px; 
+		width: 370px; 	
+	}
+	#lorry-2 {
+		position: absolute;  
+		top: 1900px; 		
+		left: 1040px; 
+		width: 550px; 	
+	}
+	#name-1 {
+		position: absolute;  
+		top: 2007px; 		
+		left: 210px; 
+		width: 550px; 	
+	}
+
+	#name-2 {
+		position: absolute;  
+		top: 2007px; 		
+		left: 860px; 
+		width: 710px; 	
+	}
+
+	#place {
+		position: absolute;  
+		top: 2130px; 		
+		left: 360px; 
+		width: 165px; 	
+	}
+	#date {
+		position: absolute;  
+		top: 2130px; 		
+		left: 760px; 
+		width: 165px; 	
+	}
+	#time {
+		position: absolute;  
+		top: 2130px; 		
+		left: 1150px; 
+		width: 165px; 	
+	}
 
 </style>
 <?php } ?>
@@ -500,10 +556,20 @@
 	<input name="rem-1" type="text" id="rem-1" value="<?php if (isset($_POST["rem-1"])) echo $_POST["rem-1"]; ?>" size="90" maxlength="90">
 	<input name="rem-2" type="text" id="rem-2" value="<?php if (isset($_POST["rem-2"])) echo $_POST["rem-2"]; ?>" size="100" maxlength="100">
 	
-
-
-
 	<!-- dolna cast -->
+	<input name="com-1" type="text" id="com-1" value="<?php if (isset($_POST["com-1"])) echo $_POST["com-1"]; ?>" size="30" maxlength="30">
+	<input name="com-2" type="text" id="com-2" value="<?php if (isset($_POST["com-2"])) echo $_POST["com-2"]; ?>" size="50" maxlength="50">
+	
+	<input name="lorry-1" type="text" id="lorry-1" value="<?php if (isset($_POST["lorry-1"])) echo $_POST["lorry-1"]; ?>" size="30" maxlength="30">
+	<input name="lorry-2" type="text" id="lorry-2" value="<?php if (isset($_POST["lorry-2"])) echo $_POST["lorry-2"]; ?>" size="50" maxlength="50">
+	
+	<input name="name-1" type="text" id="name-1" value="<?php if (isset($_POST["name-1"])) echo $_POST["name-1"]; ?>" size="50" maxlength="50">
+	<input name="name-2" type="text" id="name-2" value="<?php if (isset($_POST["name-2"])) echo $_POST["name-2"]; ?>" size="50" maxlength="50">
+	
+	<input name="place" type="text" id="place" value="<?php if (isset($_POST["place"])) echo $_POST["place"]; ?>" size="20" maxlength="20">
+	<input name="date" type="text" id="date" value="<?php if (isset($_POST["date"])) echo $_POST["date"]; ?>" size="20" maxlength="20">
+	<input name="time" type="text" id="time" value="<?php if (isset($_POST["time"])) echo $_POST["time"]; ?>" size="20" maxlength="20">
+	
 
 	<br>
 	
