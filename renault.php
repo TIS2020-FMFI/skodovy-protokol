@@ -16,9 +16,12 @@
 	form {
 		font-size: 0.5em; 
 	}
-</style>
-<?php } else { ?>
-<style>
+
+
+
+
+
+	/* povodna else vetva */
 	#model {
 		position: absolute;  
 		top: 430px; 		
@@ -469,9 +472,471 @@
 		left: 1150px; 
 		width: 165px; 	
 	}
+</style>
+<?php } else { ?>
+<style>
+
+    img {
+		position: absolute; 
+		width: 720px; 
+		height: 1017px; 
+		margin: 0px; 
+		z-index: -1; 
+	}
+	#model {
+		position: absolute;  
+		top: 180px; 		
+		left: 120px; 
+		width: 90px; 	
+	}
+
+	#origin {
+		position: absolute;  
+		top: 155px; 		
+		left: 110px; 
+		width: 100px; 	
+	}
+
+	#n {
+		position: absolute;  
+		top: 100px; 		
+		left: 480px; 
+		width: 200px; 	
+	}
+
+	#destination {
+		position: absolute;  
+		top: 155px; 		
+		left: 290px; 
+		width: 128px; 	
+	}
+	#transport {
+		position: absolute;  
+		top: 155px; 		
+		left: 555px; 
+		width: 140px; 	
+	}
+
+	#chassis-1 {
+		position: absolute;  
+		top: 180px; 		
+		left: 345px; 
+		width: 20px; 	
+	}
+	#chassis-2 {
+		position: absolute;  
+		top: 180px; 		
+		left: 366px; 
+		width: 19px; 	
+	}
+	#chassis-3 {
+		position: absolute;  
+		top: 180px; 		
+		left: 386px; 
+		width: 19px; 	
+	}
+	#chassis-4 {
+		position: absolute;  
+		top: 180px; 		
+		left: 406px; 
+		width: 20px; 	
+	}
+	#chassis-5 {
+		position: absolute;  
+		top: 180px; 		
+		left: 427px; 
+		width: 19px; 	
+	}
+	#chassis-6 {
+		position: absolute;  
+		top: 180px; 		
+		left: 447px; 
+		width: 19px; 	
+	}
+	#chassis-7 {
+		position: absolute;  
+		top: 180px; 		
+		left: 467px; 
+		width: 19px; 	
+	}
+	#chassis-8 {
+		position: absolute;  
+		top: 180px; 		
+		left: 487px; 
+		width: 20px; 	
+	}
+	#chassis-9 {
+		position: absolute;  
+		top: 180px; 		
+		left: 508px; 
+		width: 19px; 	
+	}
+	#chassis-10 {
+		position: absolute;  
+		top: 180px; 		
+		left: 528px; 
+		width: 19px; 	
+	}
+	#chassis-11 {
+		position: absolute;  
+		top: 180px; 		
+		left: 548px; 
+		width: 20px; 	
+	}
+	#chassis-12 {
+		position: absolute;  
+		top: 180px; 		
+		left: 569px; 
+		width: 19px; 	
+	}
+	#chassis-13 {
+		position: absolute;  
+		top: 180px; 		
+		left: 589px; 
+		width: 19px; 	
+	}
+	#chassis-14 {
+		position: absolute;  
+		top: 180px; 		
+		left: 609px; 
+		width: 19px; 	
+	}
+	#chassis-15 {
+		position: absolute;  
+		top: 180px; 		
+		left: 629px; 
+		width: 20px; 	
+	}
+	#chassis-16 {
+		position: absolute;  
+		top: 180px; 		
+		left: 650px; 
+		width: 19px; 	
+	}
+	#chassis-17 {
+		position: absolute;  
+		top: 180px; 		
+		left: 670px; 
+		width: 19px; 	
+	}
+	#damages-a {
+		position: absolute;  
+		top: 212px; 		
+		left: 190px; 
+		width: 20px; 	
+	}
+	#damages-b {
+		position: absolute;  
+		top: 212px; 		
+		left: 240px; 
+		width: 20px; 	
+	}
+	#damages-c {
+		position: absolute;  
+		top: 212px; 		
+		left: 290px; 
+		width: 20px; 	
+	}
+	#km {
+		position: absolute;  
+		top: 250px; 		
+		left: 93px; 
+		width: 51px; 	
+	}
+	#order {
+		position: absolute;  
+		top: 250px; 		
+		left: 205px; 
+		width: 132px; 	
+	}
+	#reg {
+		position: absolute;  
+		top: 275px; 		
+		left: 180px; 
+		width: 88px; 	
+	}
+	#road {
+		position: absolute;  
+		top: 275px; 		
+		left: 338px; 
+		width: 59px; 	
+	}
+	#rail {
+		position: absolute;  
+		top: 275px; 		
+		left: 398px; 
+		width: 58px; 	
+	}
+	#sea {
+		position: absolute;  
+		top: 275px; 		
+		left: 458px; 
+		width: 50px; 	
+	}
+	#barge {
+		position: absolute;  
+		top: 275px; 		
+		left: 509px; 
+		width: 59px; 	
+	}
+	#compound {
+		position: absolute;  
+		top: 275px; 		
+		left: 570px; 
+		width: 66px; 	
+	}
+	#factory {
+		position: absolute;  
+		top: 275px; 		
+		left: 638px; 
+		width: 58px; 	
+	}
+	#loc-1 {
+		position: absolute;  
+		top: 1250px; 		
+		left: 135px; 
+		width: 167px; 	
+	}
+	#nat-1 {
+		position: absolute;  
+		top: 1250px; 		
+		left: 304px; 
+		width: 114px; 	
+	}
+	#sev-1 {
+		position: absolute;  
+		top: 1250px; 		
+		left: 420px; 
+		width: 110px; 	
+	}
+	#ref-1 {
+		position: absolute;  
+		top: 1250px; 		
+		left: 532px; 
+		width: 232px; 	
+	}
+	#add-1 {
+		position: absolute;  
+		top: 1250px; 		
+		left: 766px; 
+		width: 826px; 	
+	}
+
+	#loc-2 {
+		position: absolute;  
+		top: 1310px; 		
+		left: 135px; 
+		width: 167px; 	
+	}
+	#nat-2 {
+		position: absolute;  
+		top: 1310px; 		
+		left: 304px; 
+		width: 114px; 	
+	}
+	#sev-2 {
+		position: absolute;  
+		top: 1310px; 		
+		left: 420px; 
+		width: 110px; 	
+	}
+	#ref-2 {
+		position: absolute;  
+		top: 1310px; 		
+		left: 532px; 
+		width: 232px; 	
+	}
+	#add-2 {
+		position: absolute;  
+		top: 1310px; 		
+		left: 766px; 
+		width: 826px; 	
+	}
+
+
+	#loc-3 {
+		position: absolute;  
+		top: 1380px; 		
+		left: 135px; 
+		width: 167px; 	
+	}
+	#nat-3 {
+		position: absolute;  
+		top: 1380px; 		
+		left: 304px; 
+		width: 114px; 	
+	}
+	#sev-3 {
+		position: absolute;  
+		top: 1380px; 		
+		left: 420px; 
+		width: 110px; 	
+	}
+	#ref-3 {
+		position: absolute;  
+		top: 1380px; 		
+		left: 532px; 
+		width: 232px; 	
+	}
+	#add-3 {
+		position: absolute;  
+		top: 1380px; 		
+		left: 766px; 
+		width: 826px; 	
+	}
+
+	#loc-4 {
+		position: absolute;  
+		top: 1440px; 		
+		left: 135px; 
+		width: 167px; 	
+	}
+	#nat-4 {
+		position: absolute;  
+		top: 1440px; 		
+		left: 304px; 
+		width: 114px; 	
+	}
+	#sev-4 {
+		position: absolute;  
+		top: 1440px; 		
+		left: 420px; 
+		width: 110px; 	
+	}
+	#ref-4 {
+		position: absolute;  
+		top: 1440px; 		
+		left: 532px; 
+		width: 232px; 	
+	}
+	#add-4 {
+		position: absolute;  
+		top: 1440px; 		
+		left: 766px; 
+		width: 826px; 	
+	}
+
+
+	#loc-5 {
+		position: absolute;  
+		top: 1490px; 		
+		left: 135px; 
+		width: 167px; 	
+	}
+	#nat-5 {
+		position: absolute;  
+		top: 1490px; 		
+		left: 304px; 
+		width: 114px; 	
+	}
+	#sev-5 {
+		position: absolute;  
+		top: 1490px; 		
+		left: 420px; 
+		width: 110px; 	
+	}
+	#ref-5 {
+		position: absolute;  
+		top: 1490px; 		
+		left: 532px; 
+		width: 232px; 	
+	}
+	#add-5 {
+		position: absolute;  
+		top: 1490px; 		
+		left: 766px; 
+		width: 826px; 	
+	}
+	#doc {
+		position: absolute;  
+		top: 1550px; 		
+		left: 133px; 
+		width: 20px; 	
+	}
+	#yes {
+		position: absolute;  
+		top: 1593px; 		
+		left: 1218px; 
+		width: 20px; 	
+	}
+	#no {
+		position: absolute;  
+		top: 1593px; 		
+		left: 1415px; 
+		width: 20px; 	
+	}
+	#rem-1 {
+		position: absolute;  
+		top: 1635px; 		
+		left: 450px; 
+		width: 1090px; 	
+	}
+	#rem-2 {
+		position: absolute;  
+		top: 1680px; 		
+		left: 130px; 
+		width: 1410px; 	
+	}
+	#com-1 {
+		position: absolute;  
+		top: 1850px; 		
+		left: 400px; 
+		width: 370px; 	
+	}
+	#com-2 {
+		position: absolute;  
+		top: 1850px; 		
+		left: 1040px; 
+		width: 550px; 	
+	}
+	#lorry-1 {
+		position: absolute;  
+		top: 1900px; 		
+		left: 400px; 
+		width: 370px; 	
+	}
+	#lorry-2 {
+		position: absolute;  
+		top: 1900px; 		
+		left: 1040px; 
+		width: 550px; 	
+	}
+	#name-1 {
+		position: absolute;  
+		top: 2007px; 		
+		left: 210px; 
+		width: 550px; 	
+	}
+
+	#name-2 {
+		position: absolute;  
+		top: 2007px; 		
+		left: 860px; 
+		width: 710px; 	
+	}
+
+	#place {
+		position: absolute;  
+		top: 2130px; 		
+		left: 360px; 
+		width: 165px; 	
+	}
+	#date {
+		position: absolute;  
+		top: 2130px; 		
+		left: 760px; 
+		width: 165px; 	
+	}
+	#time {
+		position: absolute;  
+		top: 2130px; 		
+		left: 1150px; 
+		width: 165px; 	
+	}
 
 </style>
 <?php } ?>
+
 
 <?php
 	$path = './pictures/renault-protocol.png';
@@ -484,40 +949,40 @@
     <form method="post">
 
 <!-- horna cast -->
-    <input name="n" type="text" id="n" value="<?php if (isset($_POST["n"])) echo $_POST["n"]; ?>" size="30" maxlength="30">
+    <input name="n" type="text" id="n" value="<?php if (isset($_POST["n"])) echo $_POST["n"]; ?>" size="15" maxlength="15">
 	<input name="destination" type="text" id="destination" value="<?php if (isset($_POST["destination"])) echo $_POST["destination"]; ?>" size="20" maxlength="20">
-	<input name="transport" type="text" id="transport" value="<?php if (isset($_POST["transport"])) echo $_POST["transport"]; ?>" size="20" maxlength="20">
-	<input name="origin" type="text" id="origin" value="<?php if (isset($_POST["origin"])) echo $_POST["origin"]; ?>" size="17" maxlength="17">
-	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; ?>" size="17" maxlength="17">
-	<input name="chassis-1" type="text" id="chassis-1" value="<?php if (isset($_POST["chassis-1"])) echo $_POST["chassis-1"]; ?>" size="3" maxlength="3">
-	<input name="chassis-2" type="text" id="chassis-2" value="<?php if (isset($_POST["chassis-2"])) echo $_POST["chassis-2"]; ?>" size="3" maxlength="3">
-	<input name="chassis-3" type="text" id="chassis-3" value="<?php if (isset($_POST["chassis-3"])) echo $_POST["chassis-3"]; ?>" size="3" maxlength="3">
-	<input name="chassis-4" type="text" id="chassis-4" value="<?php if (isset($_POST["chassis-4"])) echo $_POST["chassis-4"]; ?>" size="3" maxlength="3">
-	<input name="chassis-5" type="text" id="chassis-5" value="<?php if (isset($_POST["chassis-5"])) echo $_POST["chassis-5"]; ?>" size="3" maxlength="3">
-	<input name="chassis-6" type="text" id="chassis-6" value="<?php if (isset($_POST["chassis-6"])) echo $_POST["chassis-6"]; ?>" size="3" maxlength="3">
-	<input name="chassis-7" type="text" id="chassis-7" value="<?php if (isset($_POST["chassis-7"])) echo $_POST["chassis-7"]; ?>" size="3" maxlength="3">
-	<input name="chassis-8" type="text" id="chassis-8" value="<?php if (isset($_POST["chassis-8"])) echo $_POST["chassis-8"]; ?>" size="3" maxlength="3">
-	<input name="chassis-9" type="text" id="chassis-9" value="<?php if (isset($_POST["chassis-9"])) echo $_POST["chassis-9"]; ?>" size="3" maxlength="3">
-	<input name="chassis-10" type="text" id="chassis-10" value="<?php if (isset($_POST["chassis-10"])) echo $_POST["chassis-10"]; ?>" size="3" maxlength="3">
-	<input name="chassis-11" type="text" id="chassis-11" value="<?php if (isset($_POST["chassis-11"])) echo $_POST["chassis-11"]; ?>" size="3" maxlength="3">
-	<input name="chassis-12" type="text" id="chassis-12" value="<?php if (isset($_POST["chassis-12"])) echo $_POST["chassis-12"]; ?>" size="3" maxlength="3">
-	<input name="chassis-13" type="text" id="chassis-13" value="<?php if (isset($_POST["chassis-13"])) echo $_POST["chassis-13"]; ?>" size="3" maxlength="3">
-	<input name="chassis-14" type="text" id="chassis-14" value="<?php if (isset($_POST["chassis-14"])) echo $_POST["chassis-14"]; ?>" size="3" maxlength="3">
-	<input name="chassis-15" type="text" id="chassis-15" value="<?php if (isset($_POST["chassis-15"])) echo $_POST["chassis-15"]; ?>" size="3" maxlength="3">
-	<input name="chassis-16" type="text" id="chassis-16" value="<?php if (isset($_POST["chassis-16"])) echo $_POST["chassis-16"]; ?>" size="3" maxlength="3">
-	<input name="chassis-17" type="text" id="chassis-17" value="<?php if (isset($_POST["chassis-17"])) echo $_POST["chassis-17"]; ?>" size="3" maxlength="3">
+	<input name="transport" type="text" id="transport" value="<?php if (isset($_POST["transport"])) echo $_POST["transport"]; ?>" size="23" maxlength="23">
+	<input name="origin" type="text" id="origin" value="<?php if (isset($_POST["origin"])) echo $_POST["origin"]; ?>" size="12" maxlength="12">
+	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; ?>" size="10" maxlength="10">
+	<input name="chassis-1" type="text" id="chassis-1" value="<?php if (isset($_POST["chassis-1"])) echo $_POST["chassis-1"]; ?>" size="1" maxlength="1">
+	<input name="chassis-2" type="text" id="chassis-2" value="<?php if (isset($_POST["chassis-2"])) echo $_POST["chassis-2"]; ?>" size="1" maxlength="1">
+	<input name="chassis-3" type="text" id="chassis-3" value="<?php if (isset($_POST["chassis-3"])) echo $_POST["chassis-3"]; ?>" size="1" maxlength="1">
+	<input name="chassis-4" type="text" id="chassis-4" value="<?php if (isset($_POST["chassis-4"])) echo $_POST["chassis-4"]; ?>" size="1" maxlength="1">
+	<input name="chassis-5" type="text" id="chassis-5" value="<?php if (isset($_POST["chassis-5"])) echo $_POST["chassis-5"]; ?>" size="1" maxlength="1">
+	<input name="chassis-6" type="text" id="chassis-6" value="<?php if (isset($_POST["chassis-6"])) echo $_POST["chassis-6"]; ?>" size="1" maxlength="1">
+	<input name="chassis-7" type="text" id="chassis-7" value="<?php if (isset($_POST["chassis-7"])) echo $_POST["chassis-7"]; ?>" size="1" maxlength="1">
+	<input name="chassis-8" type="text" id="chassis-8" value="<?php if (isset($_POST["chassis-8"])) echo $_POST["chassis-8"]; ?>" size="1" maxlength="1">
+	<input name="chassis-9" type="text" id="chassis-9" value="<?php if (isset($_POST["chassis-9"])) echo $_POST["chassis-9"]; ?>" size="1" maxlength="1">
+	<input name="chassis-10" type="text" id="chassis-10" value="<?php if (isset($_POST["chassis-10"])) echo $_POST["chassis-10"]; ?>" size="1" maxlength="1">
+	<input name="chassis-11" type="text" id="chassis-11" value="<?php if (isset($_POST["chassis-11"])) echo $_POST["chassis-11"]; ?>" size="1" maxlength="1">
+	<input name="chassis-12" type="text" id="chassis-12" value="<?php if (isset($_POST["chassis-12"])) echo $_POST["chassis-12"]; ?>" size="1" maxlength="1">
+	<input name="chassis-13" type="text" id="chassis-13" value="<?php if (isset($_POST["chassis-13"])) echo $_POST["chassis-13"]; ?>" size="1" maxlength="1">
+	<input name="chassis-14" type="text" id="chassis-14" value="<?php if (isset($_POST["chassis-14"])) echo $_POST["chassis-14"]; ?>" size="1" maxlength="1">
+	<input name="chassis-15" type="text" id="chassis-15" value="<?php if (isset($_POST["chassis-15"])) echo $_POST["chassis-15"]; ?>" size="1" maxlength="1">
+	<input name="chassis-16" type="text" id="chassis-16" value="<?php if (isset($_POST["chassis-16"])) echo $_POST["chassis-16"]; ?>" size="1" maxlength="1">
+	<input name="chassis-17" type="text" id="chassis-17" value="<?php if (isset($_POST["chassis-17"])) echo $_POST["chassis-17"]; ?>" size="1" maxlength="1">
 	<input name="damages-a" type="text" id="damages-a" value="<?php if (isset($_POST["damages-a"])) echo $_POST["damages-a"]; ?>" size="1" maxlength="1">
 	<input name="damages-b" type="text" id="damages-b" value="<?php if (isset($_POST["damages-b"])) echo $_POST["damages-b"]; ?>" size="1" maxlength="1">
 	<input name="damages-c" type="text" id="damages-c" value="<?php if (isset($_POST["damages-c"])) echo $_POST["damages-c"]; ?>" size="1" maxlength="1">
-	<input name="km" type="text" id="km" value="<?php if (isset($_POST["km"])) echo $_POST["km"]; ?>" size="10" maxlength="10">
-	<input name="order" type="text" id="order" value="<?php if (isset($_POST["order"])) echo $_POST["order"]; ?>" size="25" maxlength="25">
-	<input name="reg" type="text" id="reg" value="<?php if (isset($_POST["reg"])) echo $_POST["reg"]; ?>" size="15" maxlength="15">
-	<input name="road" type="text" id="road" value="<?php if (isset($_POST["road"])) echo $_POST["road"]; ?>" size="10" maxlength="10">
-	<input name="rail" type="text" id="rail" value="<?php if (isset($_POST["rail"])) echo $_POST["rail"]; ?>" size="10" maxlength="10">
-	<input name="sea" type="text" id="sea" value="<?php if (isset($_POST["sea"])) echo $_POST["sea"]; ?>" size="8" maxlength="8">
-	<input name="barge" type="text" id="barge" value="<?php if (isset($_POST["barge"])) echo $_POST["barge"]; ?>" size="9" maxlength="9">
-	<input name="compound" type="text" id="compound" value="<?php if (isset($_POST["compound"])) echo $_POST["compound"]; ?>" size="10" maxlength="10">
-	<input name="factory" type="text" id="factory" value="<?php if (isset($_POST["factory"])) echo $_POST["factory"]; ?>" size="8" maxlength="8">
+	<input name="km" type="text" id="km" value="<?php if (isset($_POST["km"])) echo $_POST["km"]; ?>" size="6" maxlength="6">
+	<input name="order" type="text" id="order" value="<?php if (isset($_POST["order"])) echo $_POST["order"]; ?>" size="22" maxlength="22">
+	<input name="reg" type="text" id="reg" value="<?php if (isset($_POST["reg"])) echo $_POST["reg"]; ?>" size="13" maxlength="13">
+	<input name="road" type="text" id="road" value="<?php if (isset($_POST["road"])) echo $_POST["road"]; ?>" size="5" maxlength="5">
+	<input name="rail" type="text" id="rail" value="<?php if (isset($_POST["rail"])) echo $_POST["rail"]; ?>" size="5" maxlength="5">
+	<input name="sea" type="text" id="sea" value="<?php if (isset($_POST["sea"])) echo $_POST["sea"]; ?>" size="5" maxlength="5">
+	<input name="barge" type="text" id="barge" value="<?php if (isset($_POST["barge"])) echo $_POST["barge"]; ?>" size="5" maxlength="5">
+	<input name="compound" type="text" id="compound" value="<?php if (isset($_POST["compound"])) echo $_POST["compound"]; ?>" size="5" maxlength="5">
+	<input name="factory" type="text" id="factory" value="<?php if (isset($_POST["factory"])) echo $_POST["factory"]; ?>" size="5" maxlength="5">
 	
 	<!-- prostredna cast -->
 	<input name="loc-1" type="text" id="loc-1" value="<?php if (isset($_POST["loc-1"])) echo $_POST["loc-1"]; ?>" size="15" maxlength="15">
