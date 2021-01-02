@@ -18,9 +18,485 @@
 	}
 
 
+    /* nove */
+	img {
+		position: absolute; 
+		width: 720px; 
+		height: 1017px; 
+		margin: 0px; 
+		z-index: -1; 
+	}
+	#model {
+		position: absolute;  
+		top: 180px; 		
+		left: 120px; 
+		width: 90px; 	
+	}
+
+	#origin {
+		position: absolute;  
+		top: 155px; 		
+		left: 110px; 
+		width: 100px; 	
+	}
+
+	#n {
+		position: absolute;  
+		top: 100px; 		
+		left: 480px; 
+		width: 200px; 	
+	}
+
+	#destination {
+		position: absolute;  
+		top: 155px; 		
+		left: 290px; 
+		width: 128px; 	
+	}
+	#transport {
+		position: absolute;  
+		top: 155px; 		
+		left: 555px; 
+		width: 140px; 	
+	}
+
+	#chassis-1 {
+		position: absolute;  
+		top: 180px; 		
+		left: 345px; 
+		width: 20px; 	
+	}
+	#chassis-2 {
+		position: absolute;  
+		top: 180px; 		
+		left: 366px; 
+		width: 19px; 	
+	}
+	#chassis-3 {
+		position: absolute;  
+		top: 180px; 		
+		left: 386px; 
+		width: 19px; 	
+	}
+	#chassis-4 {
+		position: absolute;  
+		top: 180px; 		
+		left: 406px; 
+		width: 20px; 	
+	}
+	#chassis-5 {
+		position: absolute;  
+		top: 180px; 		
+		left: 427px; 
+		width: 19px; 	
+	}
+	#chassis-6 {
+		position: absolute;  
+		top: 180px; 		
+		left: 447px; 
+		width: 19px; 	
+	}
+	#chassis-7 {
+		position: absolute;  
+		top: 180px; 		
+		left: 467px; 
+		width: 19px; 	
+	}
+	#chassis-8 {
+		position: absolute;  
+		top: 180px; 		
+		left: 487px; 
+		width: 20px; 	
+	}
+	#chassis-9 {
+		position: absolute;  
+		top: 180px; 		
+		left: 508px; 
+		width: 19px; 	
+	}
+	#chassis-10 {
+		position: absolute;  
+		top: 180px; 		
+		left: 528px; 
+		width: 19px; 	
+	}
+	#chassis-11 {
+		position: absolute;  
+		top: 180px; 		
+		left: 548px; 
+		width: 20px; 	
+	}
+	#chassis-12 {
+		position: absolute;  
+		top: 180px; 		
+		left: 569px; 
+		width: 19px; 	
+	}
+	#chassis-13 {
+		position: absolute;  
+		top: 180px; 		
+		left: 589px; 
+		width: 19px; 	
+	}
+	#chassis-14 {
+		position: absolute;  
+		top: 180px; 		
+		left: 609px; 
+		width: 19px; 	
+	}
+	#chassis-15 {
+		position: absolute;  
+		top: 180px; 		
+		left: 629px; 
+		width: 20px; 	
+	}
+	#chassis-16 {
+		position: absolute;  
+		top: 180px; 		
+		left: 650px; 
+		width: 19px; 	
+	}
+	#chassis-17 {
+		position: absolute;  
+		top: 180px; 		
+		left: 670px; 
+		width: 19px; 	
+	}
+	#damages-a {
+		position: absolute;  
+		top: 212px; 		
+		left: 190px; 
+		width: 20px; 	
+	}
+	#damages-b {
+		position: absolute;  
+		top: 212px; 		
+		left: 240px; 
+		width: 20px; 	
+	}
+	#damages-c {
+		position: absolute;  
+		top: 212px; 		
+		left: 290px; 
+		width: 20px; 	
+	}
+	#km {
+		position: absolute;  
+		top: 250px; 		
+		left: 93px; 
+		width: 51px; 	
+	}
+	#order {
+		position: absolute;  
+		top: 250px; 		
+		left: 205px; 
+		width: 132px; 	
+	}
+	#reg {
+		position: absolute;  
+		top: 275px; 		
+		left: 180px; 
+		width: 88px; 	
+	}
+	#road {
+		position: absolute;  
+		top: 275px; 		
+		left: 338px; 
+		width: 59px; 	
+	}
+	#rail {
+		position: absolute;  
+		top: 275px; 		
+		left: 398px; 
+		width: 58px; 	
+	}
+	#sea {
+		position: absolute;  
+		top: 275px; 		
+		left: 458px; 
+		width: 50px; 	
+	}
+	#barge {
+		position: absolute;  
+		top: 275px; 		
+		left: 509px; 
+		width: 59px; 	
+	}
+	#compound {
+		position: absolute;  
+		top: 275px; 		
+		left: 570px; 
+		width: 66px; 	
+	}
+	#factory {
+		position: absolute;  
+		top: 275px; 		
+		left: 638px; 
+		width: 58px; 	
+	}
+	#loc-1 {
+		position: absolute;  
+		top: 547px; 		
+		left: 63px; 
+		width: 73px; 	
+	}
+	#nat-1 {
+		position: absolute;  
+		top: 547px; 		
+		left: 137px; 
+		width: 49px; 	
+	}
+	#sev-1 {
+		position: absolute;  
+		top: 547px; 		
+		left: 188px; 
+		width: 47px; 	
+	}
+	#ref-1 {
+		position: absolute;  
+		top: 547px; 		
+		left: 236px; 
+		width: 101px; 	
+	}
+	#add-1 {
+		position: absolute;  
+		top: 547px; 		
+		left: 338px; 
+		width: 360px; 	
+	}
+
+	#loc-2 {
+		position: absolute;  
+		top: 573px; 		
+		left: 63px; 
+		width: 73px; 	
+	}
+	#nat-2 {
+		position: absolute;  
+		top: 573px; 		
+		left: 137px; 
+		width: 49px; 	
+	}
+	#sev-2 {
+		position: absolute;  
+		top: 573px; 		
+		left: 188px; 
+		width: 47px; 	
+	}
+	#ref-2 {
+		position: absolute;  
+		top: 573px; 		
+		left: 236px; 
+		width: 101px; 	
+	}
+	#add-2 {
+		position: absolute;  
+		top: 573px; 		
+		left: 338px; 
+		width: 360px; 	
+	}
+
+
+	#loc-3 {
+		position: absolute;  
+		top: 598px; 		
+		left: 63px; 
+		width: 73px; 	
+	}
+	#nat-3 {
+		position: absolute;  
+		top: 598px; 		
+		left: 137px; 
+		width: 49px; 	
+	}
+	#sev-3 {
+		position: absolute;  
+		top: 598px; 		
+		left: 188px; 
+		width: 47px; 	
+	}
+	#ref-3 {
+		position: absolute;  
+		top: 598px; 		
+		left: 236px; 
+		width: 101px; 	
+	}
+	#add-3 {
+		position: absolute;  
+		top: 598px; 		
+		left: 338px; 
+		width: 360px; 	
+	}
+
+	#loc-4 {
+		position: absolute;  
+		top: 622px; 		
+		left: 63px; 
+		width: 73px; 	
+	}
+	#nat-4 {
+		position: absolute;  
+		top: 622px; 		
+		left: 137px; 
+		width: 49px; 	
+	}
+	#sev-4 {
+		position: absolute;  
+		top: 622px; 		
+		left: 188px; 
+		width: 47px; 	
+	}
+	#ref-4 {
+		position: absolute;  
+		top: 622px; 		
+		left: 236px; 
+		width: 101px; 	
+	}
+	#add-4 {
+		position: absolute;  
+		top: 622px; 		
+		left: 338px; 
+		width: 360px; 	
+	}
+
+
+	#loc-5 {
+		position: absolute;  
+		top: 647px; 		
+		left: 63px; 
+		width: 73px; 	
+	}
+	#nat-5 {
+		position: absolute;  
+		top: 647px; 		
+		left: 137px; 
+		width: 49px; 	
+	}
+	#sev-5 {
+		position: absolute;  
+		top: 647px; 		
+		left: 188px; 
+		width: 47px; 	
+	}
+	#ref-5 {
+		position: absolute;  
+		top: 647px; 		
+		left: 236px; 
+		width: 101px; 	
+	}
+	#add-5 {
+		position: absolute;  
+		top: 647px; 		
+		left: 338px; 
+		width: 360px; 	
+	}
+	#doc {
+		position: absolute;  
+		top: 672px; 		
+		left: 57px; 
+		width: 17px; 	
+	}
+	#yes {
+		position: absolute;  
+		top: 686px; 		
+		left: 528px; 
+		width: 17px; 	
+	}
+	#no {
+		position: absolute;  
+		top: 686px; 		
+		left: 613px; 
+		width: 17px; 	
+	}
+	#rem-1 {
+		position: absolute;  
+		top: 707px; 		
+		left: 201px; 
+		width: 474px; 	
+	}
+	#rem-2 {
+		position: absolute;  
+		top: 728px; 		
+		left: 60px; 
+		width: 615px; 	
+	}
+	#com-1 {
+		position: absolute;  
+		top: 800px; 		
+		left: 177px; 
+		width: 164px; 	
+	}
+	#com-2 {
+		position: absolute;  
+		top: 800px; 		
+		left: 455px; 
+		width: 243px; 	
+	}
+	#lorry-1 {
+		position: absolute;  
+		top: 825px; 		
+		left: 173px; 
+		width: 167px; 	
+	}
+	#lorry-2 {
+		position: absolute;  
+		top: 825px; 		
+		left: 450px; 
+		width: 247px; 	
+	}
+	#name-1 {
+		position: absolute;  
+		top: 870px; 		
+		left: 95px; 
+		width: 245px; 	
+	}
+
+	#name-2 {
+		position: absolute;  
+		top: 870px; 		
+		left: 380px; 
+		width: 317px; 	
+	}
+
+	#place {
+		position: absolute;  
+		top: 921px; 		
+		left: 160px; 
+		width: 120px; 	
+	}
+	#date {
+		position: absolute;  
+		top: 921px; 		
+		left: 332px; 
+		width: 107px; 	
+	}
+	#time {
+		position: absolute;  
+		top: 921px; 		
+		left: 503px; 
+		width: 150px; 	
+	}
+	#submit {
+		position: absolute;  
+		top: 970px; 		
+		left: 470px; 
+			
+	}
+	#next {
+		position: absolute;  
+		top: 970px; 		
+		left: 600px; 
+			
+	}
 
 
 
+
+</style>
+<?php } else { ?>
+<style>
+
+    
 	/* povodna else vetva */
 	#model {
 		position: absolute;  
@@ -472,467 +948,6 @@
 		left: 1150px; 
 		width: 165px; 	
 	}
-</style>
-<?php } else { ?>
-<style>
-
-    img {
-		position: absolute; 
-		width: 720px; 
-		height: 1017px; 
-		margin: 0px; 
-		z-index: -1; 
-	}
-	#model {
-		position: absolute;  
-		top: 180px; 		
-		left: 120px; 
-		width: 90px; 	
-	}
-
-	#origin {
-		position: absolute;  
-		top: 155px; 		
-		left: 110px; 
-		width: 100px; 	
-	}
-
-	#n {
-		position: absolute;  
-		top: 100px; 		
-		left: 480px; 
-		width: 200px; 	
-	}
-
-	#destination {
-		position: absolute;  
-		top: 155px; 		
-		left: 290px; 
-		width: 128px; 	
-	}
-	#transport {
-		position: absolute;  
-		top: 155px; 		
-		left: 555px; 
-		width: 140px; 	
-	}
-
-	#chassis-1 {
-		position: absolute;  
-		top: 180px; 		
-		left: 345px; 
-		width: 20px; 	
-	}
-	#chassis-2 {
-		position: absolute;  
-		top: 180px; 		
-		left: 366px; 
-		width: 19px; 	
-	}
-	#chassis-3 {
-		position: absolute;  
-		top: 180px; 		
-		left: 386px; 
-		width: 19px; 	
-	}
-	#chassis-4 {
-		position: absolute;  
-		top: 180px; 		
-		left: 406px; 
-		width: 20px; 	
-	}
-	#chassis-5 {
-		position: absolute;  
-		top: 180px; 		
-		left: 427px; 
-		width: 19px; 	
-	}
-	#chassis-6 {
-		position: absolute;  
-		top: 180px; 		
-		left: 447px; 
-		width: 19px; 	
-	}
-	#chassis-7 {
-		position: absolute;  
-		top: 180px; 		
-		left: 467px; 
-		width: 19px; 	
-	}
-	#chassis-8 {
-		position: absolute;  
-		top: 180px; 		
-		left: 487px; 
-		width: 20px; 	
-	}
-	#chassis-9 {
-		position: absolute;  
-		top: 180px; 		
-		left: 508px; 
-		width: 19px; 	
-	}
-	#chassis-10 {
-		position: absolute;  
-		top: 180px; 		
-		left: 528px; 
-		width: 19px; 	
-	}
-	#chassis-11 {
-		position: absolute;  
-		top: 180px; 		
-		left: 548px; 
-		width: 20px; 	
-	}
-	#chassis-12 {
-		position: absolute;  
-		top: 180px; 		
-		left: 569px; 
-		width: 19px; 	
-	}
-	#chassis-13 {
-		position: absolute;  
-		top: 180px; 		
-		left: 589px; 
-		width: 19px; 	
-	}
-	#chassis-14 {
-		position: absolute;  
-		top: 180px; 		
-		left: 609px; 
-		width: 19px; 	
-	}
-	#chassis-15 {
-		position: absolute;  
-		top: 180px; 		
-		left: 629px; 
-		width: 20px; 	
-	}
-	#chassis-16 {
-		position: absolute;  
-		top: 180px; 		
-		left: 650px; 
-		width: 19px; 	
-	}
-	#chassis-17 {
-		position: absolute;  
-		top: 180px; 		
-		left: 670px; 
-		width: 19px; 	
-	}
-	#damages-a {
-		position: absolute;  
-		top: 212px; 		
-		left: 190px; 
-		width: 20px; 	
-	}
-	#damages-b {
-		position: absolute;  
-		top: 212px; 		
-		left: 240px; 
-		width: 20px; 	
-	}
-	#damages-c {
-		position: absolute;  
-		top: 212px; 		
-		left: 290px; 
-		width: 20px; 	
-	}
-	#km {
-		position: absolute;  
-		top: 250px; 		
-		left: 93px; 
-		width: 51px; 	
-	}
-	#order {
-		position: absolute;  
-		top: 250px; 		
-		left: 205px; 
-		width: 132px; 	
-	}
-	#reg {
-		position: absolute;  
-		top: 275px; 		
-		left: 180px; 
-		width: 88px; 	
-	}
-	#road {
-		position: absolute;  
-		top: 275px; 		
-		left: 338px; 
-		width: 59px; 	
-	}
-	#rail {
-		position: absolute;  
-		top: 275px; 		
-		left: 398px; 
-		width: 58px; 	
-	}
-	#sea {
-		position: absolute;  
-		top: 275px; 		
-		left: 458px; 
-		width: 50px; 	
-	}
-	#barge {
-		position: absolute;  
-		top: 275px; 		
-		left: 509px; 
-		width: 59px; 	
-	}
-	#compound {
-		position: absolute;  
-		top: 275px; 		
-		left: 570px; 
-		width: 66px; 	
-	}
-	#factory {
-		position: absolute;  
-		top: 275px; 		
-		left: 638px; 
-		width: 58px; 	
-	}
-	#loc-1 {
-		position: absolute;  
-		top: 547px; 		
-		left: 63px; 
-		width: 73px; 	
-	}
-	#nat-1 {
-		position: absolute;  
-		top: 547px; 		
-		left: 137px; 
-		width: 49px; 	
-	}
-	#sev-1 {
-		position: absolute;  
-		top: 547px; 		
-		left: 188px; 
-		width: 47px; 	
-	}
-	#ref-1 {
-		position: absolute;  
-		top: 547px; 		
-		left: 236px; 
-		width: 101px; 	
-	}
-	#add-1 {
-		position: absolute;  
-		top: 547px; 		
-		left: 338px; 
-		width: 360px; 	
-	}
-
-	#loc-2 {
-		position: absolute;  
-		top: 573px; 		
-		left: 63px; 
-		width: 73px; 	
-	}
-	#nat-2 {
-		position: absolute;  
-		top: 573px; 		
-		left: 137px; 
-		width: 49px; 	
-	}
-	#sev-2 {
-		position: absolute;  
-		top: 573px; 		
-		left: 188px; 
-		width: 47px; 	
-	}
-	#ref-2 {
-		position: absolute;  
-		top: 573px; 		
-		left: 236px; 
-		width: 101px; 	
-	}
-	#add-2 {
-		position: absolute;  
-		top: 573px; 		
-		left: 338px; 
-		width: 360px; 	
-	}
-
-
-	#loc-3 {
-		position: absolute;  
-		top: 598px; 		
-		left: 63px; 
-		width: 73px; 	
-	}
-	#nat-3 {
-		position: absolute;  
-		top: 598px; 		
-		left: 137px; 
-		width: 49px; 	
-	}
-	#sev-3 {
-		position: absolute;  
-		top: 598px; 		
-		left: 188px; 
-		width: 47px; 	
-	}
-	#ref-3 {
-		position: absolute;  
-		top: 598px; 		
-		left: 236px; 
-		width: 101px; 	
-	}
-	#add-3 {
-		position: absolute;  
-		top: 598px; 		
-		left: 338px; 
-		width: 360px; 	
-	}
-
-	#loc-4 {
-		position: absolute;  
-		top: 622px; 		
-		left: 63px; 
-		width: 73px; 	
-	}
-	#nat-4 {
-		position: absolute;  
-		top: 622px; 		
-		left: 137px; 
-		width: 49px; 	
-	}
-	#sev-4 {
-		position: absolute;  
-		top: 622px; 		
-		left: 188px; 
-		width: 47px; 	
-	}
-	#ref-4 {
-		position: absolute;  
-		top: 622px; 		
-		left: 236px; 
-		width: 101px; 	
-	}
-	#add-4 {
-		position: absolute;  
-		top: 622px; 		
-		left: 338px; 
-		width: 360px; 	
-	}
-
-
-	#loc-5 {
-		position: absolute;  
-		top: 647px; 		
-		left: 63px; 
-		width: 73px; 	
-	}
-	#nat-5 {
-		position: absolute;  
-		top: 647px; 		
-		left: 137px; 
-		width: 49px; 	
-	}
-	#sev-5 {
-		position: absolute;  
-		top: 647px; 		
-		left: 188px; 
-		width: 47px; 	
-	}
-	#ref-5 {
-		position: absolute;  
-		top: 647px; 		
-		left: 236px; 
-		width: 101px; 	
-	}
-	#add-5 {
-		position: absolute;  
-		top: 647px; 		
-		left: 338px; 
-		width: 360px; 	
-	}
-	#doc {
-		position: absolute;  
-		top: 672px; 		
-		left: 57px; 
-		width: 17px; 	
-	}
-	#yes {
-		position: absolute;  
-		top: 686px; 		
-		left: 528px; 
-		width: 17px; 	
-	}
-	#no {
-		position: absolute;  
-		top: 686px; 		
-		left: 613px; 
-		width: 17px; 	
-	}
-	#rem-1 {
-		position: absolute;  
-		top: 707px; 		
-		left: 201px; 
-		width: 474px; 	
-	}
-	#rem-2 {
-		position: absolute;  
-		top: 728px; 		
-		left: 60px; 
-		width: 615px; 	
-	}
-	#com-1 {
-		position: absolute;  
-		top: 1850px; 		
-		left: 400px; 
-		width: 370px; 	
-	}
-	#com-2 {
-		position: absolute;  
-		top: 1850px; 		
-		left: 1040px; 
-		width: 550px; 	
-	}
-	#lorry-1 {
-		position: absolute;  
-		top: 1900px; 		
-		left: 400px; 
-		width: 370px; 	
-	}
-	#lorry-2 {
-		position: absolute;  
-		top: 1900px; 		
-		left: 1040px; 
-		width: 550px; 	
-	}
-	#name-1 {
-		position: absolute;  
-		top: 2007px; 		
-		left: 210px; 
-		width: 550px; 	
-	}
-
-	#name-2 {
-		position: absolute;  
-		top: 2007px; 		
-		left: 860px; 
-		width: 710px; 	
-	}
-
-	#place {
-		position: absolute;  
-		top: 2130px; 		
-		left: 360px; 
-		width: 165px; 	
-	}
-	#date {
-		position: absolute;  
-		top: 2130px; 		
-		left: 760px; 
-		width: 165px; 	
-	}
-	#time {
-		position: absolute;  
-		top: 2130px; 		
-		left: 1150px; 
-		width: 165px; 	
-	}
 
 </style>
 <?php } ?>
@@ -1022,14 +1037,14 @@
 	<input name="rem-2" type="text" id="rem-2" value="<?php if (isset($_POST["rem-2"])) echo $_POST["rem-2"]; ?>" size="90" maxlength="90">
 	
 	<!-- dolna cast -->
-	<input name="com-1" type="text" id="com-1" value="<?php if (isset($_POST["com-1"])) echo $_POST["com-1"]; ?>" size="30" maxlength="30">
-	<input name="com-2" type="text" id="com-2" value="<?php if (isset($_POST["com-2"])) echo $_POST["com-2"]; ?>" size="50" maxlength="50">
+	<input name="com-1" type="text" id="com-1" value="<?php if (isset($_POST["com-1"])) echo $_POST["com-1"]; ?>" size="25" maxlength="25">
+	<input name="com-2" type="text" id="com-2" value="<?php if (isset($_POST["com-2"])) echo $_POST["com-2"]; ?>" size="40" maxlength="40">
 	
-	<input name="lorry-1" type="text" id="lorry-1" value="<?php if (isset($_POST["lorry-1"])) echo $_POST["lorry-1"]; ?>" size="30" maxlength="30">
-	<input name="lorry-2" type="text" id="lorry-2" value="<?php if (isset($_POST["lorry-2"])) echo $_POST["lorry-2"]; ?>" size="50" maxlength="50">
+	<input name="lorry-1" type="text" id="lorry-1" value="<?php if (isset($_POST["lorry-1"])) echo $_POST["lorry-1"]; ?>" size="25" maxlength="25">
+	<input name="lorry-2" type="text" id="lorry-2" value="<?php if (isset($_POST["lorry-2"])) echo $_POST["lorry-2"]; ?>" size="40" maxlength="40">
 	
-	<input name="name-1" type="text" id="name-1" value="<?php if (isset($_POST["name-1"])) echo $_POST["name-1"]; ?>" size="50" maxlength="50">
-	<input name="name-2" type="text" id="name-2" value="<?php if (isset($_POST["name-2"])) echo $_POST["name-2"]; ?>" size="50" maxlength="50">
+	<input name="name-1" type="text" id="name-1" value="<?php if (isset($_POST["name-1"])) echo $_POST["name-1"]; ?>" size="35" maxlength="35">
+	<input name="name-2" type="text" id="name-2" value="<?php if (isset($_POST["name-2"])) echo $_POST["name-2"]; ?>" size="40" maxlength="40">
 	
 	<input name="place" type="text" id="place" value="<?php if (isset($_POST["place"])) echo $_POST["place"]; ?>" size="20" maxlength="20">
 	<input name="date" type="text" id="date" value="<?php if (isset($_POST["date"])) echo $_POST["date"]; ?>" size="20" maxlength="20">
