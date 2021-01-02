@@ -693,189 +693,189 @@
 	}
 	#loc-1 {
 		position: absolute;  
-		top: 1250px; 		
-		left: 135px; 
-		width: 167px; 	
+		top: 547px; 		
+		left: 63px; 
+		width: 73px; 	
 	}
 	#nat-1 {
 		position: absolute;  
-		top: 1250px; 		
-		left: 304px; 
-		width: 114px; 	
+		top: 547px; 		
+		left: 137px; 
+		width: 49px; 	
 	}
 	#sev-1 {
 		position: absolute;  
-		top: 1250px; 		
-		left: 420px; 
-		width: 110px; 	
+		top: 547px; 		
+		left: 188px; 
+		width: 47px; 	
 	}
 	#ref-1 {
 		position: absolute;  
-		top: 1250px; 		
-		left: 532px; 
-		width: 232px; 	
+		top: 547px; 		
+		left: 236px; 
+		width: 101px; 	
 	}
 	#add-1 {
 		position: absolute;  
-		top: 1250px; 		
-		left: 766px; 
-		width: 826px; 	
+		top: 547px; 		
+		left: 338px; 
+		width: 360px; 	
 	}
 
 	#loc-2 {
 		position: absolute;  
-		top: 1310px; 		
-		left: 135px; 
-		width: 167px; 	
+		top: 573px; 		
+		left: 63px; 
+		width: 73px; 	
 	}
 	#nat-2 {
 		position: absolute;  
-		top: 1310px; 		
-		left: 304px; 
-		width: 114px; 	
+		top: 573px; 		
+		left: 137px; 
+		width: 49px; 	
 	}
 	#sev-2 {
 		position: absolute;  
-		top: 1310px; 		
-		left: 420px; 
-		width: 110px; 	
+		top: 573px; 		
+		left: 188px; 
+		width: 47px; 	
 	}
 	#ref-2 {
 		position: absolute;  
-		top: 1310px; 		
-		left: 532px; 
-		width: 232px; 	
+		top: 573px; 		
+		left: 236px; 
+		width: 101px; 	
 	}
 	#add-2 {
 		position: absolute;  
-		top: 1310px; 		
-		left: 766px; 
-		width: 826px; 	
+		top: 573px; 		
+		left: 338px; 
+		width: 360px; 	
 	}
 
 
 	#loc-3 {
 		position: absolute;  
-		top: 1380px; 		
-		left: 135px; 
-		width: 167px; 	
+		top: 598px; 		
+		left: 63px; 
+		width: 73px; 	
 	}
 	#nat-3 {
 		position: absolute;  
-		top: 1380px; 		
-		left: 304px; 
-		width: 114px; 	
+		top: 598px; 		
+		left: 137px; 
+		width: 49px; 	
 	}
 	#sev-3 {
 		position: absolute;  
-		top: 1380px; 		
-		left: 420px; 
-		width: 110px; 	
+		top: 598px; 		
+		left: 188px; 
+		width: 47px; 	
 	}
 	#ref-3 {
 		position: absolute;  
-		top: 1380px; 		
-		left: 532px; 
-		width: 232px; 	
+		top: 598px; 		
+		left: 236px; 
+		width: 101px; 	
 	}
 	#add-3 {
 		position: absolute;  
-		top: 1380px; 		
-		left: 766px; 
-		width: 826px; 	
+		top: 598px; 		
+		left: 338px; 
+		width: 360px; 	
 	}
 
 	#loc-4 {
 		position: absolute;  
-		top: 1440px; 		
-		left: 135px; 
-		width: 167px; 	
+		top: 622px; 		
+		left: 63px; 
+		width: 73px; 	
 	}
 	#nat-4 {
 		position: absolute;  
-		top: 1440px; 		
-		left: 304px; 
-		width: 114px; 	
+		top: 622px; 		
+		left: 137px; 
+		width: 49px; 	
 	}
 	#sev-4 {
 		position: absolute;  
-		top: 1440px; 		
-		left: 420px; 
-		width: 110px; 	
+		top: 622px; 		
+		left: 188px; 
+		width: 47px; 	
 	}
 	#ref-4 {
 		position: absolute;  
-		top: 1440px; 		
-		left: 532px; 
-		width: 232px; 	
+		top: 622px; 		
+		left: 236px; 
+		width: 101px; 	
 	}
 	#add-4 {
 		position: absolute;  
-		top: 1440px; 		
-		left: 766px; 
-		width: 826px; 	
+		top: 622px; 		
+		left: 338px; 
+		width: 360px; 	
 	}
 
 
 	#loc-5 {
 		position: absolute;  
-		top: 1490px; 		
-		left: 135px; 
-		width: 167px; 	
+		top: 647px; 		
+		left: 63px; 
+		width: 73px; 	
 	}
 	#nat-5 {
 		position: absolute;  
-		top: 1490px; 		
-		left: 304px; 
-		width: 114px; 	
+		top: 647px; 		
+		left: 137px; 
+		width: 49px; 	
 	}
 	#sev-5 {
 		position: absolute;  
-		top: 1490px; 		
-		left: 420px; 
-		width: 110px; 	
+		top: 647px; 		
+		left: 188px; 
+		width: 47px; 	
 	}
 	#ref-5 {
 		position: absolute;  
-		top: 1490px; 		
-		left: 532px; 
-		width: 232px; 	
+		top: 647px; 		
+		left: 236px; 
+		width: 101px; 	
 	}
 	#add-5 {
 		position: absolute;  
-		top: 1490px; 		
-		left: 766px; 
-		width: 826px; 	
+		top: 647px; 		
+		left: 338px; 
+		width: 360px; 	
 	}
 	#doc {
 		position: absolute;  
-		top: 1550px; 		
-		left: 133px; 
-		width: 20px; 	
+		top: 672px; 		
+		left: 57px; 
+		width: 17px; 	
 	}
 	#yes {
 		position: absolute;  
-		top: 1593px; 		
-		left: 1218px; 
-		width: 20px; 	
+		top: 686px; 		
+		left: 528px; 
+		width: 17px; 	
 	}
 	#no {
 		position: absolute;  
-		top: 1593px; 		
-		left: 1415px; 
-		width: 20px; 	
+		top: 686px; 		
+		left: 613px; 
+		width: 17px; 	
 	}
 	#rem-1 {
 		position: absolute;  
-		top: 1635px; 		
-		left: 450px; 
-		width: 1090px; 	
+		top: 707px; 		
+		left: 201px; 
+		width: 474px; 	
 	}
 	#rem-2 {
 		position: absolute;  
-		top: 1680px; 		
-		left: 130px; 
-		width: 1410px; 	
+		top: 728px; 		
+		left: 60px; 
+		width: 615px; 	
 	}
 	#com-1 {
 		position: absolute;  
@@ -985,41 +985,41 @@
 	<input name="factory" type="text" id="factory" value="<?php if (isset($_POST["factory"])) echo $_POST["factory"]; ?>" size="5" maxlength="5">
 	
 	<!-- prostredna cast -->
-	<input name="loc-1" type="text" id="loc-1" value="<?php if (isset($_POST["loc-1"])) echo $_POST["loc-1"]; ?>" size="15" maxlength="15">
-	<input name="nat-1" type="text" id="nat-1" value="<?php if (isset($_POST["nat-1"])) echo $_POST["nat-1"]; ?>" size="8" maxlength="8">
-	<input name="sev-1" type="text" id="sev-1" value="<?php if (isset($_POST["sev-1"])) echo $_POST["sev-1"]; ?>" size="8" maxlength="8">
-	<input name="ref-1" type="text" id="ref-1" value="<?php if (isset($_POST["ref-1"])) echo $_POST["ref-1"]; ?>" size="18" maxlength="18">
-	<input name="add-1" type="text" id="add-1" value="<?php if (isset($_POST["add-1"])) echo $_POST["add-1"]; ?>" size="65" maxlength="65">
+	<input name="loc-1" type="text" id="loc-1" value="<?php if (isset($_POST["loc-1"])) echo $_POST["loc-1"]; ?>" size="11" maxlength="11">
+	<input name="nat-1" type="text" id="nat-1" value="<?php if (isset($_POST["nat-1"])) echo $_POST["nat-1"]; ?>" size="6" maxlength="6">
+	<input name="sev-1" type="text" id="sev-1" value="<?php if (isset($_POST["sev-1"])) echo $_POST["sev-1"]; ?>" size="6" maxlength="6">
+	<input name="ref-1" type="text" id="ref-1" value="<?php if (isset($_POST["ref-1"])) echo $_POST["ref-1"]; ?>" size="15" maxlength="15">
+	<input name="add-1" type="text" id="add-1" value="<?php if (isset($_POST["add-1"])) echo $_POST["add-1"]; ?>" size="50" maxlength="50">
 	
-	<input name="loc-2" type="text" id="loc-2" value="<?php if (isset($_POST["loc-2"])) echo $_POST["loc-2"]; ?>" size="15" maxlength="15">
-	<input name="nat-2" type="text" id="nat-2" value="<?php if (isset($_POST["nat-2"])) echo $_POST["nat-2"]; ?>" size="8" maxlength="8">
-	<input name="sev-2" type="text" id="sev-2" value="<?php if (isset($_POST["sev-2"])) echo $_POST["sev-2"]; ?>" size="8" maxlength="8">
-	<input name="ref-2" type="text" id="ref-2" value="<?php if (isset($_POST["ref-2"])) echo $_POST["ref-2"]; ?>" size="18" maxlength="18">
-	<input name="add-2" type="text" id="add-2" value="<?php if (isset($_POST["add-2"])) echo $_POST["add-2"]; ?>" size="65" maxlength="65">
+	<input name="loc-2" type="text" id="loc-2" value="<?php if (isset($_POST["loc-2"])) echo $_POST["loc-2"]; ?>" size="11" maxlength="11">
+	<input name="nat-2" type="text" id="nat-2" value="<?php if (isset($_POST["nat-2"])) echo $_POST["nat-2"]; ?>" size="6" maxlength="6">
+	<input name="sev-2" type="text" id="sev-2" value="<?php if (isset($_POST["sev-2"])) echo $_POST["sev-2"]; ?>" size="6" maxlength="6">
+	<input name="ref-2" type="text" id="ref-2" value="<?php if (isset($_POST["ref-2"])) echo $_POST["ref-2"]; ?>" size="15" maxlength="15">
+	<input name="add-2" type="text" id="add-2" value="<?php if (isset($_POST["add-2"])) echo $_POST["add-2"]; ?>" size="50" maxlength="50">
 	
-	<input name="loc-3" type="text" id="loc-3" value="<?php if (isset($_POST["loc-3"])) echo $_POST["loc-3"]; ?>" size="15" maxlength="15">
-	<input name="nat-3" type="text" id="nat-3" value="<?php if (isset($_POST["nat-3"])) echo $_POST["nat-3"]; ?>" size="8" maxlength="8">
-	<input name="sev-3" type="text" id="sev-3" value="<?php if (isset($_POST["sev-3"])) echo $_POST["sev-3"]; ?>" size="8" maxlength="8">
-	<input name="ref-3" type="text" id="ref-3" value="<?php if (isset($_POST["ref-3"])) echo $_POST["ref-3"]; ?>" size="18" maxlength="18">
-	<input name="add-3" type="text" id="add-3" value="<?php if (isset($_POST["add-3"])) echo $_POST["add-3"]; ?>" size="65" maxlength="65">
+	<input name="loc-3" type="text" id="loc-3" value="<?php if (isset($_POST["loc-3"])) echo $_POST["loc-3"]; ?>" size="11" maxlength="11">
+	<input name="nat-3" type="text" id="nat-3" value="<?php if (isset($_POST["nat-3"])) echo $_POST["nat-3"]; ?>" size="6" maxlength="6">
+	<input name="sev-3" type="text" id="sev-3" value="<?php if (isset($_POST["sev-3"])) echo $_POST["sev-3"]; ?>" size="6" maxlength="6">
+	<input name="ref-3" type="text" id="ref-3" value="<?php if (isset($_POST["ref-3"])) echo $_POST["ref-3"]; ?>" size="15" maxlength="15">
+	<input name="add-3" type="text" id="add-3" value="<?php if (isset($_POST["add-3"])) echo $_POST["add-3"]; ?>" size="50" maxlength="50">
 	
-	<input name="loc-4" type="text" id="loc-4" value="<?php if (isset($_POST["loc-4"])) echo $_POST["loc-4"]; ?>" size="15" maxlength="15">
-	<input name="nat-4" type="text" id="nat-4" value="<?php if (isset($_POST["nat-4"])) echo $_POST["nat-4"]; ?>" size="8" maxlength="8">
-	<input name="sev-4" type="text" id="sev-4" value="<?php if (isset($_POST["sev-4"])) echo $_POST["sev-4"]; ?>" size="8" maxlength="8">
-	<input name="ref-4" type="text" id="ref-4" value="<?php if (isset($_POST["ref-4"])) echo $_POST["ref-4"]; ?>" size="18" maxlength="18">
-	<input name="add-4" type="text" id="add-4" value="<?php if (isset($_POST["add-4"])) echo $_POST["add-4"]; ?>" size="65" maxlength="65">
+	<input name="loc-4" type="text" id="loc-4" value="<?php if (isset($_POST["loc-4"])) echo $_POST["loc-4"]; ?>" size="11" maxlength="11">
+	<input name="nat-4" type="text" id="nat-4" value="<?php if (isset($_POST["nat-4"])) echo $_POST["nat-4"]; ?>" size="6" maxlength="6">
+	<input name="sev-4" type="text" id="sev-4" value="<?php if (isset($_POST["sev-4"])) echo $_POST["sev-4"]; ?>" size="6" maxlength="6">
+	<input name="ref-4" type="text" id="ref-4" value="<?php if (isset($_POST["ref-4"])) echo $_POST["ref-4"]; ?>" size="15" maxlength="15">
+	<input name="add-4" type="text" id="add-4" value="<?php if (isset($_POST["add-4"])) echo $_POST["add-4"]; ?>" size="50" maxlength="50">
 	
-	<input name="loc-5" type="text" id="loc-5" value="<?php if (isset($_POST["loc-5"])) echo $_POST["loc-5"]; ?>" size="15" maxlength="15">
-	<input name="nat-5" type="text" id="nat-5" value="<?php if (isset($_POST["nat-5"])) echo $_POST["nat-5"]; ?>" size="8" maxlength="8">
-	<input name="sev-5" type="text" id="sev-5" value="<?php if (isset($_POST["sev-5"])) echo $_POST["sev-5"]; ?>" size="8" maxlength="8">
-	<input name="ref-5" type="text" id="ref-5" value="<?php if (isset($_POST["ref-5"])) echo $_POST["ref-5"]; ?>" size="18" maxlength="18">
-	<input name="add-5" type="text" id="add-5" value="<?php if (isset($_POST["add-5"])) echo $_POST["add-5"]; ?>" size="65" maxlength="65">
+	<input name="loc-5" type="text" id="loc-5" value="<?php if (isset($_POST["loc-5"])) echo $_POST["loc-5"]; ?>" size="11" maxlength="11">
+	<input name="nat-5" type="text" id="nat-5" value="<?php if (isset($_POST["nat-5"])) echo $_POST["nat-5"]; ?>" size="6" maxlength="6">
+	<input name="sev-5" type="text" id="sev-5" value="<?php if (isset($_POST["sev-5"])) echo $_POST["sev-5"]; ?>" size="6" maxlength="6">
+	<input name="ref-5" type="text" id="ref-5" value="<?php if (isset($_POST["ref-5"])) echo $_POST["ref-5"]; ?>" size="15" maxlength="15">
+	<input name="add-5" type="text" id="add-5" value="<?php if (isset($_POST["add-5"])) echo $_POST["add-5"]; ?>" size="50" maxlength="50">
 	
 	<input name="doc" type="text" id="doc" value="<?php if (isset($_POST["doc"])) echo $_POST["doc"]; ?>" size="1" maxlength="1">
 	<input name="yes" type="text" id="yes" value="<?php if (isset($_POST["yes"])) echo $_POST["yes"]; ?>" size="1" maxlength="1">
 	<input name="no" type="text" id="no" value="<?php if (isset($_POST["no"])) echo $_POST["no"]; ?>" size="1" maxlength="1">
-	<input name="rem-1" type="text" id="rem-1" value="<?php if (isset($_POST["rem-1"])) echo $_POST["rem-1"]; ?>" size="90" maxlength="90">
-	<input name="rem-2" type="text" id="rem-2" value="<?php if (isset($_POST["rem-2"])) echo $_POST["rem-2"]; ?>" size="100" maxlength="100">
+	<input name="rem-1" type="text" id="rem-1" value="<?php if (isset($_POST["rem-1"])) echo $_POST["rem-1"]; ?>" size="70" maxlength="70">
+	<input name="rem-2" type="text" id="rem-2" value="<?php if (isset($_POST["rem-2"])) echo $_POST["rem-2"]; ?>" size="90" maxlength="90">
 	
 	<!-- dolna cast -->
 	<input name="com-1" type="text" id="com-1" value="<?php if (isset($_POST["com-1"])) echo $_POST["com-1"]; ?>" size="30" maxlength="30">
