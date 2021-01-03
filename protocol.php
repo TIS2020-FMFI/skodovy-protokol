@@ -24,7 +24,6 @@ header('Index');
 ?>
 
 <section>
-<h1>Protokol</h1>
 <?php
 if (isset($_POST["submit"])) {
     // Load HTML content 
