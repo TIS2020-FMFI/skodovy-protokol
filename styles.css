@@ -12,8 +12,11 @@ body {
   margin: auto;
   text-align: center;
 }
+form {
+  text-align: center;
+}
 
-section {
+section p {
   /* outline: 3px solid red; */
   padding: 50px 0;
   text-align: left;
@@ -49,6 +52,38 @@ p a {
   cursor: pointer;
 }
 
-#login:hover {
+#login:hover,
+#logout:hover {
   background-color: #c54b53;
+}
+
+#logout {
+  background-color: #f85f6a;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+
+#hladat {
+  background-color: #f85f6a;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cislo {
+  width: 100%;
+  padding: 20px;
+  margin: 50px 0;
+  display: inline-block;
+  text-align: center;
 }
