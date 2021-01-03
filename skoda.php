@@ -183,6 +183,203 @@
     left: 2283px;
     width: 176px;
 	}
+
+	#poznA {
+	left: 304px;
+    top: 2257px;
+    width: 529px;
+    height: 221px;
+	}
+
+	#locationA {
+	left: 304px;
+    top: 2666px;
+    width: 529px;
+    height: 64px;
+	}
+	#dateA {
+	left: 304px;
+    top: 2737px;
+    width: 529px;
+    height: 65px;
+	}
+	#giverA {
+	left: 304px;
+    top: 2814px;
+    width: 529px;
+    height: 100px;
+	}
+	#truckA {
+	left: 304px;
+    top: 2921px;
+    width: 529px;
+    height: 66px;
+	}
+	#gnameA {
+	left: 304px;
+    top: 2994px;
+    width: 529px;
+    height: 66px;
+	}
+	#receiverA {
+	left: 304px;
+    top: 3127px;
+    width: 529px;
+    height: 63px;
+	}
+	#rnameA {
+	left: 304px;
+    top: 3197px;
+    width: 529px;
+    height: 66px;
+	}
+
+	#poznB {
+	left: 847px;
+    top: 2257px;
+    width: 529px;
+    height: 221px;
+	}
+	#locationB {
+	left: 847px;
+    top: 2666px;
+    width: 529px;
+    height: 64px;
+	}
+	#dateB {
+	left: 847px;
+    top: 2737px;
+    width: 529px;
+    height: 65px;
+	}
+	#giverB {
+	left: 847px;
+    top: 2814px;
+    width: 529px;
+    height: 100px;
+	}
+	#truckB {
+	left: 847px;
+    top: 2921px;
+    width: 529px;
+    height: 66px;
+	}
+	#gnameB {
+	left: 847px;
+    top: 2994px;
+    width: 529px;
+    height: 66px;
+	}
+	#receiverB {
+	left: 847px;
+    top: 3127px;
+    width: 529px;
+    height: 63px;
+	}
+	#rnameB {
+	left: 847px;
+    top: 3197px;
+    width: 529px;
+    height: 66px;
+	}
+
+	#poznC {
+	left: 1390px;
+    top: 2257px;
+    width: 526px;
+    height: 221px;
+	}
+	#locationC {
+	left: 1390px;
+    top: 2666px;
+    width: 526px;
+    height: 64px;
+	}
+	#dateC {
+	left: 1390px;
+    top: 2737px;
+    width: 526px;
+    height: 65px;
+	}
+	#giverC {
+	left: 1390px;
+    top: 2814px;
+    width: 526px;
+    height: 100px;
+	}
+	#truckC {
+	left: 1390px;
+    top: 2921px;
+    width: 526px;
+    height: 66px;
+	}
+	#gnameC {
+	left: 1390px;
+    top: 2994px;
+    width: 526px;
+    height: 66px;
+	}
+	#receiverC {
+	left: 1390px;
+    top: 3127px;
+    width: 526px;
+    height: 63px;
+	}
+	#rnameC {
+	left: 1390px;
+    top: 3197px;
+    width: 526px;
+    height: 66px;
+	}
+
+	#poznD {
+	left: 1930px;
+    top: 2257px;
+    width: 529px;
+    height: 221px;
+	}
+	#locationD {
+	left: 1930px;
+    top: 2666px;
+    width: 529px;
+    height: 64px;
+	}
+	#dateD {
+	left: 1930px;
+    top: 2737px;
+    width: 529px;
+    height: 65px;
+	}
+	#giverD {
+	left: 1930px;
+    top: 2814px;
+    width: 529px;
+    height: 100px;
+	}
+	#truckD {
+	left: 1930px;
+    top: 2921px;
+    width: 529px;
+    height: 66px;
+	}
+	#gnameD {
+	left: 1930px;
+    top: 2994px;
+    width: 529px;
+    height: 66px;
+	}
+	#receiver {
+	left: 1930px;
+    top: 3127px;
+    width: 529px;
+    height: 63px;
+	}
+	#rnameD {
+	left: 1930px;
+    top: 3197px;
+    width: 529px;
+    height: 66px;
+	}
 	
 </style>
 <?php } ?>
@@ -282,9 +479,51 @@
 	<input name="DR4" type="text" class="r4" id="DR4" value="<?php if (isset($_POST["DR4"])) echo $_POST["DR4"]; ?>" size="4" maxlength="4">
 	<input name="DR5" type="text" class="r5" id="DR5" value="<?php if (isset($_POST["DR5"])) echo $_POST["DR5"]; ?>" size="4" maxlength="4">
 	<input name="DR6" type="text" class="r6" id="DR6" value="<?php if (isset($_POST["DR6"])) echo $_POST["DR6"]; ?>" size="4" maxlength="4">
+		
+	<input name="poznA" type="text" id="poznA" value="<?php if (isset($_POST["poznA"])) echo $_POST["poznA"]; ?>" size="4" maxlength="50">
+	<input name="poznB" type="text" id="poznB" value="<?php if (isset($_POST["poznB"])) echo $_POST["poznB"]; ?>" size="4" maxlength="50">
+	<input name="poznC" type="text" id="poznC" value="<?php if (isset($_POST["poznC"])) echo $_POST["poznC"]; ?>" size="4" maxlength="50">
+	<input name="poznD" type="text" id="poznD" value="<?php if (isset($_POST["poznD"])) echo $_POST["poznD"]; ?>" size="4" maxlength="50">
+
+	<input name="locationA" type="text" id="locationA" value="<?php if (isset($_POST["locationA"])) echo $_POST["locationA"]; ?>" size="4" maxlength="50">
+	<input name="locationB" type="text" id="locationB" value="<?php if (isset($_POST["locationB"])) echo $_POST["locationB"]; ?>" size="4" maxlength="50">
+	<input name="locationC" type="text" id="locationC" value="<?php if (isset($_POST["locationC"])) echo $_POST["locationC"]; ?>" size="4" maxlength="50">
+	<input name="locationD" type="text" id="locationD" value="<?php if (isset($_POST["locationD"])) echo $_POST["locationD"]; ?>" size="4" maxlength="50">
+
+	<input name="dateA" type="text" id="dateA" value="<?php if (isset($_POST["dateA"])) echo $_POST["dateA"]; ?>" size="4" maxlength="50">
+	<input name="dateB" type="text" id="dateB" value="<?php if (isset($_POST["dateB"])) echo $_POST["dateB"]; ?>" size="4" maxlength="50">
+	<input name="dateC" type="text" id="dateC" value="<?php if (isset($_POST["dateC"])) echo $_POST["dateC"]; ?>" size="4" maxlength="50">
+	<input name="dateD" type="text" id="dateD" value="<?php if (isset($_POST["dateD"])) echo $_POST["dateD"]; ?>" size="4" maxlength="50">
+
+	<input name="giverA" type="text" id="giverA" value="<?php if (isset($_POST["giverA"])) echo $_POST["giverA"]; ?>" size="4" maxlength="50">
+	<input name="giverB" type="text" id="giverB" value="<?php if (isset($_POST["giverB"])) echo $_POST["giverB"]; ?>" size="4" maxlength="50">
+	<input name="giverC" type="text" id="giverC" value="<?php if (isset($_POST["giverC"])) echo $_POST["giverC"]; ?>" size="4" maxlength="50">
+	<input name="giverD" type="text" id="giverD" value="<?php if (isset($_POST["giverD"])) echo $_POST["giverD"]; ?>" size="4" maxlength="50">
+
+	<input name="truckA" type="text" id="truckA" value="<?php if (isset($_POST["truckA"])) echo $_POST["truckA"]; ?>" size="4" maxlength="50">
+	<input name="truckB" type="text" id="truckB" value="<?php if (isset($_POST["truckB"])) echo $_POST["truckB"]; ?>" size="4" maxlength="50">
+	<input name="truckC" type="text" id="truckC" value="<?php if (isset($_POST["truckC"])) echo $_POST["truckC"]; ?>" size="4" maxlength="50">
+	<input name="truckD" type="text" id="truckD" value="<?php if (isset($_POST["truckD"])) echo $_POST["truckD"]; ?>" size="4" maxlength="50">
+
+	<input name="gnameA" type="text" id="gnameA" value="<?php if (isset($_POST["gnameA"])) echo $_POST["gnameA"]; ?>" size="4" maxlength="50">
+	<input name="gnameB" type="text" id="gnameB" value="<?php if (isset($_POST["gnameB"])) echo $_POST["gnameB"]; ?>" size="4" maxlength="50">
+	<input name="gnameC" type="text" id="gnameC" value="<?php if (isset($_POST["gnameC"])) echo $_POST["gnameC"]; ?>" size="4" maxlength="50">
+	<input name="gnameD" type="text" id="gnameD" value="<?php if (isset($_POST["gnameD"])) echo $_POST["gnameD"]; ?>" size="4" maxlength="50">
+	
+	<input name="receiverA" type="text" id="receiverA" value="<?php if (isset($_POST["receiverA"])) echo $_POST["receiverA"]; ?>" size="4" maxlength="50">
+	<input name="receiverB" type="text" id="receiverB" value="<?php if (isset($_POST["receiverB"])) echo $_POST["receiverB"]; ?>" size="4" maxlength="50">
+	<input name="receiverC" type="text" id="receiverC" value="<?php if (isset($_POST["receiverC"])) echo $_POST["receiverC"]; ?>" size="4" maxlength="50">
+	<input name="receiverD" type="text" id="receiverD" value="<?php if (isset($_POST["receiverD"])) echo $_POST["receiverD"]; ?>" size="4" maxlength="50">
+
+	<input name="rnameA" type="text" id="rnameA" value="<?php if (isset($_POST["rnameA"])) echo $_POST["rnameA"]; ?>" size="4" maxlength="50">
+	<input name="rnameB" type="text" id="rnameB" value="<?php if (isset($_POST["rnameB"])) echo $_POST["rnameB"]; ?>" size="4" maxlength="50">
+	<input name="rnameC" type="text" id="rnameC" value="<?php if (isset($_POST["rnameC"])) echo $_POST["rnameC"]; ?>" size="4" maxlength="50">
+	<input name="rnameD" type="text" id="rnameD" value="<?php if (isset($_POST["rnameD"])) echo $_POST["rnameD"]; ?>" size="4" maxlength="50">
+	
+	
 	<br>
 	
-<p><input name="submit" type="submit" id="submit" value="Dowland PDF"></p>
+<p><input name="submit" type="submit" id="submit" value="Download PDF"></p>
 <p><input name="next" type="submit" id="next" value="Next"></p>
 </form>
   </div>
