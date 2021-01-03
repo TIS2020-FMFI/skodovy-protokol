@@ -368,7 +368,7 @@
     width: 529px;
     height: 66px;
 	}
-	#receiver {
+	#receiverD {
 	left: 1930px;
     top: 3127px;
     width: 529px;
