@@ -19,11 +19,24 @@
 </style>
 <?php } else { ?>
 <style>
+	input[type='text']{
+		position: absolute;
+		font-size:40px;
+		text-align:center;
+	}
+
 	#model {
-		position: absolute;  
-		top: 250px; 		
-		left: 160px; 
-		width: 700px; 	
+	top: 337px;
+    left: 225px;
+    width: 394px;
+    height: 70px;
+}
+#vin {
+	top: 408px;
+    left: 225px;
+    width: 394px;
+    height: 71px;
+}
 	}
 </style>
 <?php } ?>
@@ -38,7 +51,7 @@
   <div id="o-back">
     <form method="post">			
 	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; ?>" size="20" maxlength="20">
-	
+	<input name="vin" type="text" id="vin"  value="<?php if (isset($_POST["vin"])) echo  $_POST["vin"]; ?>" size="20" minlength="17" maxlength="17">
 
 	<br>
 	
