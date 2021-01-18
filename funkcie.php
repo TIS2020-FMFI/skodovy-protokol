@@ -125,8 +125,8 @@ function packToZIP($filename) {
 
 function uploadToSharepoint($filename) {
 	try {
-		$clientId = "964c908f-f1b6-4a7f-a8e3-f17b0aa02529";
-		$clientSecret = "kLTFoKc8BM/u87YQ9wQjxhspK7pSGj2NqJcwlz9lL7Y=";
+		$clientId = "---userID----";
+		$clientSecret = "--key---";
 		$webUrl = "https://liveuniba.sharepoint.com/sites/MartinKristak/";
 		$credentials = new ClientCredential($clientId, $clientSecret);
 		$ctx = (new ClientContext($webUrl))->withCredentials($credentials);
