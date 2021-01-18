@@ -60,7 +60,93 @@
     height: 21px;
 }
 
+.r1,.r2,.r3,.r4,.r2,.r6,.r7{
+	height: 25px;
+}
 
+.r1 {
+	top: 436px;
+}
+
+.r2 {
+	top: 457px;
+}
+
+.r3 {
+	top: 478px;
+}
+
+.r4 {
+	top: 499px;
+}
+
+.r5 {
+	top: 520px;
+	height: 40px;
+}
+
+.r6 {
+	top: 541px;
+}
+
+.r7 {
+	top: 562px;
+	height: 50px;
+}
+
+#pposc1, #pposc2, #pposc3, #pposc4, #pposc5, #pposc6, #pposc7{
+	left: 204px;
+    width: 24px;
+} 
+
+#pdamc1, #pdamc2, #pdamc3, #pdamc4, #pdamc5, #pdamc6, #pdamc7{
+    left: 234px;
+    width: 24px;
+}
+
+#psevc1, #psevc2, #psevc3, #psevc4, #psevc5, #psevc6, #psevc7{
+    left: 264px;
+    width: 48px;
+}
+
+#xposc1, #xposc2, #xposc3, #xposc4, #xposc5, #xposc6, #xposc7{
+    left: 319px;
+    width: 24px;
+}
+#xdamc1, #xdamc2, #xdamc3, #xdamc4, #xdamc5, #xdamc6, #xdamc7{
+    left: 349px;
+    width: 24px;
+}
+#xsevc1, #xsevc2, #xsevc3, #xsevc4, #xsevc5, #xsevc6, #xsevc7{
+    left: 379px;
+    width: 48px;
+}
+
+#nposc1, #nposc2, #nposc3, #nposc4, #nposc5, #nposc6, #nposc7{
+    left: 434px;
+    width: 24px;
+}
+#ndamc1, #ndamc2, #ndamc3, #ndamc4, #ndamc5, #ndamc6, #ndamc7{
+    left: 464px;
+    width: 24px;
+}
+#nsevc1, #nsevc2, #nsevc3, #nsevc4, #nsevc5, #nsevc6, #nsevc7{
+    left: 494px;
+    width: 48px;
+}
+
+#fposc1, #fposc2, #fposc3, #fposc4, #fposc5, #fposc6, #fposc7{
+    left: 550px;
+    width: 24px;
+}
+#fdamc1, #fdamc2, #fdamc3, #fdamc4, #fdamc5, #fdamc6, #fdamc7{
+    left: 580px;
+    width: 24px;
+}
+#fsevc1, #fsevc2, #fsevc3, #fsevc4, #fsevc5, #fsevc6, #fsevc7{
+    left: 610px;
+    width: 48px;
+}
 
 #plantremarks {
 	top: 592px;
@@ -85,6 +171,197 @@
     left: 550px;
     width: 108px;
     height: 56px;
+}
+
+#pa1 {
+	top: 670px;
+    left: 204px;
+    width: 24px;
+    height: 10px;
+}#pa2 {
+	top: 670px;
+    left: 234px;
+    width: 23px;
+    height: 10px;
+}#pa3 {
+	top: 670px;
+    left: 264px;
+    width: 21px;
+    height: 10px;
+}#pa4 {
+	top: 670px;
+    left: 292px;
+    width: 20px;
+    height: 10px;
+}
+
+#xa1 {
+	top: 670px;
+    left: 319px;
+    width: 24px;
+    height: 10px;
+}#xa2 {
+	top: 670px;
+    left: 349px;
+    width: 24px;
+    height: 10px;
+}#xa3 {
+	top: 670px;
+    left: 379px;
+    width: 21px;
+    height: 10px;
+}#xa4 {
+	top: 670px;
+    left: 407px;
+    width: 21px;
+    height: 10px;
+}
+
+#na1 {
+	top: 670px;
+    left: 435px;
+    width: 24px;
+    height: 10px;
+}#na2 {
+	top: 670px;
+    left: 465px;
+    width: 24px;
+    height: 10px;
+}#na3 {
+	top: 670px;
+    left: 495px;
+    width: 21px;
+    height: 10px;
+}#na4 {
+	top: 670px;
+    left: 522px;
+    width: 21px;
+    height: 10px;
+}
+
+#fa1 {
+	top: 670px;
+    left: 550px;
+    width: 24px;
+    height: 10px;
+}#fa2 {
+	top: 670px;
+    left: 580px;
+    width: 24px;
+    height: 10px;
+}#fa3 {
+	top: 670px;
+    left: 610px;
+    width: 21px;
+    height: 10px;
+}#fa4 {
+	top: 670px;
+    left: 637px;
+    width: 22px;
+    height: 10px;
+}
+
+.vyssirp,
+.vyssirx,
+.vyssirn,
+.vyssirf {
+	width: 108px;
+    height: 13px;
+}
+.vyssirp {
+	left: 204px;
+}
+
+.vyssirx {
+	left: 319px;
+}
+
+.vyssirn {
+	left: 435px;
+}
+
+.vyssirf {
+	left: 550px;
+}
+
+#pdeliv {
+	top: 687px;
+}
+#ptruckno {
+	top: 706px;
+}
+#pname {
+	top: 746px;
+}
+#precname {
+	top: 766px;
+}
+#pins {
+	top: 786px;
+}
+#pdate {
+	top: 825px;
+	height: 10px;
+}
+
+#xdeliv {
+	top: 687px;
+}
+#xtruckno {
+	top: 706px;
+}
+#xname {
+	top: 746px;
+}
+#xrecname {
+	top: 766px;
+}
+#xins {
+	top: 786px;
+}
+#xdate {
+	top: 825px;
+	height: 10px;
+}
+
+#ndeliv {
+	top: 687px;
+}
+#ntruckno {
+	top: 706px;
+}
+#nname {
+	top: 746px;
+}
+#nrecname {
+	top: 766px;
+}
+#nins {
+	top: 786px;
+}
+#ndate {
+	top: 825px;
+	height: 10px;
+}
+
+#fdeliv {
+	top: 687px;
+}
+#ftruckno {
+	top: 706px;
+}
+#fname {
+	top: 746px;
+}
+#frecname {
+	top: 766px;
+}
+#fins {
+	top: 786px;
+}
+#fdate {
+	top: 825px;
+	height: 10px;
 }
 </style>
 <?php } else { ?>
@@ -465,7 +742,7 @@
 	<input name="portentry" type="text" id="portentry" value="<?php if (isset($_POST["portentry"])) echo $_POST["portentry"]; ?>" size="20" maxlength="20">
 	<input name="finaldest" type="text" id="finaldest" value="<?php if (isset($_POST["finaldest"])) echo $_POST["finaldest"]; ?>" size="20" maxlength="20">
 
-	<!-- <input name="pposc1" class="r1" type="text" id="pposc1" value="<?php if (isset($_POST["pposc1"])) echo $_POST["pposc1"]; ?>" size="2" maxlength="2">
+	 <input name="pposc1" class="r1" type="text" id="pposc1" value="<?php if (isset($_POST["pposc1"])) echo $_POST["pposc1"]; ?>" size="2" maxlength="2">
 	<input name="pdamc1" class="r1" type="text" id="pdamc1" value="<?php if (isset($_POST["pdamc1"])) echo $_POST["pdamc1"]; ?>" size="1" maxlength="1">
 	<input name="psevc1" class="r1" type="text" id="psevc1" value="<?php if (isset($_POST["psevc1"])) echo $_POST["psevc1"]; ?>" size="1" maxlength="1">
 	<input name="xposc1" class="r1" type="text" id="xposc1" value="<?php if (isset($_POST["xposc1"])) echo $_POST["xposc1"]; ?>" size="2" maxlength="2">
@@ -554,14 +831,14 @@
 	<input name="nsevc7" class="r7" type="text" id="nsevc7" value="<?php if (isset($_POST["nsevc7"])) echo $_POST["nsevc7"]; ?>" size="1" maxlength="1">
 	<input name="fposc7" class="r7" type="text" id="fposc7" value="<?php if (isset($_POST["fposc7"])) echo $_POST["fposc7"]; ?>" size="2" maxlength="2">
 	<input name="fdamc7" class="r7" type="text" id="fdamc7" value="<?php if (isset($_POST["fdamc7"])) echo $_POST["fdamc7"]; ?>" size="1" maxlength="1">
-	<input name="fsevc7" class="r7" type="text" id="fsevc7" value="<?php if (isset($_POST["fsevc7"])) echo $_POST["fsevc7"]; ?>" size="1" maxlength="1">-->
+	<input name="fsevc7" class="r7" type="text" id="fsevc7" value="<?php if (isset($_POST["fsevc7"])) echo $_POST["fsevc7"]; ?>" size="1" maxlength="1">
 
 	<input name="plantremarks" type="text" id="plantremarks" value="<?php if (isset($_POST["plantremarks"])) echo $_POST["plantremarks"]; ?>" size="20" maxlength="20">
 	<input name="exitremarks" type="text" id="exitremarks" value="<?php if (isset($_POST["exitremarks"])) echo $_POST["exitremarks"]; ?>" size="20" maxlength="20">
 	<input name="entremarks" type="text" id="entremarks" value="<?php if (isset($_POST["entremarks"])) echo $_POST["entremarks"]; ?>" size="20" maxlength="20">
 	<input name="finalremarks" type="text" id="finalremarks" value="<?php if (isset($_POST["finalremarks"])) echo $_POST["finalremarks"]; ?>" size="20" maxlength="20">
 
-	<!-- <input name="pa1" type="text" id="pa1" value="<?php if (isset($_POST["pa1"])) echo $_POST["pa1"]; ?>" size="1" maxlength="1">
+	<input name="pa1" type="text" id="pa1" value="<?php if (isset($_POST["pa1"])) echo $_POST["pa1"]; ?>" size="1" maxlength="1">
 	<input name="pa2" type="text" id="pa2" value="<?php if (isset($_POST["pa2"])) echo $_POST["pa2"]; ?>" size="1" maxlength="1">
 	<input name="pa3" type="text" id="pa3" value="<?php if (isset($_POST["pa3"])) echo $_POST["pa3"]; ?>" size="1" maxlength="1">
 	<input name="pa4" type="text" id="pa4" value="<?php if (isset($_POST["pa4"])) echo $_POST["pa4"]; ?>" size="1" maxlength="1">
@@ -607,7 +884,7 @@
 	<input name="fname" type="text" class="vyssirf" id="fname" value="<?php if (isset($_POST["fname"])) echo $_POST["fname"]; ?>" size="20" maxlength="20">
 	<input name="frecname" type="text" class="vyssirf" id="frecname" value="<?php if (isset($_POST["frecname"])) echo $_POST["frecname"]; ?>" size="20" maxlength="20">
 	<input name="fins" type="text" class="vyssirf" id="fins" value="<?php if (isset($_POST["fins"])) echo $_POST["fins"]; ?>" size="20" maxlength="20">
-	<input name="fdate" type="text" class="vyssirf" id="fdate" value="<?php if (isset($_POST["fdate"])) echo $_POST["fdate"]; ?>" size="20" maxlength="20"> -->
+	<input name="fdate" type="text" class="vyssirf" id="fdate" value="<?php if (isset($_POST["fdate"])) echo $_POST["fdate"]; ?>" size="20" maxlength="20">
 	<br> 
 	
 <p><input name="submit" type="submit" id="submit" value="Dowland PDF"></p>
