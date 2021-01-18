@@ -6,6 +6,8 @@
 		height: 1017px; 
 		margin: 0px; 
 		z-index: -1; 
+		top: 10px; 
+		left: 12px; 
 	}
 	#model {
 		position: fixed;  

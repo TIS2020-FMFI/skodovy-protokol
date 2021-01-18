@@ -1,26 +1,16 @@
 
-
 <?php
 session_start();
 include('db.php');
 include('funkcie.php');
-header('Index');
-?>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="styles.css"> -->
-	<style>
-		<?php include "styles.css" ?>
-	</style>
-	<title>Škodový protokol</title>
-</head>
+head('Škodový protokol');
 
-<body>
-	<?php
 		
-	
+if (isset($_POST["send"])) {        
+	$name = "protocol_" . date("Y-m-d--H-i-s") . ".zip";
+	packToZIP($name); 
+	uploadToSharepoint($name); 
+}	
 	if (isset($_POST["username"]) && isset($_POST["password"]) && $user = user_right($mysqli, $_POST["username"], $_POST["password"])) {
 		$_SESSION['user_id'] = $user['user_id'];
 		$_SESSION['username'] = $user['username'];				 

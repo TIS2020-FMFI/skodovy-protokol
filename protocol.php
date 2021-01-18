@@ -43,8 +43,7 @@ if (isset($_POST["submit"])) {
     $dompdf->stream();
     /*save a document
     $output = $dompdf->output();
-    file_put_contents('protocol_data/protocol.pdf', $output);
-    */
+    file_put_contents('protocol_data/protocol.pdf', $output);    */
 }
 else if (isset($_POST["upload"])) {
     fileToServer(isset($_FILES) ? $_FILES["photo1"] : '', "photo1");     
@@ -52,11 +51,28 @@ else if (isset($_POST["upload"])) {
     fileToServer(isset($_FILES) ? $_FILES["photo3"] : '', "photo3");     
     include('upload.php');                                
 }
-else if (isset($_POST["send"])) {        
-    packToZIP(); 
-    uploadToSharepoint(); 
-}
 else if (isset($_POST["next"])) {
+    /*ob_start();
+	if (isset($_GET['type']) && strcmp($_GET['type'], "jaguar") == 0) {
+		include('jaguar.php');
+	}    
+	else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
+		include('opel.php');
+	}
+	else if (isset($_GET['type']) && strcmp($_GET['type'], "peugeot") == 0) {
+		include('peugeot.php');
+	}
+	else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
+		include('renault.php');
+	}
+	else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
+		include('skoda.php');
+	}
+	$html = ob_get_clean();
+	$dompdf->loadHtml($html);  	
+	$dompdf->render();  		
+	$output = $dompdf->output();
+	file_put_contents('protocol_data/protocol.pdf', $output);	*/
     for ($x = 1; $x <= 3; $x++) {
         $name = "protocol_data/photo" . $x . ".jpg"; 
         if (file_exists($name))
@@ -82,7 +98,7 @@ else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
 else if (isset($_POST["next"])) {
     include('upload.php');
 }
-
+8
 
 ?>
 	
