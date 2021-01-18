@@ -10,10 +10,19 @@
 
 	input[type='text']{
 		position: absolute;
+		font-size: 0.5em;
 	}
+
+	#vdc {
+	top: 117px;
+    left: 62px;
+    width: 196px;
+    height: 11px;
+}
+
 	
 	#model {
-		top: 143px; 		
+		top: 141px; 		
 		left: 92px; 
 		width: 166px; 
 		height: 24px;
@@ -28,33 +37,55 @@
 
 	#plant {
 	top: 387px;
-    left: 203px;
-    width: 110px;
+    left: 204px;
+    width: 108px;
     height: 21px;
 }
 #portexit {
 	top: 387px;
-    left: 318px;
-    width: 110px;
+    left: 319px;
+    width: 108px;
     height: 21px;
 }
 #portentry {
 	top: 387px;
-    left: 434px;
-    width: 110px;
+    left: 435px;
+    width: 108px;
     height: 21px;
 }
-
 #finaldest {
 	top: 387px;
     left: 550px;
-    width: 110px;
+    width: 108px;
     height: 21px;
 }
 
-	form {
-		font-size: 0.5em; 
-	}
+
+
+#plantremarks {
+	top: 592px;
+    left: 204px;
+    width: 108px;
+    height: 56px;
+}
+#exitremarks {
+	top: 592px;
+    left: 319px;
+    width: 108px;
+    height: 56px;
+}
+#entremarks {
+	top: 592px;
+    left: 435px;
+    width: 108px;
+    height: 56px;
+}
+#finalremarks {
+	top: 592px;
+    left: 550px;
+    width: 108px;
+    height: 56px;
+}
 </style>
 <?php } else { ?>
 <style>
@@ -206,13 +237,13 @@
 	top: 1374px;
     left: 746px;
     width: 263px;
-    height: 141;
+    height: 141px;
 }
 #entremarks {
 	top: 1374px;
     left: 1011px;
     width: 263px;
-    height: 141;
+    height: 141px;
 }
 #finalremarks {
 	top: 1374px;
@@ -428,12 +459,13 @@
 	<input name="vdc" type="text" id="vdc" value="<?php if (isset($_POST["vdc"])) echo $_POST["vdc"]; ?>" size="20" maxlength="20">
 	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; ?>" size="20" maxlength="20">
 	<input name="vin" type="text" id="vin"  value="<?php if (isset($_POST["vin"])) echo  $_POST["vin"]; ?>" size="20" minlength="17" maxlength="17">
+	
 	<input name="plant" type="text" id="plant" value="<?php if (isset($_POST["plant"])) echo $_POST["plant"]; ?>" size="20" maxlength="20">
-	<input name="portexit" type="text" id="portexit" value="<?php if (isset($_POST["portexit"])) echo $_POST["portexit"]; ?>" size="20" maxlength="20">
+	<input name="portexit" type="text" id="portexit" value="<?php if (isset($_POST["portexit"])) echo $_POST["portexit"]; ?>" size="20" maxlength="20"> 
 	<input name="portentry" type="text" id="portentry" value="<?php if (isset($_POST["portentry"])) echo $_POST["portentry"]; ?>" size="20" maxlength="20">
 	<input name="finaldest" type="text" id="finaldest" value="<?php if (isset($_POST["finaldest"])) echo $_POST["finaldest"]; ?>" size="20" maxlength="20">
 
-	<input name="pposc1" class="r1" type="text" id="pposc1" value="<?php if (isset($_POST["pposc1"])) echo $_POST["pposc1"]; ?>" size="2" maxlength="2">
+	<!-- <input name="pposc1" class="r1" type="text" id="pposc1" value="<?php if (isset($_POST["pposc1"])) echo $_POST["pposc1"]; ?>" size="2" maxlength="2">
 	<input name="pdamc1" class="r1" type="text" id="pdamc1" value="<?php if (isset($_POST["pdamc1"])) echo $_POST["pdamc1"]; ?>" size="1" maxlength="1">
 	<input name="psevc1" class="r1" type="text" id="psevc1" value="<?php if (isset($_POST["psevc1"])) echo $_POST["psevc1"]; ?>" size="1" maxlength="1">
 	<input name="xposc1" class="r1" type="text" id="xposc1" value="<?php if (isset($_POST["xposc1"])) echo $_POST["xposc1"]; ?>" size="2" maxlength="2">
@@ -522,14 +554,14 @@
 	<input name="nsevc7" class="r7" type="text" id="nsevc7" value="<?php if (isset($_POST["nsevc7"])) echo $_POST["nsevc7"]; ?>" size="1" maxlength="1">
 	<input name="fposc7" class="r7" type="text" id="fposc7" value="<?php if (isset($_POST["fposc7"])) echo $_POST["fposc7"]; ?>" size="2" maxlength="2">
 	<input name="fdamc7" class="r7" type="text" id="fdamc7" value="<?php if (isset($_POST["fdamc7"])) echo $_POST["fdamc7"]; ?>" size="1" maxlength="1">
-	<input name="fsevc7" class="r7" type="text" id="fsevc7" value="<?php if (isset($_POST["fsevc7"])) echo $_POST["fsevc7"]; ?>" size="1" maxlength="1">
+	<input name="fsevc7" class="r7" type="text" id="fsevc7" value="<?php if (isset($_POST["fsevc7"])) echo $_POST["fsevc7"]; ?>" size="1" maxlength="1">-->
 
 	<input name="plantremarks" type="text" id="plantremarks" value="<?php if (isset($_POST["plantremarks"])) echo $_POST["plantremarks"]; ?>" size="20" maxlength="20">
 	<input name="exitremarks" type="text" id="exitremarks" value="<?php if (isset($_POST["exitremarks"])) echo $_POST["exitremarks"]; ?>" size="20" maxlength="20">
 	<input name="entremarks" type="text" id="entremarks" value="<?php if (isset($_POST["entremarks"])) echo $_POST["entremarks"]; ?>" size="20" maxlength="20">
 	<input name="finalremarks" type="text" id="finalremarks" value="<?php if (isset($_POST["finalremarks"])) echo $_POST["finalremarks"]; ?>" size="20" maxlength="20">
 
-	<input name="pa1" type="text" id="pa1" value="<?php if (isset($_POST["pa1"])) echo $_POST["pa1"]; ?>" size="1" maxlength="1">
+	<!-- <input name="pa1" type="text" id="pa1" value="<?php if (isset($_POST["pa1"])) echo $_POST["pa1"]; ?>" size="1" maxlength="1">
 	<input name="pa2" type="text" id="pa2" value="<?php if (isset($_POST["pa2"])) echo $_POST["pa2"]; ?>" size="1" maxlength="1">
 	<input name="pa3" type="text" id="pa3" value="<?php if (isset($_POST["pa3"])) echo $_POST["pa3"]; ?>" size="1" maxlength="1">
 	<input name="pa4" type="text" id="pa4" value="<?php if (isset($_POST["pa4"])) echo $_POST["pa4"]; ?>" size="1" maxlength="1">
@@ -547,7 +579,7 @@
 	<input name="fa1" type="text" id="fa1" value="<?php if (isset($_POST["fa1"])) echo $_POST["fa1"]; ?>" size="1" maxlength="1">
 	<input name="fa2" type="text" id="fa2" value="<?php if (isset($_POST["fa2"])) echo $_POST["fa2"]; ?>" size="1" maxlength="1">
 	<input name="fa3" type="text" id="fa3" value="<?php if (isset($_POST["fa3"])) echo $_POST["fa3"]; ?>" size="1" maxlength="1">
-	<input name="fa4" type="text" id="fa4" value="<?php if (isset($_POST["fa4"])) echo $_POST["fa4"]; ?>" size="1" maxlength="1">
+	<input name="fa4" type="text" id="fa4" value="<?php if (isset($_POST["fa4"])) echo $_POST["fa4"]; ?>" size="1" maxlength="1"> 
 
 	<input name="pdeliv" type="text" class="vyssirp" id="pdeliv" value="<?php if (isset($_POST["pdeliv"])) echo $_POST["pdeliv"]; ?>" size="20" maxlength="20">
 	<input name="ptruckno" type="text" class="vyssirp" id="ptruckno" value="<?php if (isset($_POST["ptruckno"])) echo $_POST["ptruckno"]; ?>" size="20" maxlength="20">
@@ -575,8 +607,8 @@
 	<input name="fname" type="text" class="vyssirf" id="fname" value="<?php if (isset($_POST["fname"])) echo $_POST["fname"]; ?>" size="20" maxlength="20">
 	<input name="frecname" type="text" class="vyssirf" id="frecname" value="<?php if (isset($_POST["frecname"])) echo $_POST["frecname"]; ?>" size="20" maxlength="20">
 	<input name="fins" type="text" class="vyssirf" id="fins" value="<?php if (isset($_POST["fins"])) echo $_POST["fins"]; ?>" size="20" maxlength="20">
-	<input name="fdate" type="text" class="vyssirf" id="fdate" value="<?php if (isset($_POST["fdate"])) echo $_POST["fdate"]; ?>" size="20" maxlength="20">
-	<br>
+	<input name="fdate" type="text" class="vyssirf" id="fdate" value="<?php if (isset($_POST["fdate"])) echo $_POST["fdate"]; ?>" size="20" maxlength="20"> -->
+	<br> 
 	
 <p><input name="submit" type="submit" id="submit" value="Dowland PDF"></p>
 <p><input name="next" type="submit" id="next" value="Next"></p>
