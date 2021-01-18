@@ -8,18 +8,16 @@ use Office365\SharePoint\ClientContext;
 function head($tittle) {
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title><?php echo $tittle; ?></title>
-<link href="styly.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">	
+	<title><?php echo $tittle; ?></title>
 </head>
 
 <body>
 
-<header>
-<h1><?php echo $tittle; ?></h1>
-</header>
 <?php
 }
 
@@ -111,10 +109,8 @@ function fileFormat($filename) {
 	return $result; 
 }
 
-function packToZIP() {
-	$zip = new ZipArchive();
-	$filename = "result.zip";
-
+function packToZIP($filename) {
+	$zip = new ZipArchive();	
 	if ($zip->open($filename, ZipArchive::CREATE)!==TRUE) {
 		exit("cannot open <$filename>\n");
 	}
@@ -127,15 +123,15 @@ function packToZIP() {
 	$zip->close();
 }
 
-function uploadToSharepoint() {
+function uploadToSharepoint($filename) {
 	try {
-		$clientId = "---userID---";
-		$clientSecret = "---password---";
+		$clientId = "964c908f-f1b6-4a7f-a8e3-f17b0aa02529";
+		$clientSecret = "kLTFoKc8BM/u87YQ9wQjxhspK7pSGj2NqJcwlz9lL7Y=";
 		$webUrl = "https://liveuniba.sharepoint.com/sites/MartinKristak/";
 		$credentials = new ClientCredential($clientId, $clientSecret);
 		$ctx = (new ClientContext($webUrl))->withCredentials($credentials);
 		$targetFolderUrl = "Shared%20Documents";
-		$localPath = "result.zip";
+		$localPath = $filename; 
 		$fileName = basename($localPath);
 		$fileCreationInformation = new FileCreationInformation();
 		$fileCreationInformation->Content = file_get_contents($localPath);
@@ -148,5 +144,6 @@ function uploadToSharepoint() {
 		echo 'Error: ',  $e->getMessage(), "\n";
 	}
 }
+
 
 ?>

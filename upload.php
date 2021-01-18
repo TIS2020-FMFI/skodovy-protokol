@@ -15,8 +15,8 @@
 		
 	<br>
 	
-<p><input name="upload" type="submit" id="upload" value="upload"></p>
-<p><input name="send" type="submit" id="send" value="Send to Sharepoint"></p>
+<p><input name="upload" type="submit" id="upload" value="upload" style="display: none;"></p>
+<p><input name="send" type="submit" id="send" value="Send to Sharepoint" formaction="index.php"></p>
 </form>
 
 <script type="text/javascript">
