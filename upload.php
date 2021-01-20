@@ -8,6 +8,9 @@
 			<?php 
 			if (file_exists("protocol_data/" . $name . ".jpg")) {
 				echo '<img src="protocol_data/' . $name . '.jpg" alt="Photo1" width="42" height="42">'; 				
+			}
+			else if (file_exists("protocol_data/" . $name . ".png")) {
+				echo '<img src="protocol_data/' . $name . '.png" alt="Photo1" width="42" height="42">'; 				
 			} ?>
 		</p>
 		<?php } ?>
@@ -22,6 +25,6 @@
 <script type="text/javascript">
     function submitForm() {
         // However you need to submit the form
-        document.getElementById("upload").click(); // Or whatever
+        document.getElementById("upload").click(); 
     }
 </script>

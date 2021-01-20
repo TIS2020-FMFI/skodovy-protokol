@@ -1,10 +1,12 @@
 <?php
+require_once 'dompdf/autoload.inc.php';  
+use Dompdf\Dompdf; 
 date_default_timezone_set('Europe/Bratislava');
 require_once 'vendor/autoload.php';
 use Office365\Runtime\Auth\ClientCredential;
 use Office365\SharePoint\FileCreationInformation;
 use Office365\SharePoint\ClientContext;
-	
+
 function head($tittle) {
 ?>
 <!DOCTYPE html>
@@ -73,27 +75,51 @@ function user_right($mysqli, $username, $pass) {
 	}
 }
 
+function convertToPDF() {
+	$dompdf = new Dompdf();	
+	// Load HTML content 
+    ob_start();
+    if (isset($_GET['type']) && strcmp($_GET['type'], "jaguar") == 0) {
+        include('jaguar.php');
+    }    
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
+        include('opel.php');
+    }
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "peugeot") == 0) {
+        include('peugeot.php');
+    }
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
+        include('renault.php');
+    }
+    else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
+        include('skoda.php');
+    }
+    $html = ob_get_clean();
+    $dompdf->loadHtml($html);  
+    // (Optional) Setup the paper size and orientation 
+    //$dompdf->setPaper('A4', 'landscape');  
+    // Render the HTML as PDF 
+    $dompdf->render();  
+    // Output the ge    nerated PDF to Browser 
+    $dompdf->stream();
+    /*save a document
+    $output = $dompdf->output();
+    file_put_contents('protocol_data/protocol.pdf', $output);    */
+}
+
 function fileToServer($file, $newName) {
 	$new_name = '';	
 	if (!empty($file) && !empty($file['name'])) {				
 		if ($file['error'] == UPLOAD_ERR_OK) {
 			if (is_uploaded_file($file['tmp_name'])) {
-				$new_name = 'protocol_data/' . $newName . fileFormat($file['name']);								
-				$ok = move_uploaded_file($file['tmp_name'], $new_name);
-				/*if ($ok) {
-					echo '<p>Súbor bol nahratý na server.</p>';
-				} else {
-					echo '<p>Súbor NEbol nahratý na server.</p>';
-					$new_name = ''; 
-				}*/
-			} else {
-				echo '<p>Súbor je podvrh.</p>';
-			}
-		} else { 
-			// nastane, ak bol uploadovaný súbor väcší ako upload_max_filesize (chyba 2)
-			// nastane aj vtedy, ak bol uploadovaný súbor väcší ako post_max_size (chyba 2)
-			echo '<p class="chyba">Nastal problém pri uploadovaní súboru ' . $subor['name'] . ' - ' . $subor['error'] . '</p>';
-		}
+				$new_name = 'protocol_data/' . $newName . fileFormat($file['name']);												
+				if (file_exists('protocol_data/' . $newName . '.jpg'))
+					unlink('protocol_data/' . $newName . '.jpg');            
+				if (file_exists('protocol_data/' . $newName . '.png'))
+					unlink('protocol_data/' . $newName . '.png');            
+				$ok = move_uploaded_file($file['tmp_name'], $new_name);				
+			} 
+		} 
 	}	
 }
 
@@ -117,6 +143,9 @@ function packToZIP($filename) {
 	$zip->addFile("protocol_data/protocol.pdf");        
 	for ($x = 1; $x <= 3; $x++) {
 		$name = "protocol_data/photo" . $x . ".jpg"; 
+		if (file_exists($name))
+			$zip->addFile($name);            
+		$name = "protocol_data/photo" . $x . ".png"; 
 		if (file_exists($name))
 			$zip->addFile($name);            
 	}    
@@ -143,6 +172,17 @@ function uploadToSharepoint($filename) {
 	catch (Exception $e) {
 		echo 'Error: ',  $e->getMessage(), "\n";
 	}
+}
+
+function clearData() {
+	for ($x = 1; $x <= 3; $x++) {
+        $name = "protocol_data/photo" . $x . ".jpg"; 
+        if (file_exists($name))
+            unlink($name); 
+        $name = "protocol_data/photo" . $x . ".png"; 
+        if (file_exists($name))
+            unlink($name); 
+    }
 }
 
 

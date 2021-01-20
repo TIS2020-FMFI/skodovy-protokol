@@ -10,6 +10,8 @@ if (isset($_POST["send"])) {
 	$name = "protocol_" . date("Y-m-d--H-i-s") . ".zip";
 	packToZIP($name); 
 	uploadToSharepoint($name); 
+	if (file_exists($name))
+        unlink($name); 
 }	
 	if (isset($_POST["username"]) && isset($_POST["password"]) && $user = user_right($mysqli, $_POST["username"], $_POST["password"])) {
 		$_SESSION['user_id'] = $user['user_id'];

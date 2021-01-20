@@ -887,7 +887,7 @@
 	<input name="fdate" type="text" class="vyssirf" id="fdate" value="<?php if (isset($_POST["fdate"])) echo $_POST["fdate"]; ?>" size="20" maxlength="20">
 	<br> 
 	
-<p><input name="submit" type="submit" id="submit" value="Dowland PDF"></p>
-<p><input name="next" type="submit" id="next" value="Next"></p>
+<p><input name="submit" type="submit" id="submit" value="Dowland PDF" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
+<p><input name="next" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
 </form>
   </div>
