@@ -7,6 +7,8 @@ header('Záznam protokolu');
 
 <section>
 <?php
+
+
 if (isset($_POST["submit"])) {
     convertToPDF(); 
 }
@@ -17,27 +19,7 @@ else if (isset($_POST["upload"])) {
     include('upload.php');                                
 }
 else if (isset($_POST["next"])) {
-    /*ob_start();
-	if (isset($_GET['type']) && strcmp($_GET['type'], "jaguar") == 0) {
-		include('jaguar.php');
-	}    
-	else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
-		include('opel.php');
-	}
-	else if (isset($_GET['type']) && strcmp($_GET['type'], "peugeot") == 0) {
-		include('peugeot.php');
-	}
-	else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
-		include('renault.php');
-	}
-	else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
-		include('skoda.php');
-	}
-	$html = ob_get_clean();
-	$dompdf->loadHtml($html);  	
-	$dompdf->render();  		
-	$output = $dompdf->output();
-	file_put_contents('protocol_data/protocol.pdf', $output);	*/
+    //convertToPDF(); 
     clearData(); 
     include('upload.php');
 }
@@ -59,7 +41,8 @@ else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
 else if (isset($_POST["next"])) {
     include('upload.php');
 }
-8
+if (!isset($_POST["upload"])) 
+    echo '<a target="_blank" rel="SK preklad" href="help.php?type=' . $_GET["type"] . '">Pomôcka v SK jazyku</a>'; 
 
 ?>
 	
