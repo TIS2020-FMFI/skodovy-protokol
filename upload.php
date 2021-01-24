@@ -1,17 +1,18 @@
 <div class="wrapper">
-	<form method="post" enctype="multipart/form-data">			
+	<form method="post" enctype="multipart/form-data">	
+	<h1>Sem vložte fotografie</h1>		
 			<?php 
 			for ($x = 1; $x <= 3; $x++) {
 				$name = "photo" . $x; 	?>
-				<p><label for="<?php echo $name; ?>">Fotografia č. <?php echo $x; ?>:</label>
-				<input type="file" name="<?php echo $name; ?>" id="<?php echo $name; ?>" onchange="submitForm();" style="display: none;" accept=".jpg, .png">
-				<input type="button" value="Browse..." onclick="document.getElementById('<?php echo $name; ?>').click();" />
+				
+				<p><input type="file" class="rad" name="<?php echo $name; ?>" id="<?php echo $name; ?>" onchange="submitForm();" style="display: none;" accept=".jpg, .png">
+				<input type="button" class="rad" value="Fotografia <?php echo $x;?>" onclick="document.getElementById('<?php echo $name; ?>').click();" />
 				<?php 
 				if (file_exists("protocol_data/" . $name . ".jpg")) {
-					echo '<img src="protocol_data/' . $name . '.jpg" alt="Photo1" width="100" height="100">'; 				
+					echo '<img src="protocol_data/' . $name . '.jpg" alt="Photo1" class="rad" width="100" height="100">'; 				
 				}
 				else if (file_exists("protocol_data/" . $name . ".png")) {
-					echo '<img src="protocol_data/' . $name . '.png" alt="Photo1" width="100" height="100">'; 				
+					echo '<img src="protocol_data/' . $name . '.png" alt="Photo1" class="rad" width="100" height="100">'; 				
 				} ?>
 			</p>
 			<?php } ?>
@@ -24,40 +25,47 @@
 	</form>
 </div>	
 <style>
-	* {
-		/* outline: 3px solid black; */
-	}
 
 	.wrapper {
 		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin:0;
+	}
+
+	.rad {
+		margin: 5px;
 	}
 	form {
 		text-align: center;
 		width: 50%;
 		height: 50%;
+		display:flex;
+		flex-direction: column;
 	}
 
-	input[type="submit"] {
+	form p {
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 10px;
+	}
+
+	input[type="submit"], input[type="button"] {
 		background-color: #f85f6a;
 		color: white;
 		font-weight: bold;
 		padding: 20px;
-		margin: 10px 0;
+		margin: 10px;
 		border: none;
 		border-radius: 4px;
 		cursor: pointer;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover, input[type="button"]:hover{
   background-color: #c54b53;
 }
 
-img {
-	outline: 5px solid red;
-}
 </style>
 
 <script type="text/javascript">
