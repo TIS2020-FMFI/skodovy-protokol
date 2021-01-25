@@ -1,4 +1,11 @@
-<?php if (isset($_POST["submit"])) { ?>
+<?php if (isset($_POST["submit"])) { 
+	$img = $_POST['signature'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature.png', $data); 
+	$path = './protocol_data/signature.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img = 'data:image/' . $type . ';base64,' . base64_encode($data); ?> ?>
 <style>
 	img {
 		position: fixed; 
@@ -6,6 +13,14 @@
 		height: 1017px; 
 		margin: 0px; 
 		z-index: -1; 
+	}
+
+	#sig_img {
+		position: fixed; 
+		left: 220px; 
+		top: 808px; 
+		height: 16px;
+		width: 44px;		
 	}
 
 	input[type='text']{
@@ -537,6 +552,13 @@
 	top: 1910px;
 	height: 36px;
 }
+canvas#signature {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 510px; 
+		top: 1865px; 
+		
+	}
 	
 </style>
 <?php } ?>
@@ -694,8 +716,15 @@
 	<input name="fins" type="text" class="vyssirf ins" id="fins" value="<?php if (isset($_POST["fins"])) echo $_POST["fins"]; ?>" size="20" maxlength="20">
 	<input name="fdate" type="text" class="vyssirf date" id="fdate" value="<?php if (isset($_POST["fdate"])) echo $_POST["fdate"]; ?>" size="20" maxlength="20">
 	<br> 
-	
+	<?php if (isset($_POST["submit"])) { ?>
+		<img id="sig_img" src="<?php echo $signature_img?>">
+	<?php } else { ?>
+		<canvas id="signature" width="200" height="40"></canvas>
+		<input type="hidden" name="signature" />
+	<?php 
+	 } ?>
 <p><input name="submit" type="submit" id="submit" value="Dowland PDF" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
 <p><input name="next" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
 </form>
   </div>
+
