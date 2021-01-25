@@ -36,10 +36,11 @@ if (isset($_SESSION['username'])) {
   <p> 
     <input name="logout" type="submit" id="logout" value="Odhlásiť sa"> 
   </p> 
-<input class="cislo" name="cislo" type="text" size="30" placeholder="Výrobné číslo auta" maxlength="30" id="cislo"/> 
+  <div class="wrapper">
+<input class="cislo" name="cislo" type="text" size="17" placeholder="Výrobné číslo auta" maxlength="17" id="cislo"/> 
  
     <input name="hladat" type="submit" id="hladat" value="Hľadať"> 
-  
+	</div>
 </form> 
 <ul> 
 <li><a href="protocol.php?type=jaguar">Jaguar</a> </li> 
