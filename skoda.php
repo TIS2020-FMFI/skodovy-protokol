@@ -1,13 +1,26 @@
-<?php if (isset($_POST["submit"])) { ?>
+<?php if (isset($_POST["submit"])) {
+	$img = $_POST['signature'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature.png', $data); 
+	$path = './protocol_data/signature.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img = 'data:image/' . $type . ';base64,' . base64_encode($data); ?>
 <style>
-	img {
+	#bckground {
 		position: fixed; 
 		width: 720px; 
 		height: 1017px; 
 		margin: 0px; 
 		z-index: -1; 
 	}
-
+	#sig_img {
+		position: fixed; 
+		left: 110px; 
+		top: 965px; 
+		height: 30px;
+		width: 80px;		
+	}
 	input[type='text']{
 		position: absolute;
 		font-size: 0.5em;
@@ -16,8 +29,7 @@
 	#vin {
 		top: 120px;
 		left: 84px;
-		width: 256px;
-		height: 16px;
+		width: 256px;		
 	}
 
 	#model {
@@ -331,6 +343,13 @@
     top: 3197px;
     height: 72px;
 	}
+	canvas#signature {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 350px; 
+		top: 3270px; 
+		
+	}
 	
 </style>
 <?php } ?>
@@ -341,7 +360,7 @@
 	$data = file_get_contents($path);
 	$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
 ?>	
-	<img src="<?php echo $base64?>">
+	<img id="bckground" src="<?php echo $base64?>">
   <div id="o-back">
     <form method="post">			
 	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; ?>" size="20" maxlength="20">
@@ -471,10 +490,14 @@
 	<input name="rnameC" type="text" class="classC rname" id="rnameC" value="<?php if (isset($_POST["rnameC"])) echo $_POST["rnameC"]; ?>" size="4" maxlength="50">
 	<input name="rnameD" type="text" class="classD rname" id="rnameD" value="<?php if (isset($_POST["rnameD"])) echo $_POST["rnameD"]; ?>" size="4" maxlength="50">
 	
-	
-	<br>
-	
+	<?php if (isset($_POST["submit"])) { ?>
+		<img id="sig_img" src="<?php echo $signature_img?>">
+	<?php } else { ?>
+		<canvas id="signature" width="400" height="150"></canvas>
+		<input type="hidden" name="signature" />
+	<?php 
+	 } ?>
+	<br>	
 <p><input name="submit" type="submit" id="submit" value="Download PDF"></p>
 <p><input name="next" type="submit" id="next" value="Next"></p>
 </form>
-  </div>

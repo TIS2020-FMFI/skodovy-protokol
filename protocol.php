@@ -47,3 +47,5 @@ if (!isset($_POST["upload"]))
 ?>
 	
 </section>
+
+<?php include("signature.php"); ?>
