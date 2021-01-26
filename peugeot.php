@@ -10,12 +10,6 @@
 		margin: 0px; 
 		z-index: -1; 
 	}
-	#model {
-		position: absolute;  
-		top: 250px; 		
-		left: 160px; 
-		width: 700px; 	
-	}
 	form {
 		font-size: 0.5em; 
 	}
@@ -2085,31 +2079,15 @@
 <style>
 
 
-    /*  
-	input[type='text']{
-		position: absolute;
-		font-size:40px;
-		text-align:center;
-	}
-	#model {
-		position: fixed;  
-		top: 140px; 		
-		left: 60ani px; 
-		width: 700px; 	
-	}
-	form {
-		font-size: 0.5em; 
-	} */
-
-
 	#submit {
 		position: absolute;
-		top: 1050px;
+		top: 2340px;
+		left: 50px;
 	}
 	#next {
 		position: absolute;
-		top: 1050px;
-		left: 190px;
+		top: 2340px;
+		left: 200px;
 	}
 	#model {
 		position: absolute;
@@ -3187,6 +3165,487 @@
 		left: 83px;
 		width: 1535px;
 	}
+
+
+
+
+	#loading-a{
+		position: absolute;
+		top: 1609px;
+		left: 502px;
+		width: 18px;
+	}
+	#unloading-a{
+		position: absolute;
+		top: 1643px;
+		left: 502px;
+		width: 18px;
+	}
+	#loading-b{
+		position: absolute;
+		top: 1607px;
+		left: 739px;
+		width: 18px;
+	}
+	#unloading-b{
+		position: absolute;
+		top: 1642px;
+		left: 739px;
+		width: 18px;
+	}
+	#loading-c{
+		position: absolute;
+		top: 1611px;
+		left: 979px;
+		width: 18px;
+	}
+	#unloading-c{
+		position: absolute;
+		top: 1645px;
+		left: 979px;
+		width: 18px;
+	}
+	#loading-d{
+		position: absolute;
+		top: 1611px;
+		left: 1211px;
+		width: 18px;
+	}
+	#unloading-d{
+		position: absolute;
+		top: 1645px;
+		left: 1211px;
+		width: 18px;
+	}
+	#loading-e{
+		position: absolute;
+		top: 1609px;
+		left: 1449px;
+		width: 18px;
+	}
+	#unloading-e{
+		position: absolute;
+		top: 1644px;
+		left: 1449px;
+		width: 18px;
+	}
+
+
+	#factory-a{
+		position: absolute;
+		top: 1687px;
+		left: 645px;
+		width: 18px;
+	}
+	#compound-a{
+		position: absolute;
+		top: 1715px;
+		left: 645px;
+		width: 18px;
+	}
+	#dealer-a{
+		position: absolute;
+		top: 1744px;
+		left: 645px;
+		width: 18px;
+	}
+	#production-a{
+		position: absolute;
+		top: 1775px;
+		left: 646px;
+		width: 18px;
+	}
+	#transport-a{
+		position: absolute;
+		top: 1810px;
+		left: 646px;
+		width: 18px;
+	}
+	#l-a{
+		position: absolute;
+		top: 1835px;
+		left: 646px;
+		width: 18px;
+	}
+	#u-a{
+		position: absolute;
+		top: 1858px;
+		left: 646px;
+		width: 18px;
+	}
+
+
+
+	#factory-b{
+		position: absolute;
+		top: 1688px;
+		left: 883px;
+		width: 18px;
+	}
+	#compound-b{
+		position: absolute;
+		top: 1714px;
+		left: 883px;
+		width: 18px;
+	}
+	#dealer-b{
+		position: absolute;
+		top: 1743px;
+		left: 883px;
+		width: 18px;
+	}
+	#production-b{
+		position: absolute;
+		top: 1774px;
+		left: 882px;
+		width: 18px;
+	}
+	#transport-b{
+		position: absolute;
+		top: 1808px;
+		left: 882px;
+		width: 18px;
+	}
+	#l-b{
+		position: absolute;
+		top: 1834px;
+		left: 882px;
+		width: 18px;
+	}
+	#u-b{
+		position: absolute;
+		top: 1858px;
+		left: 882px;
+		width: 18px;
+	}
+
+
+	#factory-c{
+		position: absolute;
+		top: 1688px;
+		left: 1120px;
+		width: 18px;
+	}
+	#compound-c{
+		position: absolute;
+		top: 1715px;
+		left: 1120px;
+		width: 18px;
+	}
+	#dealer-c{
+		position: absolute;
+		top: 1743px;
+		left: 1120px;
+		width: 18px;
+	}
+	#production-c{
+		position: absolute;
+		top: 1776px;
+		left: 1120px;
+		width: 18px;
+	}
+	#transport-c{
+		position: absolute;
+		top: 1808px;
+		left: 1120px;
+		width: 18px;
+	}
+	#l-c{
+		position: absolute;
+		top: 1834px;
+		left: 1120px;
+		width: 18px;
+	}
+	#u-c{
+		position: absolute;
+		top: 1858px;
+		left: 1120px;
+		width: 18px;
+	}
+
+
+
+	#factory-d{
+		position: absolute;
+		top: 1688px;
+		left: 1358px;
+		width: 18px;
+	}
+	#compound-d{
+		position: absolute;
+		top: 1713px;
+		left: 1358px;
+		width: 18px;
+	}
+	#dealer-d{
+		position: absolute;
+		top: 1740px;
+		left: 1358px;
+		width: 18px;
+	}
+	#production-d{
+		position: absolute;
+		top: 1775px;
+		left: 1357px;
+		width: 18px;
+	}
+	#transport-d{
+		position: absolute;
+		top: 1809px;
+		left: 1356px;
+		width: 18px;
+	}
+	#l-d{
+		position: absolute;
+		top: 1834px;
+		left: 1357px;
+		width: 18px;
+	}
+	#u-d{
+		position: absolute;
+		top: 1858px;
+		left: 1356px;
+		width: 18px;
+	}
+
+
+	#factory-e{
+		position: absolute;
+		top: 1688px;
+		left: 1591px;
+		width: 18px;
+	}
+	#compound-e{
+		position: absolute;
+		top: 1716px;
+		left: 1592px;
+		width: 18px;
+	}
+	#dealer-e{
+		position: absolute;
+		top: 1744px;
+		left: 1592px;
+		width: 18px;
+	}
+	#production-e{
+		position: absolute;
+		top: 1775px;
+		left: 1592px;
+		width: 18px;
+	}
+	#transport-e{
+		position: absolute;
+		top: 1806px;
+		left: 1592px;
+		width: 18px;
+	}
+	#l-e{
+		position: absolute;
+		top: 1830px;
+		left: 1592px;
+		width: 18px;
+	}
+	#u-e{
+		position: absolute;
+		top: 1856px;
+		left: 1592px;
+		width: 18px;
+	}
+
+
+
+	#date-a{
+		position: absolute;
+		top: 1900px;
+		left: 432px;
+		width: 235px;
+	}
+	#date-b{
+		position: absolute;
+		top: 1900px;
+		left: 669px;
+		width: 235px;
+	}
+	#date-c{
+		position: absolute;
+		top: 1900px;
+		left: 906px;
+		width: 235px;
+	}
+	#date-d{
+		position: absolute;
+		top: 1900px;
+		left: 1144px;
+		width: 235px;
+	}
+	#date-e{
+		position: absolute;
+		top: 1900px;
+		left: 1380px;
+		width: 235px;
+	}
+
+
+	#loc-a{
+		position: absolute;
+		top: 1950px;
+		left: 432px;
+		width: 235px;
+	}
+	#loc-b{
+		position: absolute;
+		top: 1950px;
+		left: 669px;
+		width: 235px;
+	}
+	#loc-c{
+		position: absolute;
+		top: 1950px;
+		left: 906px;
+		width: 235px;
+	}
+	#loc-d{
+		position: absolute;
+		top: 1950px;
+		left: 1144px;
+		width: 235px;
+	}
+	#loc-e{
+		position: absolute;
+		top: 1950px;
+		left: 1380px;
+		width: 235px;
+	}
+
+
+	#truck-a{
+		position: absolute;
+		top: 2000px;
+		left: 432px;
+		width: 235px;
+	}
+	#truck-b{
+		position: absolute;
+		top: 2000px;
+		left: 669px;
+		width: 235px;
+	}
+	#truck-c{
+		position: absolute;
+		top: 2000px;
+		left: 906px;
+		width: 235px;
+	}
+	#truck-d{
+		position: absolute;
+		top: 2000px;
+		left: 1144px;
+		width: 235px;
+	}
+	#truck-e{
+		position: absolute;
+		top: 2000px;
+		left: 1380px;
+		width: 235px;
+	}
+
+
+	#del-a{
+		position: absolute;
+		top: 2055px;
+		left: 432px;
+		width: 235px;
+	}
+	#del-b{
+		position: absolute;
+		top: 2055px;
+		left: 669px;
+		width: 235px;
+	}
+	#del-c{
+		position: absolute;
+		top: 2055px;
+		left: 906px;
+		width: 235px;
+	}
+	#del-d{
+		position: absolute;
+		top: 2055px;
+		left: 1144px;
+		width: 235px;
+	}
+	#del-e{
+		position: absolute;
+		top: 2055px;
+		left: 1380px;
+		width: 235px;
+	}
+
+
+	#giver-a{
+		position: absolute;
+		top: 2110px;
+		left: 432px;
+		width: 235px;
+	}
+	#giver-b{
+		position: absolute;
+		top: 2110px;
+		left: 669px;
+		width: 235px;
+	}
+	#giver-c{
+		position: absolute;
+		top: 2110px;
+		left: 906px;
+		width: 235px;
+	}
+	#giver-d{
+		position: absolute;
+		top: 2110px;
+		left: 1144px;
+		width: 235px;
+	}
+	#giver-e{
+		position: absolute;
+		top: 2110px;
+		left: 1380px;
+		width: 235px;
+	}
+
+
+	#receiver-a{
+		position: absolute;
+		top: 2220px;
+		left: 432px;
+		width: 235px;
+	}
+	#receiver-b{
+		position: absolute;
+		top: 2220px;
+		left: 669px;
+		width: 235px;
+	}
+	#receiver-c{
+		position: absolute;
+		top: 2220px;
+		left: 906px;
+		width: 235px;
+	}
+	#receiver-d{
+		position: absolute;
+		top: 2220px;
+		left: 1144px;
+		width: 235px;
+	}
+	#receiver-e{
+		position: absolute;
+		top: 2220px;
+		left: 1380px;
+		width: 235px;
+	}
+	
+
 
 
 
