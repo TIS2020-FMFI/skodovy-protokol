@@ -1,4 +1,11 @@
-<?php if (isset($_POST["submit"])) { ?>
+<?php if (isset($_POST["submit"])) { 
+	$img = $_POST['signature'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature.png', $data); 
+	$path = './protocol_data/signature.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img = 'data:image/' . $type . ';base64,' . base64_encode($data); ?> ?>
 <style>
 	img {
 		position: fixed; 
@@ -6,6 +13,15 @@
 		height: 1017px; 
 		margin: 0px; 
 		z-index: -1; 
+		top: 10px; 
+		left: 12px; 
+	}
+	#sig_img {
+		position: fixed; 
+		left: 150px; 
+		top: 895px; 
+		height: 25px;
+		width: 60px;		
 	}
 	#model {
 		position: fixed;  
@@ -948,6 +964,12 @@
 		left: 1150px; 
 		width: 165px; 	
 	}
+	canvas#signature {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 350px; 
+		top: 2040px; 		
+	}
 
 </style>
 <?php } ?>
@@ -1046,6 +1068,14 @@
 	<input name="name-1" type="text" id="name-1" value="<?php if (isset($_POST["name-1"])) echo $_POST["name-1"]; ?>" size="35" maxlength="35">
 	<input name="name-2" type="text" id="name-2" value="<?php if (isset($_POST["name-2"])) echo $_POST["name-2"]; ?>" size="40" maxlength="40">
 	
+	<?php if (isset($_POST["submit"])) { ?>
+		<img id="sig_img" src="<?php echo $signature_img?>">
+	<?php } else { ?>
+		<canvas id="signature" width="300" height="60"></canvas>
+		<input type="hidden" name="signature" />
+	<?php 
+	 } ?>
+
 	<input name="place" type="text" id="place" value="<?php if (isset($_POST["place"])) echo $_POST["place"]; ?>" size="20" maxlength="20">
 	<input name="date" type="text" id="date" value="<?php if (isset($_POST["date"])) echo $_POST["date"]; ?>" size="20" maxlength="20">
 	<input name="time" type="text" id="time" value="<?php if (isset($_POST["time"])) echo $_POST["time"]; ?>" size="20" maxlength="20">
