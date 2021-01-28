@@ -1,11 +1,18 @@
 <?php if (isset($_POST["submit"])) { 
-	$img = $_POST['signature'];
+	$img = $_POST['signature1'];
 	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
-	file_put_contents('protocol_data/signature.png', $data); 
-	$path = './protocol_data/signature.png';
+	file_put_contents('protocol_data/signature1.png', $data); 
+	$path = './protocol_data/signature1.png';
 	$type = pathinfo($path, PATHINFO_EXTENSION);
 	$data = file_get_contents($path);
-	$signature_img = 'data:image/' . $type . ';base64,' . base64_encode($data); ?> ?>
+	$signature_img1 = 'data:image/' . $type . ';base64,' . base64_encode($data); 
+	$img = $_POST['signature2'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature2.png', $data); 
+	$path = './protocol_data/signature2.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img2 = 'data:image/' . $type . ';base64,' . base64_encode($data); ?> 
 <style>
 
 
@@ -19,9 +26,16 @@
 		top: 10px; 
 		left: 12px; 
 	}
-	#sig_img {
+	#sig_img1 {
 		position: fixed; 
 		left: 150px; 
+		top: 895px; 
+		height: 25px;
+		width: 60px;		
+	}
+	#sig_img2 {
+		position: fixed; 
+		left: 250px; 
 		top: 895px; 
 		height: 25px;
 		width: 60px;		
@@ -777,10 +791,16 @@
 		left: 1150px; 
 		width: 165px; 	
 	}
-	canvas#signature {
+	canvas#signature1 {
 		position: absolute; 
   		border: 2px solid black;		  
 		left: 350px; 
+		top: 2040px; 		
+	}
+	canvas#signature2 {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 550px; 
 		top: 2040px; 		
 	}
 
@@ -873,10 +893,13 @@
 	<input name="name-2" type="text" id="name-2" value="<?php if (isset($_POST["name-2"])) echo $_POST["name-2"]; ?>" size="40" maxlength="40">
 	
 	<?php if (isset($_POST["submit"])) { ?>
-		<img id="sig_img" src="<?php echo $signature_img?>">
+		<img id="sig_img1" src="<?php echo $signature_img1?>">
+		<img id="sig_img2" src="<?php echo $signature_img2?>">
 	<?php } else { ?>
-		<canvas id="signature" width="300" height="60"></canvas>
-		<input type="hidden" name="signature" />
+		<canvas id="signature1" width="300" height="60"></canvas>
+		<input type="hidden" name="signature1" />
+		<canvas id="signature2" width="300" height="60"></canvas>
+		<input type="hidden" name="signature2" />
 	<?php 
 	 } ?>
 
