@@ -1,47 +1,87 @@
 <script>
-var canvas = document.getElementById('signature');
-var ctx = canvas.getContext("2d");
+var canvas1 = document.getElementById('signature1');
+var canvas2 = document.getElementById('signature2');
+var ctx1 = canvas1.getContext("2d");
+var ctx2 = canvas2.getContext("2d");
 var drawing = false;
 var prevX, prevY;
 var currX, currY;
-var signature = document.getElementsByName('signature')[0];
+var signature1 = document.getElementsByName('signature1')[0];
+var signature2 = document.getElementsByName('signature2')[0];
 
-canvas.addEventListener("mousemove", draw);
-canvas.addEventListener("touchmove", draw);
-canvas.addEventListener("mouseup", stop);
-canvas.addEventListener("touchmove", stop);
-canvas.addEventListener("mousedown", start);
-canvas.addEventListener("touchstop", start);
+canvas1.addEventListener("mousemove", draw1);
+canvas1.addEventListener("touchmove", draw1);
+canvas1.addEventListener("mouseup", stop1);
+canvas1.addEventListener("touchmove", stop1);
+canvas1.addEventListener("mousedown", start);
+canvas1.addEventListener("touchstop", start);
+
+canvas2.addEventListener("mousemove", draw2);
+canvas2.addEventListener("touchmove", draw2);
+canvas2.addEventListener("mouseup", stop2);
+canvas2.addEventListener("touchmove", stop2);
+canvas2.addEventListener("mousedown", start);
+canvas2.addEventListener("touchstop", start);
 
 function start() {
   drawing = true;    
 }
 
-function stop() {
+function stop1() {
   drawing = false;
   prevX = prevY = null;
-  signature.value = canvas.toDataURL();  
+  signature1.value = canvas1.toDataURL();  
 }
 
-function draw(e) {
+function stop2() {
+  drawing = false;
+  prevX = prevY = null;
+  signature2.value = canvas2.toDataURL();  
+}
+
+function draw1(e) {
   if (!drawing) {	
     return;
   }    
-	const rect = canvas.getBoundingClientRect();
+	const rect = canvas1.getBoundingClientRect();
 	currX = e.clientX - rect.left;
-    currY = e.clientY - rect.top;
+  currY = e.clientY - rect.top;
   if (!prevX && !prevY) {
     prevX = currX;
     prevY = currY;
   }
 
-  ctx.beginPath();
-  ctx.moveTo(prevX, prevY);
-  ctx.lineTo(currX, currY);
-  ctx.strokeStyle = 'black';
-  ctx.lineWidth = 2;
-  ctx.stroke();
-  ctx.closePath();
+  ctx1.beginPath();
+  ctx1.moveTo(prevX, prevY);
+  ctx1.lineTo(currX, currY);
+  ctx1.strokeStyle = 'black';
+  ctx1.lineWidth = 2;
+  ctx1.stroke();
+  ctx1.closePath();
+
+  prevX = currX;
+  prevY = currY;    
+}
+
+function draw2(e) {
+  if (!drawing) {	
+    return;
+  }    
+	const rect = canvas2.getBoundingClientRect();
+	currX = e.clientX - rect.left;
+  currY = e.clientY - rect.top;
+  if (!prevX && !prevY) {
+    prevX = currX;
+    prevY = currY;
+  }
+
+  ctx2.beginPath();
+  ctx2.moveTo(prevX, prevY);
+  ctx2.lineTo(currX, currY);
+  ctx2.strokeStyle = 'black';
+  ctx2.lineWidth = 2;
+  ctx2.stroke();
+  ctx2.closePath();
 
   prevX = currX;
   prevY = currY;    
