@@ -101,7 +101,6 @@ ul {
 li {
   background-color: #f85f6a;
   font-weight: bold;
-  padding: 20px 0;
   margin: 10px;
   border: none;
   border-radius: 4px;
@@ -116,4 +115,5 @@ li a {
   text-align: center;
   color: white;
   display: block;
+  padding: 20px 0;
 }
