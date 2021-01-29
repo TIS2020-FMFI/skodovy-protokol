@@ -1,14 +1,46 @@
-<?php if (isset($_POST["submit"])) { ?>
+<?php if (isset($_POST["submit"])) { 
+	$img = $_POST['signature1'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature1.png', $data); 
+	$path = './protocol_data/signature1.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img1 = 'data:image/' . $type . ';base64,' . base64_encode($data); 
+	$img = $_POST['signature2'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature2.png', $data); 
+	$path = './protocol_data/signature2.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img2 = 'data:image/' . $type . ';base64,' . base64_encode($data); ?> 
 <style>
 
 /* PDF verzia*/
 
     img {
-		position: absolute; 
+		position: absolute;
+		left: 12px;
+		top: 10px; 
 		width: 720px; 
 		height: 1017px; 
 		margin: 0px; 
 		z-index: -1; 
+	}
+	#sig_img1 {
+		position: fixed; 
+		left: 200px; 
+		top: 942px; 
+		height: 20px;
+		width: 510px;		
+		outline: 3px solid red;
+	}
+	#sig_img2 {
+		position: fixed; 
+		left: 200px; 
+		top: 990px; 
+		height: 20px;
+		width: 510px;	
+		outline: 3px solid red;	
 	}
 	form {
 		font-size: 0.5em; 
@@ -50,10 +82,10 @@
 	#vin{
 		position: absolute;
 		height: 15px;
-		top: 62px;
+		top: 57px;
 		left: 50px;
-		width: 100px;
-		letter-spacing: 3px;
+		width: 230px;
+		letter-spacing: 1px;
 		font-size: 8px;
 	}
 
@@ -1985,7 +2017,8 @@
 		position: absolute;
 		top: 145px;
 		left: 105px;
-		letter-spacing: 24.5px;
+		letter-spacing: 20px;
+		text-align: center;
 		width: 532px;
 	}
 
@@ -3422,6 +3455,18 @@
 		width: 234px;
 	}
 
+	canvas#signature1 {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 432px; 
+		top: 2145px; 		
+	}
+	canvas#signature2 {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 432px; 
+		top: 2250px; 		
+	}
 
 	
 
@@ -3704,6 +3749,16 @@
 	<input name="receiver-d" type="text" id="receiver-d" value="<?php if (isset($_POST["receiver-d"])) echo $_POST["receiver-d"]; ?>" size="25" maxlength="25">
 	<input name="receiver-e" type="text" id="receiver-e" value="<?php if (isset($_POST["receiver-e"])) echo $_POST["receiver-e"]; ?>" size="25" maxlength="25">
 
+	<?php if (isset($_POST["submit"])) { ?>
+		<img id="sig_img1" src="<?php echo $signature_img1?>">
+		<img id="sig_img2" src="<?php echo $signature_img2?>">
+	<?php } else { ?>
+		<canvas id="signature1" width="1180" height="55"></canvas>
+		<input type="hidden" name="signature1" />
+		<canvas id="signature2" width="1180" height="58"></canvas>
+		<input type="hidden" name="signature2" />
+	<?php 
+	 } ?>
 
 	<br>
 	

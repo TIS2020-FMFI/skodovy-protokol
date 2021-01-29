@@ -28,17 +28,17 @@
 	}
 	#sig_img1 {
 		position: fixed; 
-		left: 150px; 
+		left: 177px; 
 		top: 895px; 
 		height: 25px;
-		width: 60px;		
+		width: 164px;		
 	}
 	#sig_img2 {
 		position: fixed; 
-		left: 250px; 
+		left: 455px; 
 		top: 895px; 
 		height: 25px;
-		width: 60px;		
+		width: 243px;		
 	}
 	#model {
 		position: fixed;  
@@ -794,13 +794,13 @@
 	canvas#signature1 {
 		position: absolute; 
   		border: 2px solid black;		  
-		left: 350px; 
+		left: 400px; 
 		top: 2040px; 		
 	}
 	canvas#signature2 {
 		position: absolute; 
   		border: 2px solid black;		  
-		left: 550px; 
+		left: 1040px; 
 		top: 2040px; 		
 	}
 
@@ -896,9 +896,9 @@
 		<img id="sig_img1" src="<?php echo $signature_img1?>">
 		<img id="sig_img2" src="<?php echo $signature_img2?>">
 	<?php } else { ?>
-		<canvas id="signature1" width="300" height="60"></canvas>
+		<canvas id="signature1" width="370" height="60"></canvas>
 		<input type="hidden" name="signature1" />
-		<canvas id="signature2" width="300" height="60"></canvas>
+		<canvas id="signature2" width="550" height="60"></canvas>
 		<input type="hidden" name="signature2" />
 	<?php 
 	 } ?>

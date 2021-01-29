@@ -42,10 +42,27 @@ else if (isset($_POST["next"])) {
     include('upload.php');
 }
 if (!isset($_POST["upload"])) 
-    echo '<a target="_blank" rel="SK preklad" href="help.php?type=' . $_GET["type"] . '">Pomôcka v SK jazyku</a>'; 
+    echo '<div class="wrap"><a target="_blank" rel="SK preklad" href="help.php?type=' . $_GET["type"] . '">Pomôcka v SK jazyku</a></div>'; 
 
 ?>
 	
 </section>
+<style>
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+a {
+  background-color: #f85f6a;
+  font-weight: bold;
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+</style>
 
 <?php include("signature.php"); ?>
