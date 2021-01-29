@@ -1,4 +1,18 @@
-<?php if (isset($_POST["submit"])) { ?>
+<?php if (isset($_POST["submit"])) { 
+	$img = $_POST['signature1'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature1.png', $data); 
+	$path = './protocol_data/signature1.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img1 = 'data:image/' . $type . ';base64,' . base64_encode($data); 
+	$img = $_POST['signature2'];
+	$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $img));
+	file_put_contents('protocol_data/signature2.png', $data); 
+	$path = './protocol_data/signature2.png';
+	$type = pathinfo($path, PATHINFO_EXTENSION);
+	$data = file_get_contents($path);
+	$signature_img2 = 'data:image/' . $type . ';base64,' . base64_encode($data); ?> 
 <style>
 
 
@@ -12,7 +26,20 @@
 		margin: 0px; 
 		z-index: -1; 
 	}
-
+	#sig_img1 {
+		position: fixed; 
+		left: 177px; 
+		top: 895px; 
+		height: 25px;
+		width: 164px;		
+	}
+	#sig_img2 {
+		position: fixed; 
+		left: 455px; 
+		top: 895px; 
+		height: 25px;
+		width: 243px;		
+	}
     #submit {
 		position: absolute; 
 		top: 1020px; 		
@@ -7319,7 +7346,18 @@
 		left: 1516px; 
 		width: 50px;	
 	}
-
+	canvas#signature1 {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 400px; 
+		top: 2000px; 		
+	}
+	canvas#signature2 {
+		position: absolute; 
+  		border: 2px solid black;		  
+		left: 1040px; 
+		top: 2000px; 		
+	}
 
 </style>
 <?php } ?>
@@ -7908,8 +7946,18 @@
 <input name="E-D-79" type="text" id="E-D-79" value="<?php if (isset($_POST["E-D-79"])) echo $_POST["E-D-79"]; ?>" size="4" maxlength="4">
 <input name="E-S-79" type="text" id="E-S-79" value="<?php if (isset($_POST["E-S-79"])) echo $_POST["E-S-79"]; ?>" size="4" maxlength="4">
 
-	
+<?php if (isset($_POST["submit"])) { ?>
+		<img id="sig_img1" src="<?php echo $signature_img1?>">
+		<img id="sig_img2" src="<?php echo $signature_img2?>">
+	<?php } else { ?>
+		<canvas id="signature1" width="370" height="60"></canvas>
+		<input type="hidden" name="signature1" />
+		<canvas id="signature2" width="550" height="60"></canvas>
+		<input type="hidden" name="signature2" />
+	<?php 
+	 } ?>
+
 <p><input name="submit" type="submit" id="submit" value="Download PDF"></p>
-<p><input name="next" type="submit" id="next" value="Next"></p>
+<p><input name="next" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
 </form>
   </div>
