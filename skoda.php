@@ -523,5 +523,5 @@
 	 } ?>
 	<br>	
 <p><input name="submit" type="submit" id="submit" value="Download PDF"></p>
-<p><input name="next" type="submit" id="next" value="Next"></p>
+<p><input name="next" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
 </form>
