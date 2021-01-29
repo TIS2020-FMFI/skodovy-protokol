@@ -28,17 +28,17 @@
 	}
 	#sig_img1 {
 		position: fixed; 
-		left: 177px; 
-		top: 895px; 
-		height: 25px;
-		width: 164px;		
+		left: 224px; 
+		top: 845px; 
+		height: 15px;
+		width: 470px;		
 	}
 	#sig_img2 {
 		position: fixed; 
-		left: 455px; 
-		top: 895px; 
-		height: 25px;
-		width: 243px;		
+		left: 224px; 
+		top: 928px; 
+		height: 15px;
+		width: 470px;		
 	}
     #submit {
 		position: absolute; 
@@ -146,7 +146,7 @@
 	}
 	#trucknoA {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 820px; 		
 		left: 219px; 
 		width: 94px; 
@@ -154,7 +154,7 @@
 	}
 	#trucknoB {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 820px; 		
 		left: 313px; 
 		width: 94px; 
@@ -162,7 +162,7 @@
 	}
 	#trucknoC {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 820px; 		
 		left: 407px; 
 		width: 93px; 
@@ -170,7 +170,7 @@
 	}
 	#trucknoD {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 820px; 		
 		left: 500px; 
 		width: 94px; 
@@ -178,7 +178,7 @@
 	}
 	#trucknoE {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 820px; 		
 		left: 594px; 
 		width: 94px; 
@@ -266,7 +266,7 @@
 	}
 	#nameofinspectorA {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 902px; 		
 		left: 219px; 
 		width: 94px; 
@@ -274,7 +274,7 @@
 	}
 	#nameofinspectorB {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 902px; 		
 		left: 313px; 
 		width: 94px; 
@@ -282,7 +282,7 @@
 	}
 	#nameofinspectorC {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 902px; 		
 		left: 407px; 
 		width: 93px; 
@@ -290,7 +290,7 @@
 	}
 	#nameofinspectorD {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 902px; 		
 		left: 500px; 
 		width: 94px; 
@@ -298,7 +298,7 @@
 	}
 	#nameofinspectorE {
 		position: absolute;  
-		height: 20px;
+		height: 15px;
 		top: 902px; 		
 		left: 594px; 
 		width: 94px; 
@@ -7349,14 +7349,14 @@
 	canvas#signature1 {
 		position: absolute; 
   		border: 2px solid black;		  
-		left: 400px; 
-		top: 2000px; 		
+		left: 500px; 
+		top: 1920px; 		
 	}
 	canvas#signature2 {
 		position: absolute; 
   		border: 2px solid black;		  
-		left: 1040px; 
-		top: 2000px; 		
+		left: 500px; 
+		top: 2110px; 		
 	}
 
 </style>
@@ -7950,9 +7950,9 @@
 		<img id="sig_img1" src="<?php echo $signature_img1?>">
 		<img id="sig_img2" src="<?php echo $signature_img2?>">
 	<?php } else { ?>
-		<canvas id="signature1" width="370" height="60"></canvas>
+		<canvas id="signature1" width="1065" height="45"></canvas>
 		<input type="hidden" name="signature1" />
-		<canvas id="signature2" width="550" height="60"></canvas>
+		<canvas id="signature2" width="1065" height="45"></canvas>
 		<input type="hidden" name="signature2" />
 	<?php 
 	 } ?>
