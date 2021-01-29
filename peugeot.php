@@ -18,7 +18,9 @@
 /* PDF verzia*/
 
     img {
-		position: absolute; 
+		position: absolute;
+		left: 12px;
+		top: 10px; 
 		width: 720px; 
 		height: 1017px; 
 		margin: 0px; 
@@ -26,17 +28,19 @@
 	}
 	#sig_img1 {
 		position: fixed; 
-		left: 150px; 
-		top: 895px; 
-		height: 25px;
-		width: 60px;		
+		left: 200px; 
+		top: 942px; 
+		height: 20px;
+		width: 510px;		
+		outline: 3px solid red;
 	}
 	#sig_img2 {
 		position: fixed; 
-		left: 250px; 
-		top: 895px; 
-		height: 25px;
-		width: 60px;		
+		left: 200px; 
+		top: 990px; 
+		height: 20px;
+		width: 510px;	
+		outline: 3px solid red;	
 	}
 	form {
 		font-size: 0.5em; 
@@ -78,10 +82,10 @@
 	#vin{
 		position: absolute;
 		height: 15px;
-		top: 62px;
+		top: 57px;
 		left: 50px;
-		width: 100px;
-		letter-spacing: 3px;
+		width: 230px;
+		letter-spacing: 1px;
 		font-size: 8px;
 	}
 
@@ -2013,7 +2017,8 @@
 		position: absolute;
 		top: 145px;
 		left: 105px;
-		letter-spacing: 24.5px;
+		letter-spacing: 20px;
+		text-align: center;
 		width: 532px;
 	}
 
@@ -3453,14 +3458,14 @@
 	canvas#signature1 {
 		position: absolute; 
   		border: 2px solid black;		  
-		left: 350px; 
-		top: 2140px; 		
+		left: 432px; 
+		top: 2145px; 		
 	}
 	canvas#signature2 {
 		position: absolute; 
   		border: 2px solid black;		  
-		left: 550px; 
-		top: 2140px; 		
+		left: 432px; 
+		top: 2250px; 		
 	}
 
 	
@@ -3748,9 +3753,9 @@
 		<img id="sig_img1" src="<?php echo $signature_img1?>">
 		<img id="sig_img2" src="<?php echo $signature_img2?>">
 	<?php } else { ?>
-		<canvas id="signature1" width="300" height="60"></canvas>
+		<canvas id="signature1" width="1180" height="55"></canvas>
 		<input type="hidden" name="signature1" />
-		<canvas id="signature2" width="300" height="60"></canvas>
+		<canvas id="signature2" width="1180" height="58"></canvas>
 		<input type="hidden" name="signature2" />
 	<?php 
 	 } ?>
