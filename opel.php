@@ -7,6 +7,8 @@
 		position: absolute; 
 		width: 720px; 
 		height: 1017px; 
+		left: 12px;
+		top: 10px;
 		margin: 0px; 
 		z-index: -1; 
 	}
