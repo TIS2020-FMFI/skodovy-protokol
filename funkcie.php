@@ -95,16 +95,11 @@ function convertToPDF() {
         include('skoda.php');
     }
     $html = ob_get_clean();
-    $dompdf->loadHtml($html);  
-    // (Optional) Setup the paper size and orientation 
-    //$dompdf->setPaper('A4', 'landscape');  
-    // Render the HTML as PDF 
-    $dompdf->render();  
-    // Output the ge    nerated PDF to Browser 
-    $dompdf->stream();
-    /*save a document
+    $dompdf->loadHtml($html);      
+    $dompdf->render();      
+    //$dompdf->stream();    
     $output = $dompdf->output();
-    file_put_contents('protocol_data/protocol.pdf', $output);    */
+    file_put_contents('protocol_data/protocol.pdf', $output);    
 }
 
 function fileToServer($file, $newName) {
@@ -167,10 +162,11 @@ function uploadToSharepoint($filename) {
 		$fileCreationInformation->Url = $fileName;
 		$uploadFile = $ctx->getWeb()->getFolderByServerRelativeUrl($targetFolderUrl)->getFiles()->add($fileCreationInformation);
 		$ctx->executeQuery();
-		print "File has been uploaded\r\n";
+		echo "<p id='message'>File has been uploaded.</p>";
 	}
 	catch (Exception $e) {
-		echo 'Error: ',  $e->getMessage(), "\n";
+		//echo 'Error: ',  $e->getMessage(), "\n";
+		echo "<p id='message'>Sharepoint connection lost!</p>"; 
 	}
 }
 
