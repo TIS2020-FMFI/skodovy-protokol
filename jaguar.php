@@ -747,8 +747,8 @@ canvas#signature1 {
 		<input type="hidden" name="signature2" />
 	<?php 
 	 } ?>
-<p><input name="submit" type="submit" id="submit" value="Dowland PDF" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
-<p><input name="next" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
+
+<p><input name="submit" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
 </form>
   </div>
 

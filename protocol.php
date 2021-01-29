@@ -9,17 +9,14 @@ header('Záznam protokolu');
 <?php
 
 
-if (isset($_POST["submit"])) {
-    convertToPDF(); 
-}
-else if (isset($_POST["upload"])) {
+if (isset($_POST["upload"])) {
     fileToServer(isset($_FILES) ? $_FILES["photo1"] : '', "photo1");     
     fileToServer(isset($_FILES) ? $_FILES["photo2"] : '', "photo2");     
     fileToServer(isset($_FILES) ? $_FILES["photo3"] : '', "photo3");     
     include('upload.php');                                
 }
-else if (isset($_POST["next"])) {
-    //convertToPDF(); 
+else if (isset($_POST["submit"])) {
+    convertToPDF(); 
     clearData(); 
     include('upload.php');
 }
