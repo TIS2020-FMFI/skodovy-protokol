@@ -6,6 +6,7 @@ require_once 'vendor/autoload.php';
 use Office365\Runtime\Auth\ClientCredential;
 use Office365\SharePoint\FileCreationInformation;
 use Office365\SharePoint\ClientContext;
+error_reporting(0);
 
 function head($tittle) {
 ?>

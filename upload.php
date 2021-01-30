@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["username"])) {
+    echo "<p class='fail' >Na túto stránku nemáte prístup!</p>"; 
+} else { ?>
+
 <div class="wrapper">
 	<form method="post" enctype="multipart/form-data">	
 	<h1>Sem vložte fotografie</h1>		
@@ -24,6 +30,15 @@
 	<p><input name="send" type="submit" id="send" value="Send to Sharepoint" formaction="index.php"></p>
 	</form>
 </div>	
+
+<script type="text/javascript">
+    function submitForm() {
+        // However you need to submit the form
+        document.getElementById("upload").click(); 
+    }
+</script>
+<?php } ?>
+
 <style>
 
 	.wrapper {
@@ -65,12 +80,9 @@
 input[type="submit"]:hover, input[type="button"]:hover{
   background-color: #c54b53;
 }
-
+.fail {
+  font-size: 50px;
+  color: #fc100d;
+  font-weight: bold;
+}
 </style>
-
-<script type="text/javascript">
-    function submitForm() {
-        // However you need to submit the form
-        document.getElementById("upload").click(); 
-    }
-</script>

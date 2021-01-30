@@ -45,15 +45,7 @@
 	form {
 		font-size: 0.5em; 
 	}
-	#submit {
-		position: absolute;
-		top: 1050px;
-	}
-	#next {
-		position: absolute;
-		top: 1050px;
-		left: 190px;
-	}
+	
 	#model {
 		position: absolute;
 		height: 15px;
@@ -1982,19 +1974,7 @@
 
 </style>
 <?php } else { ?>
-<style>
-
-
-	#submit {
-		position: absolute;
-		top: 2340px;
-		left: 50px;
-	}
-	#next {
-		position: absolute;
-		top: 2340px;
-		left: 200px;
-	}
+<style>	
 	#model {
 		position: absolute;
 		top: 185px;
