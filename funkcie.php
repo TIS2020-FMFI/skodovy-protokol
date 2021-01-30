@@ -162,11 +162,11 @@ function uploadToSharepoint($filename) {
 		$fileCreationInformation->Url = $fileName;
 		$uploadFile = $ctx->getWeb()->getFolderByServerRelativeUrl($targetFolderUrl)->getFiles()->add($fileCreationInformation);
 		$ctx->executeQuery();
-		echo "<p id='message'>File has been uploaded.</p>";
+		echo "<p class='success' id='message'>Protokol bol úspešne odoslaný.</p>";
 	}
 	catch (Exception $e) {
 		//echo 'Error: ',  $e->getMessage(), "\n";
-		echo "<p id='message'>Sharepoint connection lost!</p>"; 
+		echo "<p class='fail' id='message'>V spojení nastala chyba!</p>"; 
 	}
 }
 

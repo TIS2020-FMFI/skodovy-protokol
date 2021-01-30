@@ -805,7 +805,22 @@
 	}
 
 
+	.wrap {
+    display: flex;
+    justify-content: center;
+}
 
+	#next {
+  background-color: #f85f6a;
+  font-weight: bold;
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
 
 
     
@@ -910,6 +925,6 @@
 
 	<br>
 	
-<p><input name="submit" type="submit" id="next" value="Next"></p>
+<p class="wrap"><input name="submit" type="submit" id="next" value="Next"></p>
 </form>
   </div>

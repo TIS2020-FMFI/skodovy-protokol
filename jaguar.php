@@ -580,6 +580,23 @@ canvas#signature1 {
 		top: 1865px; 
 		
 	}
+
+	.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+	#next {
+  background-color: #f85f6a;
+  font-weight: bold;
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
 	
 </style>
 <?php } ?>
@@ -748,7 +765,7 @@ canvas#signature1 {
 	<?php 
 	 } ?>
 
-<p><input name="submit" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
+<p class="wrap"><input name="submit" type="submit" id="next" value="Next" <?php if (isset($_POST['submit'])) echo 'style="display: none;"'; ?>></p>
 </form>
   </div>
 
