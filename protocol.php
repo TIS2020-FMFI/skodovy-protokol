@@ -7,7 +7,9 @@ header('Záznam protokolu');
 
 <section>
 <?php
-
+if (!isset($_SESSION["username"])) {
+    echo "<p class='fail' >Na túto stránku nemáte prístup!</p>"; 
+} else {
 
 if (isset($_POST["upload"])) {
     fileToServer(isset($_FILES) ? $_FILES["photo1"] : '', "photo1");     
@@ -38,12 +40,17 @@ else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
 else if (isset($_POST["next"])) {
     include('upload.php');
 }
-if (!isset($_POST["upload"])) 
+if (!isset($_POST["submit"])) {
     echo '<div class="wrap"><a target="_blank" rel="SK preklad" href="help.php?type=' . $_GET["type"] . '">Pomôcka v SK jazyku</a></div>'; 
+}    
 
 ?>
 	
 </section>
+
+
+<?php include("signature.php"); }?>
+
 <style>
 .wrap {
     display: flex;
@@ -60,6 +67,9 @@ a {
   text-decoration: none;
   color: white;
 }
+.fail {
+  font-size: 50px;
+  color: #fc100d;
+  font-weight: bold;
+}
 </style>
-
-<?php include("signature.php"); ?>
