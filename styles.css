@@ -6,6 +6,7 @@ h1 {
   padding: 20px 0;
   margin-top: 150px;
   text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
   width: 60%;
@@ -22,6 +23,7 @@ section p {
   text-align: left;
   color: #f85f6a;
   font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p a {
   color: #f85f6a;
@@ -34,6 +36,7 @@ p a {
   display: inline-block;
   border: none;
   border-bottom: 3px solid grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .spodok:focus {
   outline: none;
@@ -50,6 +53,7 @@ p a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #login:hover,
@@ -68,6 +72,7 @@ p a {
   border-radius: 4px;
   cursor: pointer;
   display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #hladat {
@@ -79,6 +84,7 @@ p a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .cislo {
   width: fit-content;
@@ -86,6 +92,7 @@ p a {
   margin: 50px 0;
   display: inline-block;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .wrapper {
@@ -97,6 +104,7 @@ ul {
   overflow: hidden;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 li {
   background-color: #f85f6a;

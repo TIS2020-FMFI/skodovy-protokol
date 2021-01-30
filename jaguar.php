@@ -583,7 +583,8 @@ canvas#signature1 {
 
 	.wrap {
     display: flex;
-    justify-content: center;
+	justify-content: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 	#next {
@@ -596,6 +597,7 @@ canvas#signature1 {
   cursor: pointer;
   text-decoration: none;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 	
 </style>
