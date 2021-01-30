@@ -117,3 +117,15 @@ li a {
   display: block;
   padding: 20px 0;
 }
+
+.success {
+  font-size: 50px;
+  color: #4bb543;
+  font-weight: bold;
+}
+
+.fail {
+  font-size: 50px;
+  color: #fc100d;
+  font-weight: bold;
+}
