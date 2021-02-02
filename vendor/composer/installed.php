@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '8953dd5900703979b0a863713e55cce9ceb7116a',
+    'reference' => '67edbce45cf59e977b22f591ea0dadd3d5e320f4',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '8953dd5900703979b0a863713e55cce9ceb7116a',
+      'reference' => '67edbce45cf59e977b22f591ea0dadd3d5e320f4',
+    ),
+    'php-imap/php-imap' => 
+    array (
+      'pretty_version' => '4.1.0',
+      'version' => '4.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7ca3d19451bfe6de47186b52f4b266179a5858b9',
     ),
     'vgrem/php-spo' => 
     array (

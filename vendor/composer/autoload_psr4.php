@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'PhpImap\\' => array($vendorDir . '/php-imap/php-imap/src/PhpImap'),
     'Office365\\' => array($vendorDir . '/vgrem/php-spo/src'),
 );

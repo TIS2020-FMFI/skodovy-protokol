@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit7d368d5f17f7f88b7aa40ae661e7af53
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PhpImap\\' => 8,
+        ),
         'O' => 
         array (
             'Office365\\' => 10,
@@ -14,6 +18,10 @@ class ComposerStaticInit7d368d5f17f7f88b7aa40ae661e7af53
     );
 
     public static $prefixDirsPsr4 = array (
+        'PhpImap\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-imap/php-imap/src/PhpImap',
+        ),
         'Office365\\' => 
         array (
             0 => __DIR__ . '/..' . '/vgrem/php-spo/src',
