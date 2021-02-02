@@ -1,91 +1,127 @@
-<script>
-var canvas1 = document.getElementById('signature1');
-var canvas2 = document.getElementById('signature2');
-var ctx1 = canvas1.getContext("2d");
-var ctx2 = canvas2.getContext("2d");
-var drawing = false;
-var prevX, prevY;
-var currX, currY;
-var signature1 = document.getElementsByName('signature1')[0];
-var signature2 = document.getElementsByName('signature2')[0];
+<script type="text/javascript">    
+    var canvas1, canvas2, ctx1, ctx2;    
+    var mouseX,mouseY,mouseDown=0;    
+    var prevX, prevY;
+    var touchX,touchY;    
+    var signature1 = document.getElementsByName('signature1')[0];
+    var signature2 = document.getElementsByName('signature2')[0];
 
-canvas1.addEventListener("mousemove", draw1);
-canvas1.addEventListener("touchmove", draw1);
-canvas1.addEventListener("mouseup", stop1);
-canvas1.addEventListener("touchmove", stop1);
-canvas1.addEventListener("mousedown", start);
-canvas1.addEventListener("touchstop", start);
+    canvas1 = document.getElementById('signature1');        
+    if (canvas1.getContext)
+        ctx1 = canvas1.getContext('2d');        
+    if (ctx1) {            
+        canvas1.addEventListener('mousedown', sketchpad_mouseDown, false);
+        canvas1.addEventListener('mousemove', sketchpad_mouseMove1, false);
+        window.addEventListener('mouseup', sketchpad_mouseUp, false);
+        canvas1.addEventListener('touchstart', sketchpad_touchStart, false);
+        canvas1.addEventListener('touchmove', sketchpad_touchMove1, false);
+        window.addEventListener('touchend', sketchpad_mouseUp, false);
+    }  
 
-canvas2.addEventListener("mousemove", draw2);
-canvas2.addEventListener("touchmove", draw2);
-canvas2.addEventListener("mouseup", stop2);
-canvas2.addEventListener("touchmove", stop2);
-canvas2.addEventListener("mousedown", start);
-canvas2.addEventListener("touchstop", start);
+    canvas2 = document.getElementById('signature2');        
+    if (canvas2.getContext)
+        ctx2 = canvas2.getContext('2d');        
+    if (ctx2) {            
+        canvas2.addEventListener('mousedown', sketchpad_mouseDown, false);
+        canvas2.addEventListener('mousemove', sketchpad_mouseMove2, false);
+        window.addEventListener('mouseup', sketchpad_mouseUp, false);
+        canvas2.addEventListener('touchstart', sketchpad_touchStart, false);
+        canvas2.addEventListener('touchmove', sketchpad_touchMove2, false);
+        window.addEventListener('touchend', sketchpad_mouseUp, false);
+    }      
 
-function start() {
-  drawing = true;    
-}
+    function draw(ctx,x,y) {                
+        if (!prevX && !prevY) {
+              prevX = x;
+              prevY = y;
+        }
+        ctx.beginPath();
+        ctx.moveTo(prevX, prevY);
+        ctx.lineTo(x, y);
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.closePath();
+    } 
 
-function stop1() {
-  drawing = false;
-  prevX = prevY = null;
-  signature1.value = canvas1.toDataURL();  
-}
+    function sketchpad_mouseDown() {
+        mouseDown=1;        
+    }
+    
+    function sketchpad_mouseUp() {
+        mouseDown=0;
+        prevX = prevY = 0; 
+        signature1.value = canvas1.toDataURL();  
+        signature2.value = canvas2.toDataURL();  
+    }
+    
+    function sketchpad_mouseMove1(e) {         
+        getMousePos(e);      
+        if (mouseDown==1) {
+            draw(ctx1,mouseX,mouseY);
+        }
+        prevX = mouseX; 
+        prevY = mouseY; 
+    }
 
-function stop2() {
-  drawing = false;
-  prevX = prevY = null;
-  signature2.value = canvas2.toDataURL();  
-}
+    function sketchpad_mouseMove2(e) {         
+        getMousePos(e);      
+        if (mouseDown==1) {
+            draw(ctx2,mouseX,mouseY);
+        }
+        prevX = mouseX; 
+        prevY = mouseY; 
+    }
 
-function draw1(e) {
-  if (!drawing) {	
-    return;
-  }    
-	const rect = canvas1.getBoundingClientRect();
-	currX = e.clientX - rect.left;
-  currY = e.clientY - rect.top;
-  if (!prevX && !prevY) {
-    prevX = currX;
-    prevY = currY;
-  }
+    function getMousePos(e) {
+        if (!e)
+            var e = event;
 
-  ctx1.beginPath();
-  ctx1.moveTo(prevX, prevY);
-  ctx1.lineTo(currX, currY);
-  ctx1.strokeStyle = 'black';
-  ctx1.lineWidth = 2;
-  ctx1.stroke();
-  ctx1.closePath();
+        if (e.offsetX) {
+            mouseX = e.offsetX;
+            mouseY = e.offsetY;
+        }
+        else if (e.layerX) {
+            mouseX = e.layerX;
+            mouseY = e.layerY;
+        }
+     }
+    
+    function sketchpad_touchStart() {        
+        getTouchPos();                
+        event.preventDefault();
+    }
+    
+    function sketchpad_touchMove1(e) {         
+        getTouchPos(e);        
+        draw(ctx1,touchX,touchY);         
+        //event.preventDefault();
+        prevX = touchX; 
+        prevY = touchY; 
+    }
 
-  prevX = currX;
-  prevY = currY;    
-}
+    function sketchpad_touchMove2(e) {         
+        getTouchPos(e);        
+        draw(ctx2,touchX,touchY);         
+        //event.preventDefault();
+        prevX = touchX; 
+        prevY = touchY; 
+    }
+    
+    function getTouchPos(e) {
+        if (!e)
+            var e = event;
 
-function draw2(e) {
-  if (!drawing) {	
-    return;
-  }    
-	const rect = canvas2.getBoundingClientRect();
-	currX = e.clientX - rect.left;
-  currY = e.clientY - rect.top;
-  if (!prevX && !prevY) {
-    prevX = currX;
-    prevY = currY;
-  }
-
-  ctx2.beginPath();
-  ctx2.moveTo(prevX, prevY);
-  ctx2.lineTo(currX, currY);
-  ctx2.strokeStyle = 'black';
-  ctx2.lineWidth = 2;
-  ctx2.stroke();
-  ctx2.closePath();
-
-  prevX = currX;
-  prevY = currY;    
-}
-
-</script>	  
-
+        if(e.touches) {
+            if (e.touches.length == 1) { // Only deal with one finger
+                var touch = e.touches[0]; // Get the information for finger #1
+                touchX=touch.pageX-touch.target.offsetLeft;
+                touchY=touch.pageY-touch.target.offsetTop;
+                if (!prevX && !prevY) {
+                    prevX = touchX;
+                    prevY = touchY;
+                }
+            }
+        }
+    }        
+</script>
