@@ -146,13 +146,14 @@ function packToZIP($filename) {
 			$zip->addFile($name);            
 	}    
 	$zip->close();
+	echo "<p class='success' id='message'>Protokol bol úspešne uložený na server.</p>";
 }
 
 function uploadToSharepoint($filename) {
 	try {
 		$clientId = "---userID----";
 		$clientSecret = "--key---";
-		$webUrl = "https://liveuniba.sharepoint.com/sites/MartinKristak/";
+		$webUrl = "...link...";
 		$credentials = new ClientCredential($clientId, $clientSecret);
 		$ctx = (new ClientContext($webUrl))->withCredentials($credentials);
 		$targetFolderUrl = "Shared%20Documents";
