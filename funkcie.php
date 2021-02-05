@@ -6,7 +6,7 @@ require_once 'vendor/autoload.php';
 use Office365\Runtime\Auth\ClientCredential;
 use Office365\SharePoint\FileCreationInformation;
 use Office365\SharePoint\ClientContext;
-error_reporting(0);
+//error_reporting(0);
 
 function head($tittle) {
 ?>
@@ -200,5 +200,25 @@ function add_model($mysqli, $vin, $manufacturer, $model, $storageConsignee, $ent
 		}
 	}
 }
+
+function print_models($mysqli, $vin) {	
+	if (!$mysqli->connect_errno) {
+		$sql = "SELECT * FROM models where vin like '%" . $vin . "%'"; 		
+		if ($result = $mysqli->query($sql)) {  // vykonaj dopyt		
+			echo '<table>';
+			echo '<tr><th>VIN číslo</th><th>Manufacturer</th><th>Model</th><th>Storage Cognisee</th><th>Entry date</th></tr>';
+			while ($row = $result->fetch_assoc()) {
+				echo '<tr><td><a href="protocol.php?type=' . strtolower($row['manufacturer']) . '">' . $row['vin'] . ' </a></td><td>' . $row['manufacturer'] . ' ' . $row['model'] . '</td><td>' . $row['storageConsignee'] . '</td><td>' . $row['entrydate'] . '</td>';
+				echo "</tr>\n";
+			}
+			echo '</table>';
+			$result->free();
+		} else {
+			// dopyt sa NEpodarilo vykonať!
+			//echo '<p class="chyba">NEpodarilo sa získať údaje z databázy</p>';
+		}
+	}
+}
+
 
 ?>
