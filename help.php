@@ -310,13 +310,558 @@ else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
     echo '<img src="pictures/renault-help.jpg">'; 
 }
 else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
-    echo '<img src="pictures/skoda-help.jpg">'; 
+    echo '<table>
+    <tr>
+        <th>Číslo dielu.</th>
+        <th>Názov poškodeného dielu.</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Päta antény.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Batéria.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Predný nárazník / kryt / doplnok.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Zadný nárazník / kryt / doplnok.</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Predná vložka nárazníka / protektor.</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Zadná vložka nárazníka / protektor.</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Pravé zadné posuvné dvere.</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Ľavé zadné posuvné dvere.</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Dvere batožinového priestoru.</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Ľavé predné dvere.</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Ľavé zadné dvere.</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Pravé predné dvere.</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Pravé zadné dvere.</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Ľavý predný blatník.</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>Ľavá bočnica.</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>Pravý predný blatník.</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Pravá bočnica.</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Predné koberčeky.</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Zadné koberčeky.</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Čelné sklo.</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>Zadné sklo.</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>Mriežka chladiča.</td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>Taška s príslušenstvom.</td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>Diaľkové svetlo / kryt / smerové svetlo.</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>Hmlovky / stretávacie svetlá / parkovacie svetlá.</td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td>Vnútorné obloženie strechy - vpredu.</td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td>Kapota / predné veko.</td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td>Kľúče.</td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td>Diaľkové ovládanie centrálneho uzamykania.</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>Ľavé vonkajšie zrkadlo.</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>Pravé vonkajšie zrkadlo.</td>
+    </tr>
+    <tr>
+        <td>32</td>
+        <td>Otvorené.</td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td>Audio / video prehrávač.</td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td>TV / DVD obrazovka.</td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td>Ľavy prah dverí / vonkajší nástup.</td>
+    </tr>
+    <tr>
+        <td>36</td>
+        <td>Pravý prah dverí / vonkajší nástup.</td>
+    </tr>
+    <tr>
+        <td>37</td>
+        <td>Strecha.</td>
+    </tr>
+    <tr>
+        <td>38</td>
+        <td>Ľavé stúpadlo / nástup.</td>
+    </tr>
+    <tr>
+        <td>39</td>
+        <td>Pravé stúpadlo / nástup.</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>Rezervné koleso / pneumatika.</td>
+    </tr>
+    <tr>
+        <td>41</td>
+        <td>Otvorené.</td>
+    </tr>
+    <tr>
+        <td>42</td>
+        <td>Deflektor - vpredu dole / spojler.</td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td>Otvorené.</td>
+    </tr>
+    <tr>
+        <td>44</td>
+        <td>Nádrž.</td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td>Koncové svietelne / orámovanie.</td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td>Otvorené.</td>
+    </tr>
+    <tr>
+        <td>47</td>
+        <td>Otvorené.</td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td>Vnútorné obloženie dverí - vpredu vľavo.</td>
+    </tr>
+    <tr>
+        <td>49</td>
+        <td>CD menič - separátna jednotka.</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>Vnútorné obloženie dverí - vpredu vpravo.</td>
+    </tr>
+    <tr>
+        <td>52</td>
+        <td>Batožinový priestor / piate dvere.</td>
+    </tr>
+    <tr>
+        <td>53</td>
+        <td>Posuvná strecha.</td>
+    </tr>
+    <tr>
+        <td>54</td>
+        <td>Spodok vozidla a ostatné.</td>
+    </tr>
+    <tr>
+        <td>55</td>
+        <td>Ložná plocha a ostatné.</td>
+    </tr>
+    <tr>
+        <td>56</td>
+        <td>Vinyl / sťahovacia strecha / veko sklápacej strechy.</td>
+    </tr>
+    <tr>
+        <td>57</td>
+        <td>Kryt kolesa / puklice / ozdobné kolesá.</td>
+    </tr>
+    <tr>
+        <td>58</td>
+        <td>Reproduktory - rádio.</td>
+    </tr>
+    <tr>
+        <td>59</td>
+        <td>Stierače.</td>
+    </tr>
+    <tr>
+        <td>60</td>
+        <td>Špeciálne použitie.</td>
+    </tr>
+    <tr>
+        <td>61</td>
+        <td>Odkladacia plocha - stredová konzola.</td>
+    </tr>
+    <tr>
+        <td>63</td>
+        <td>Ochranný oblúk proti prevráteniu / bočná ochrana proti nárazu PickUp / ložná plocha.</td>
+    </tr>
+    <tr>
+        <td>64</td>
+        <td>Zadný spojler / reflektor.</td>
+    </tr>
+    <tr>
+        <td>65</td>
+        <td>Nosič batožiny / strešná lišta.</td>
+    </tr>
+    <tr>
+        <td>66</td>
+        <td>Prístrojová doska.</td>
+    </tr>
+    <tr>
+        <td>67</td>
+        <td>Zapaľovač / popolník.</td>
+    </tr>
+    <tr>
+        <td>68</td>
+        <td>Koberček vpredu.</td>
+    </tr>
+    <tr>
+        <td>69</td>
+        <td>Pravý B stĺpček.</td>
+    </tr>
+    <tr>
+        <td>70</td>
+        <td>Ľavý B stĺpček.</td>
+    </tr>
+    <tr>
+        <td>71</td>
+        <td>A stĺpčeky.</td>
+    </tr>
+    <tr>
+        <td>72</td>
+        <td>Ľavá predná pneumatika.</td>
+    </tr>
+    <tr>
+        <td>73</td>
+        <td>Ľavý predný disk.</td>
+    </tr>
+    <tr>
+        <td>74</td>
+        <td>Ľavá zadná pneumatika.</td>
+    </tr>
+    <tr>
+        <td>75</td>
+        <td>ĽAvý zadný disk.</td>
+    </tr>
+    <tr>
+        <td>76</td>
+        <td>Pravá zadná pneumatika.</td>
+    </tr>
+    <tr>
+        <td>77</td>
+        <td>Pravý zadný disk.</td>
+    </tr>
+    <tr>
+        <td>78</td>
+        <td>Pravá predná pneumatika.</td>
+    </tr>
+    <tr>
+        <td>79</td>
+        <td>Pravý predný disk.</td>
+    </tr>
+    <tr>
+        <td>80</td>
+        <td>Vetrací plech.</td>
+    </tr>
+    <tr>
+        <td>81</td>
+        <td>Viečko nádrže / kryt.</td>
+    </tr>
+    <tr>
+        <td>82</td>
+        <td>Ľavý zadný blatník.</td>
+    </tr>
+    <tr>
+        <td>83</td>
+        <td>Pravý zadný blatník.</td>
+    </tr>
+    <tr>
+        <td>84</td>
+        <td>Náradie / zdvihák sada & zámok.</td>
+    </tr>
+    <tr>
+        <td>85</td>
+        <td>Komunikačná / GPS jednotka.</td>
+    </tr>
+    <tr>
+        <td>86</td>
+        <td>Radar pre meranie vzdialeností medzi vozidlam / parkovacie čidlo / asistent.</td>
+    </tr>
+    <tr>
+        <td>87</td>
+        <td>Zadná stena kabíny.</td>
+    </tr>
+    <tr>
+        <td>88</td>
+        <td>Otvorené.</td>
+    </tr>
+    <tr>
+        <td>89</td>
+        <td>Ťažné zariadenie / káblový zväzok (elektroagregát), vlečné oči.</td>
+    </tr>
+    <tr>
+        <td>90</td>
+        <td>Rám.</td>
+    </tr>
+    <tr>
+        <td>91</td>
+        <td>Výfuk.</td>
+    </tr>
+    <tr>
+        <td>92</td>
+        <td>Držiak poznávacej značky.</td>
+    </tr>
+    <tr>
+        <td>93</td>
+        <td>Volant / airbag.</td>
+    </tr>
+    <tr>
+        <td>94</td>
+        <td>Ľavé predné sedadlo.</td>
+    </tr>
+    <tr>
+        <td>95</td>
+        <td>Pravé predné sedadlo.</td>
+    </tr>
+    <tr>
+        <td>96</td>
+        <td>Zadné sedadlo.</td>
+    </tr>
+    <tr>
+        <td>97</td>
+        <td>Koberček vzadu.</td>
+    </tr>
+    <tr>
+        <td>98</td>
+        <td>Interiér.</td>
+    </tr>
+    <tr>
+        <td>99</td>
+        <td>Motorový priestor / ostatné.</td>
+    </tr>
+</table>
+<h1>Druh škody.</h1>
+<table>
+    <tr>
+        <th>Číslo druhu škody.</th>
+        <th>Názov druhu škody.</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Zakrivený / ohnutý.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Odlomený / zlomený.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Rozrezaný / zarezaný.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Vtlačený.</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Odlupnutý lak.</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Prasknutý / puknutý / roztrhnutý.</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Malé hlboké poškodenie (nárazník).</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Chýba.</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Narazený / odretý / zodratý.</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Znečistený / poškvrnený.</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Vpich / prerazenie / diera.</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Poškrabané.</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Pretrhnutý / roztrhnutý.</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Vtlačený lak ale bez poškodenia laku.</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Tesnenie / emblém / tesniaca lišta / (nárazová lišta) poškodené.</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>Tesnenie / emblém / tesniaca lišta / (nárazová lišta) uvoľnené.</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>Prasknuté sklo.</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>Sklo rozbité.</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>Škoda na skle spôsobená odlietajúcimi kameňmi.</td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>Poškriabané sklo.</td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>Bočné obrysové sklá poškodené.</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td>Ozdobná lišta poškodená.</td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td>Vonkajšie znečistenie vozidla.</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>Tekutina na vozidla, zvonka.</td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td>Opráskaný lak v oblasti hrán.</td>
+    </tr>
+    <tr>
+        <td>36</td>
+        <td>Diely alebo varianty nesúhlasiace s faktúrou / nesprávne zabudované komponenty.</td>
+    </tr>
+    <tr>
+        <td>37</td>
+        <td>Ťažné zariadenie, kľučka dverí apod. poškodené.</td>
+    </tr>
+    <tr>
+        <td>38</td>
+        <td>Ťažné zariadenie, kľučka dverí apod. uvoľnené/chýba.</td>
+    </tr>
+</table>
+<h1>Rozsah škody.</h1>
+<table>
+    <tr>
+        <th>Číslo druhu škody.</th>
+        <th>Názov druhu škody.</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Menej ako 3cm na dĺžku alebo v priemere.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>3 až 8cm na dĺžku alebo v priemere.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>8 až 15cm na dĺžku alebo v priemere.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>15 až 30cm na dĺžku alebo v priemere.</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Viac ako 30cm na dĺžku alebo v priemere.</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Chýba.</td>
+    </tr>
+</table>'; 
 }
 
 ?>
 
 <style>
-
+h1 {
+    text-align: center;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -332,6 +877,9 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+span {
+    color: red;
 }
 
 </style>
