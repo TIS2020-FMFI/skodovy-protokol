@@ -7,7 +7,13 @@ head('Škodový protokol');
 
 		
 if (isset($_POST["send"])) {        
-	$name = "data/protocol_" . date("Y-m-d--H-i-s") . ".zip";
+	$vin = ""; 
+	$type = $_POST["type"];
+	if (isset($_POST["vin"])) $vin = substr($_POST["vin"], 9);
+	if ($vin)
+		$name = "data/" .  $type . "_" . $vin . ".zip"; 
+	else
+		$name = "data/" . $type . "_" . date("Y-m-d--H-i-s") . ".zip";
 	packToZIP($name); 
 	/*uploadToSharepoint($name); 
 	if (file_exists($name))
