@@ -6,7 +6,7 @@ require_once 'vendor/autoload.php';
 use Office365\Runtime\Auth\ClientCredential;
 use Office365\SharePoint\FileCreationInformation;
 use Office365\SharePoint\ClientContext;
-error_reporting(0);
+//error_reporting(0);
 
 function head($tittle) {
 ?>
@@ -181,6 +181,43 @@ function clearData() {
         if (file_exists($name))
             unlink($name); 
     }
+}
+
+function add_model($mysqli, $vin, $manufacturer, $model, $storageConsignee, $entrydate) {
+	if (!$mysqli->connect_errno) {
+		$vin = $mysqli->real_escape_string($vin);
+		$manufacturer = $mysqli->real_escape_string($manufacturer);
+		$model = $mysqli->real_escape_string($model);
+		$storageConsignee = $mysqli->real_escape_string($storageConsignee);
+		$entrydate = $mysqli->real_escape_string($entrydate);				
+		$sql = "INSERT INTO models SET vin='$vin', manufacturer='$manufacturer', model='$model', storageConsignee='$storageConsignee', entrydate='$entrydate'"; 
+	
+		if ($result = $mysqli->query($sql)) {  // vykonaj dopyt
+ 	    //echo '<p>Model added!</p>'. "\n"; 								
+		} elseif ($mysqli->errno) {
+			//echo '<p class="chyba">Nastala chyba pri pridávaní tovaru. (' . $mysqli->error . ')</p>';
+
+		}
+	}
+}
+
+function print_models($mysqli, $vin) {	
+	if (!$mysqli->connect_errno) {
+		$sql = "SELECT * FROM models where vin like '%" . $vin . "%'"; 		
+		if ($result = $mysqli->query($sql)) {  // vykonaj dopyt		
+			echo '<table>';
+			echo '<tr><th>VIN číslo</th><th>Manufacturer</th><th>Model</th><th>Storage Cognisee</th><th>Entry date</th></tr>';
+			while ($row = $result->fetch_assoc()) {
+				echo '<tr><td><a href="protocol.php?type=' . strtolower($row['manufacturer']) . '">' . $row['vin'] . ' </a></td><td>' . $row['manufacturer'] . ' ' . $row['model'] . '</td><td>' . $row['storageConsignee'] . '</td><td>' . $row['entrydate'] . '</td>';
+				echo "</tr>\n";
+			}
+			echo '</table>';
+			$result->free();
+		} else {
+			// dopyt sa NEpodarilo vykonať!
+			//echo '<p class="chyba">NEpodarilo sa získať údaje z databázy</p>';
+		}
+	}
 }
 
 

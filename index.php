@@ -48,6 +48,11 @@ if (isset($_SESSION['username'])) {
     <input name="hladat" type="submit" id="hladat" value="Hľadať"> 
 	</div>
 </form> 
+<?php if (isset($_POST["hladat"])) {
+	$vin = ""; 
+	if (isset($_POST["cislo"])) $vin = $_POST["cislo"];
+	print_models($mysqli, $vin); 
+}   ?>
 <ul> 
 <li><a href="protocol.php?type=jaguar">Jaguar</a> </li> 
 <li><a href="protocol.php?type=opel">Opel</a> </li> 
