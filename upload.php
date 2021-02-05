@@ -6,6 +6,8 @@ if (!isset($_SESSION["username"])) {
 
 <div class="wrapper">
 	<form method="post" enctype="multipart/form-data">	
+		<input name="type" type="text" id="type"  value="<?php echo  $_GET["type"]; ?>" size="20" style="display: none;">
+		<input name="vin" type="text" id="vin"  value="<?php if (isset($_POST["vin"])) echo  $_POST["vin"]; ?>" style="display: none;">
 	<h1>Sem vložte fotografie</h1>		
 			<?php 
 			for ($x = 1; $x <= 3; $x++) {
@@ -27,7 +29,7 @@ if (!isset($_SESSION["username"])) {
 		<br>
 		
 	<p><input name="upload" type="submit" id="upload" value="upload" style="display: none;"></p>
-	<p><input name="send" type="submit" id="send" value="Send to Sharepoint" formaction="index.php"></p>
+	<p><input name="send" type="submit" id="send" value="Send to Server" formaction="index.php"></p>
 	</form>
 </div>	
 

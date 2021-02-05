@@ -848,7 +848,7 @@
 	<input name="transport" type="text" id="transport" value="<?php if (isset($_POST["transport"])) echo $_POST["transport"]; ?>" size="23" maxlength="23">
 	<input name="origin" type="text" id="origin" value="<?php if (isset($_POST["origin"])) echo $_POST["origin"]; ?>" size="12" maxlength="12">
 	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; ?>" size="10" maxlength="10">
-	<input name="vin" type="text" id="vin" value="<?php if (isset($_POST["vin"])) echo $_POST["vin"]; ?>" size="17" maxlength="17">
+	<input name="vin" type="text" id="vin" value="<?php if (isset($_POST["vin"])) echo $_POST["vin"]; ?>" size="20" minlength="17" maxlength="17">
 	<input name="damages-a" type="text" id="damages-a" value="<?php if (isset($_POST["damages-a"])) echo $_POST["damages-a"]; ?>" size="1" maxlength="1">
 	<input name="damages-b" type="text" id="damages-b" value="<?php if (isset($_POST["damages-b"])) echo $_POST["damages-b"]; ?>" size="1" maxlength="1">
 	<input name="damages-c" type="text" id="damages-c" value="<?php if (isset($_POST["damages-c"])) echo $_POST["damages-c"]; ?>" size="1" maxlength="1">
