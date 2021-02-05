@@ -183,5 +183,22 @@ function clearData() {
     }
 }
 
+function add_model($mysqli, $vin, $manufacturer, $model, $storageConsignee, $entrydate) {
+	if (!$mysqli->connect_errno) {
+		$vin = $mysqli->real_escape_string($vin);
+		$manufacturer = $mysqli->real_escape_string($manufacturer);
+		$model = $mysqli->real_escape_string($model);
+		$storageConsignee = $mysqli->real_escape_string($storageConsignee);
+		$entrydate = $mysqli->real_escape_string($entrydate);				
+		$sql = "INSERT INTO models SET vin='$vin', manufacturer='$manufacturer', model='$model', storageConsignee='$storageConsignee', entrydate='$entrydate'"; 
+	
+		if ($result = $mysqli->query($sql)) {  // vykonaj dopyt
+ 	    //echo '<p>Model added!</p>'. "\n"; 								
+		} elseif ($mysqli->errno) {
+			//echo '<p class="chyba">Nastala chyba pri pridávaní tovaru. (' . $mysqli->error . ')</p>';
+
+		}
+	}
+}
 
 ?>
