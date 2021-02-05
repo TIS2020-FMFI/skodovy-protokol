@@ -864,7 +864,467 @@ else if (isset($_GET['type']) && strcmp($_GET['type'], "opel") == 0) {
     '; 
 }
 else if (isset($_GET['type']) && strcmp($_GET['type'], "peugeot") == 0) {
-    echo '<img src="pictures/peugeot-help.jpg">'; 
+    echo 
+    '<table>
+    <tr>
+        <th>Kód1</th>
+        <th>Popis1</th>
+    </tr>
+    <tr>
+        <td>BR</td>
+        <td>Spálené</td>
+    </tr>
+    <tr>
+        <td>CA</td>
+        <td>Zlomené, odtrhnuté, prasknuté</td>
+    </tr>
+    <tr>
+        <td>CD</td>
+        <td>Prerezané, roztrhnuté</td>
+    </tr>
+    <tr>
+        <td>CE</td>
+        <td>Prepichnuté, rozseknuté</td>
+    </tr>
+    <tr>
+        <td>EC</td>
+        <td>Odlúpenie farby</td>
+    </tr>
+    <tr>
+        <td>EN</td>
+        <td>Preliačené</td>
+    </tr>
+    <tr>
+        <td>MA</td>
+        <td>Chýbajúce</td>
+    </tr>
+    <tr>
+        <td>PR</td>
+        <td>Obité</td>
+    </tr>
+    <tr>
+        <td>RF</td>
+        <td>Poškriabané, odreté</td>
+    </tr>
+    <tr>
+        <td>TA</td>
+        <td>Zafarbené</td>
+    </tr>
+    <tr>
+        <td>xx</td>
+        <td>Nešpecifikované</td>
+    </tr>
+    </table>
+
+
+    <br>
+
+    <table>
+        <tr>
+            <th>Kód2</th>
+            <th>Popis2</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Spojler predný</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Nárazník predný</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Kapota</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Lišta ochranná predného nárazníka</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Stĺpiky A</td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td>Strecha</td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td>Strešné okno</td>
+        </tr>
+        <tr>
+            <td>08</td>
+            <td>Strešný nosič</td>
+        </tr>
+        <tr>
+            <td>09</td>
+            <td>Strecha odklápacia - žirafón</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Sklo čelné</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Dvere piate</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Nárazník zadný</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Zadné čelo</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Lišta ochranná zadného nárazníka</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Dvere vodiča - obklad</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Dvere vodiča - prah</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Kľučky predné vonkajšie</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Kľučky zadné vonkajšie</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Sada na opravu defektu</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Karta s kódom imobilizéra</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Anténa rádia</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Lapače nečistôt</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Ostrekovače / stierače predných svetiel</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Stierače predné</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Stierač zadný</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Spojler zadný</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Kryty kolies ozdobné</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Koberčeky doplnkové - sada</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Príručka užívateľa</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Zrkadlo spätné pravé</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Blatník predný pravý</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Koleso predné pravé : disk</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Koleso predné pravé : pneumatika</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Podbeh - pravý</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Blatník zadný pravý a C-stĺpik</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Dvere predné pravé</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Dvere zadné pravé</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Stena bočná pravá (úžitkové vozidlo)</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Lišty ochranné - pravá strana</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Smerovky predné</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Sklo pevné predné ľavé/pravé (na 36/56)</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Výfuk</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>Kryt vlečného oka predný / zadný</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Náradie + taška</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Rôzne</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Kľúče</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Mriežka chladiča</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>Svetlá hmlové zadné</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Svetlo brzdové tretie</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Zrkadlo spätné ľavé</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>Blatník predný ľavý</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td>Koleso predné ľavé : disk</td>
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>Koleso predné ľavé : pneumatika</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>Podbeh - ľavý</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>Blatník zadný ľavý a C-stĺpik</td>
+        </tr>
+        <tr>
+            <td>56</td>
+            <td>Dvere predné ľavé</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>Dvere zadné ľavé</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td>Stena bočná ľavá (úžitkové vozidlo)</td>
+        </tr>
+        <tr>
+            <td>59</td>
+            <td>Lišty ochranné - ľavá strana</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>Kryt hrdla nádrže / napájacieho kábla</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>Logo / emblém</td>
+        </tr>
+        <tr>
+            <td>62</td>
+            <td>Koberec / podložka v bat. priestore</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td>Osvetlenie EČV</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td>Nabíjací kábel (elektromobil)</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>Svetlá zadné</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td>Sklo pevné zadné ľavé/pravé (na 37/57) + C-stĺpik</td>
+        </tr>
+        <tr>
+            <td>67</td>
+            <td>Sklo zadné bočné (na 38/58)</td>
+        </tr>
+        <tr>
+            <td>68</td>
+            <td>Kľúč s diaľkovým ovládaním</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td>Zámky dverí</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td>Stredný stĺpik</td>
+        </tr>
+        <tr>
+            <td>71</td>
+            <td>Slúchadlá</td>
+        </tr>
+        <tr>
+            <td>72</td>
+            <td>Sedadlá predné / zadné</td>
+        </tr>
+        <tr>
+            <td>73</td>
+            <td>Koleso zadné pravé : disk</td>
+        </tr>
+        <tr>
+            <td>74</td>
+            <td>Koleso zadné pravé : pneumatika</td>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td>Smerovky bočné</td>
+        </tr>
+        <tr>
+            <td>76</td>
+            <td>Svetlá predné</td>
+        </tr>
+        <tr>
+            <td>77</td>
+            <td>Svetlá hmlové predné</td>
+        </tr>
+        <tr>
+            <td>78</td>
+            <td>Zadné plató</td>
+        </tr>
+        <tr>
+            <td>79</td>
+            <td>Sada vo vozidle</td>
+        </tr>
+        <tr>
+            <td>80</td>
+            <td>Sklo zadné</td>
+        </tr>
+        <tr>
+            <td>81</td>
+            <td>Kľúč na kolesá</td>
+        </tr>
+        <tr>
+            <td>82</td>
+            <td>Sklá predné bočné (na 36/56)</td>
+        </tr>
+        <tr>
+            <td>83</td>
+            <td>Sklá zadné bočné (na 37/57)</td>
+        </tr>
+        <tr>
+            <td>84</td>
+            <td>Zapaľovač</td>
+        </tr>
+        <tr>
+            <td>85</td>
+            <td>Navigácia, CD ROM, DO</td>
+        </tr>
+        <tr>
+            <td>86</td>
+            <td>Rádio / príslušenstvo rádia</td>
+        </tr>
+        <tr>
+            <td>87</td>
+            <td>Menič CD</td>
+        </tr>
+        <tr>
+            <td>88</td>
+            <td>Opierky hlavy - predné</td>
+        </tr>
+        <tr>
+            <td>89</td>
+            <td>Opierky hlavy - zadné + stredná</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>Nástavec bezpečnostného kľúča</td>
+        </tr>
+        <tr>
+            <td>91</td>
+            <td>FFA/DC41</td>
+        </tr>
+        <tr>
+            <td>92</td>
+            <td>Zdvihák (súprava)</td>
+        </tr>
+        <tr>
+            <td>93</td>
+            <td>Koleso zadné ľavé : disk</td>
+        </tr>
+        <tr>
+            <td>94</td>
+            <td>Koleso zadné ľavé : pneumatika</td>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td>Rezervné koleso</td>
+        </tr>
+        <tr>
+            <td>96</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>97</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>98</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>99</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>xx</td>
+            <td>Nešpecifikované</td>
+        </tr>
+    </table>';
 }
 else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
     echo '<img src="pictures/renault-help.jpg">'; 
