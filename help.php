@@ -1327,7 +1327,465 @@ else if (isset($_GET['type']) && strcmp($_GET['type'], "peugeot") == 0) {
     </table>';
 }
 else if (isset($_GET['type']) && strcmp($_GET['type'], "renault") == 0) {
-    echo '<img src="pictures/renault-help.jpg">'; 
+    echo  
+    '<table>
+    <tr>
+        <th>Ľavá strana</th>
+    </tr>
+    <tr>
+        <td>B8 – ľavý podbeh – treba špecifikovať presnú pozíciu</td>
+    </tr>
+    <tr>
+        <td>D1 – ľavé predné dvere - panel</td>
+    </tr>
+    <tr>
+        <td>D2 – ľavé zadné dvere - panel</td>
+    </tr>
+    <tr>
+        <td>D9 – ochranná lišta – ĽP dvere</td>
+    </tr>
+    <tr>
+        <td>D10 – ochranná lišta – ĽZ dvere</td>
+    </tr>
+    <tr>
+        <td>F10 – viečko nádrže</td>
+    </tr>
+    <tr>
+        <td>L5 – ľavá smerovka</td>
+    </tr>
+    <tr>
+        <td>L8 – ľavé predné hmlové svetlo</td>
+    </tr>
+    <tr>
+        <td>M1 – ľavé spätné zrkadlo</td>
+    </tr>
+    <tr>
+        <td>P1 – A stĺpik – ľavá strana</td>
+    </tr>
+    <tr>
+        <td>P2 – B sĺpik – ľavá strana</td>
+    </tr>
+    <tr>
+        <td>P3 – C stĺpik – ľavá strana</td>
+    </tr>
+    <tr>
+        <td>T1 – okrasná krytka kolesa – špecifikuj na ktorom kolese</td>
+    </tr>
+    <tr>
+        <td>T2 – ľavá predná pneumatika</td>
+    </tr>
+    <tr>
+        <td>T3 – ľavá zadná pneumatika</td>
+    </tr>
+    <tr>
+        <td>T6 – ľavý predný disk </td>
+    </tr>
+    <tr>
+        <td>T7 – ľavý zadný disk</td>
+    </tr>
+    <tr>
+        <td>W3 – fixné sklo ľavých predných dverí</td>
+    </tr>
+    <tr>
+        <td>W4 – sklo ľavých predných dverí (pohyblivé)</td>
+    </tr>
+    <tr>
+        <td>W5 – sklo ľavých zadných dverí</td>
+    </tr>
+    <tr>
+        <td>W6 - fixné sklo ľavých zadných dverí </td>
+    </tr>
+    <tr>
+        <td>W20 – ľavý predný blatník</td>
+    </tr>
+    <tr>
+        <td>W21 – ľavý zadný blatník</td>
+    </tr>
+    </table>
+    
+    <br>
+
+    <table>
+    <tr>
+        <th>Pravá strana</th>
+    </tr>
+    <tr>
+        <td>B9 - pravý podbeh – treba špecifikovať presnú pozíciu</td>
+    </tr>
+    <tr>
+        <td>D3 – pravé predné dvere - panel</td>
+    </tr>
+    <tr>
+        <td>D4 – pravé zadné dvere – panel</td>
+    </tr>
+    <tr>
+        <td>D11 – ochranná lišta – PP dvere</td>
+    </tr>
+    <tr>
+        <td>D12 – ochranná lišta – PZ dvere</td>
+    </tr>
+    <tr>
+        <td>F10 – viečko nádrže</td>
+    </tr>
+    <tr>
+        <td>L6 – pravá smerovka</td>
+    </tr>
+    <tr>
+        <td>L7 – pravé predné hmlové svetlo</td>
+    </tr>
+    <tr>
+        <td>M2 – pravé spätné zrkadlo</td>
+    </tr>
+    <tr>
+        <td>P4 – A stĺpik – pravá strana</td>
+    </tr>
+    <tr>
+        <td>P5 – B sĺpik – pravá strana</td>
+    </tr>
+    <tr>
+        <td>P6 – C stĺpik – pravá strana</td>
+    </tr>
+    <tr>
+        <td>T1 – okrasná krytka kolesa => na ktorom kolese</td>
+    </tr>
+    <tr>
+        <td>T4 – pravá predná pneumatika</td>
+    </tr>
+    <tr>
+        <td>T5 – pravá zadná pneumatika</td>
+    </tr>
+    <tr>
+        <td>T8 – pravý predný disk </td>
+    </tr>
+    <tr>
+        <td>T9 – pravý zadný disk</td>
+    </tr>
+    <tr>
+        <td>W7 – fixné sklo pravých predných dverí </td>
+    </tr>
+    <tr>
+        <td>W8 – sklo pravých predných dverí (pohyblivé)</td>
+    </tr>
+    <tr>
+        <td>W9 – sklo pravých zadných dverí</td>
+    </tr>
+    <tr>
+        <td>W10 - fixné sklo pravých zadných dverí  </td>
+    </tr>
+    <tr>
+        <td>W22 – pravý predný blatník</td>
+    </tr>
+    <tr>
+        <td>W23 – pravý zadný blatník</td>
+    </tr>
+    </table>
+
+
+    <br>
+
+    <table>
+    <tr>
+        <th>Zadná časť</th>
+    </tr>
+    <tr>
+        <td>B2 – piate / kufrové dvere</td>
+    </tr>
+    <tr>
+        <td>B4 – spojler zadného nárazníku</td>
+    </tr>
+    <tr>
+        <td>B7 – zadný nárazník</td>
+    </tr>
+    <tr>
+        <td>L3 – zadné pravé svetlo</td>
+    </tr>
+    <tr>
+        <td>L4 – zadné ľavé svetlo</td>
+    </tr>
+    <tr>
+        <td>L9 – zadné brzdové svetlo</td>
+    </tr>
+    <tr>
+        <td>N1 – logo => špecifikuj model </td>
+    </tr>
+    <tr>
+        <td>W2 – zadné sklo</td>
+    </tr>
+    <tr>
+        <td>W12 – stierač zadného skla</td>
+    </tr>
+    </table>
+    
+  <br>
+
+  <table>
+    <tr>
+        <th>Predná časť</th>
+    </tr>
+    <tr>
+        <td>B1 – kapota</td>
+    </tr>
+    <tr>
+        <td>B3 – spojler predného nárazníku</td>
+    </tr>
+    <tr>
+        <td>B5 – Mriežka chladenia v kapote</td>
+    </tr>
+    <tr>
+        <td>B6 – predný nárazník</td>
+    </tr>
+    <tr>
+        <td>G1 – predná maska</td>
+    </tr>
+    <tr>
+        <td>L1 – pravý predný svetlomet</td>
+    </tr>
+    <tr>
+        <td>L2 – ľavý predný svetlomet</td>
+    </tr>
+    <tr>
+        <td>W1 – čelné sklo</td>
+    </tr>
+    <tr>
+        <td>W11 – stierače čelného skla</td>
+    </tr>
+    </table>  
+    
+    <br>
+
+    <table>
+    <tr>
+        <th>Vrchná časť</th>
+    </tr>
+    <tr>
+        <td>R1 – strecha</td>
+    </tr>
+    <tr>
+        <td>R2 – strešné okno</td>
+    </tr>
+    <tr>
+        <td>R4 – otváracia strecha </td>
+    </tr>
+    <tr>
+        <td>R5 – strešné nosiče</td>
+    </tr>
+    </table>  
+
+    <br>
+
+    <table>
+    <tr>
+        <th>Interiér</th>
+    </tr>
+    <tr>
+        <td>B10 – obloženie kufru</td>
+    </tr>
+    <tr>
+        <td>D5 – obloženie ĽP dvere</td>
+    </tr>
+    <tr>
+        <td>D6 – obloženie LZ dvere</td>
+    </tr>
+    <tr>
+        <td>D7 – obloženie PP dvere</td>
+    </tr>
+    <tr>
+        <td>D8 – obloženie PZ dvere</td>
+    </tr>
+    <tr>
+        <td>D15 – palubná doska</td>
+    </tr>
+    <tr>
+        <td>F1 – koberčeky predná časť</td>
+    </tr>
+    <tr>
+        <td>F2 – koberčeky stredná časť</td>
+    </tr>
+    <tr>
+        <td>F3 – koberčeky zadná časť</td>
+    </tr>
+    <tr>
+        <td>L10 - popolník</td>
+    </tr>
+    <tr>
+        <td>L11 – zapaľovač</td>
+    </tr>
+    <tr>
+        <td>M3 – spätné zrkadlo interiér</td>
+    </tr>
+    <tr>
+        <td>R10 – rádio / CD prehrávač</td>
+    </tr>
+    <tr>
+        <td>R11 – DVD prehrávač</td>
+    </tr>
+    <tr>
+        <td>S1 – predné sedadlá</td>
+    </tr>
+    <tr>
+        <td>S2 – opierka hlavy predných sedadiel</td>
+    </tr>
+    <tr>
+        <td>S3 – stredný rad sedadiel </td>
+    </tr>
+    <tr>
+        <td>S4 – opierka hlavy stredných sedadiel </td>
+    </tr>
+    <tr>
+        <td>S5 – zadná rada sedadiel</td>
+    </tr>
+    <tr>
+        <td>S6 – opierka hlavy zadného radu sedadiel</td>
+    </tr>
+    <tr>
+        <td>S10 – ľavá slnečná clona </td>
+    </tr>
+    <tr>
+        <td>S11 – pravá slnečná clona</td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table>
+    <tr>
+        <th>Rôzne</th>
+    </tr>
+    <tr>
+        <td>A1 – výstražný trojuholník / reflexná vesta špecifikuj</td>
+    </tr>
+    <tr>
+        <td>A2  - lekárnička</td>
+    </tr>
+    <tr>
+        <td>A3  - hasiaci prístroj</td>
+    </tr>
+    <tr>
+        <td>B15 - autobatéria</td>
+    </tr>
+    <tr>
+        <td>B16 – kryt autobatérie</td>
+    </tr>
+    <tr>
+        <td>B17 – druhá batéria – menšia</td>
+    </tr>
+    <tr>
+        <td>B20 – nosič na bicykle</td>
+    </tr>
+    <tr>
+        <td>C1 – priehradka na CD</td>
+    </tr>
+    <tr>
+        <td>C2 – CD s navigáciou </td>
+    </tr>
+    <tr>
+        <td>E1 – výfuk </td>
+    </tr>
+    <tr>
+        <td>F4 – koberček – treba špeficikovať pozíciu</td>
+    </tr>
+    <tr>
+        <td>K1 – kľúč / štartovacia karta</td>
+    </tr>
+    <tr>
+        <td>K2 – kryt na kľúč / štartovaciu kartu</td>
+    </tr>
+    <tr>
+        <td>K3 – zámok dverí – treba špecifikovať pozíciu</td>
+    </tr>
+    <tr>
+        <td>M10 – manuál / servisná knižka</td>
+    </tr>
+    <tr>
+        <td>P12 – výstražné svetlo</td>
+    </tr>
+    <tr>
+        <td>R3 – príslušenstvo ku strešnému oknu</td>
+    </tr>
+    <tr>
+        <td>R15 – diaľkové ovládanie</td>
+    </tr>
+    <tr>
+        <td>S7 – detská sedačka</td>
+    </tr>
+    <tr>
+        <td>S8 – opierka detskej sedačky</td>
+    </tr>
+    <tr>
+        <td>T11 – kufrík / taška s náradím</td>
+    </tr>
+    <tr>
+        <td>T12 – sada na zalepenie defektu (fľaštička)</td>
+    </tr>
+    <tr>
+        <td>T13 – kompresor a rezerva</td>
+    </tr>
+    <tr>
+        <td>T20 – vlečné oko</td>
+    </tr>
+    <tr>
+        <td>T21 – vlečný hák</td>
+    </tr>
+    <tr>
+        <td>T30 – telefón / handsfree</td>
+    </tr>
+    <tr>
+        <td>X1 – nešpecifikovaný diel – treba popísať</td>
+    </tr>
+    </table>
+
+    <br>
+
+    <table>
+    <tr>
+        <th>Typ poškodenia</th>
+    </tr>
+    <tr>
+        <td>AT - ostatné</td>
+    </tr>
+    <tr>
+        <td>FE - prasknuté</td>
+    </tr>
+    <tr>
+        <td>BR - spálené</td>
+    </tr>
+    <tr>
+        <td>FR - odreté</td>
+    </tr>
+    <tr>
+        <td>CA - rozbité</td>
+    </tr>
+    <tr>
+        <td>HS - nefungujúce</td>
+    </tr>
+    <tr>
+        <td>CD - roztrhnuté / natrhnuté</td>
+    </tr>
+    <tr>
+        <td>MA - chýbajúce</td>
+    </tr>
+    <tr>
+        <td>CR - prepichnuté</td>
+    </tr>
+    <tr>
+        <td>MO - mokré / vlhké</td>
+    </tr>
+    <tr>
+        <td>EC - odlúpnutá farba</td>
+    </tr>
+    <tr>
+        <td>PR - povrchové znečistenie</td>
+    </tr>
+    <tr>
+        <td>EN - preliačené</td>
+    </tr>
+    <tr>
+        <td>RE - poškrabané / ošúchané</td>
+    </tr>
+    <tr>
+        <td>TA – zafarbené / postriekané</td>
+    </tr>
+    </table>'; 
 }
 else if (isset($_GET['type']) && strcmp($_GET['type'], "skoda") == 0) {
     echo '<table>
