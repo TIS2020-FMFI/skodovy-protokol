@@ -139,12 +139,14 @@ if($emails) {
             }
             
         }
+        imap_delete($inbox, $email_number);        
+
     }
 } 
 
 /* close the connection */
 imap_close($inbox);
 
-echo "all attachment in DB!";
+//echo "all attachment in DB!";
 
 ?>
