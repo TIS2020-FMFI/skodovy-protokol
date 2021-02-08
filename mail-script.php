@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
-include("db.php"); 
-include("funkcie.php"); 
+/*include("db.php"); 
+include("funkcie.php"); */
 set_time_limit(3000); 
 
 /* do mailu prihlasovanie */
@@ -12,7 +12,7 @@ $password = '---';
 /* pripojenie */
 $inbox = imap_open($hostname,$username,$password) or die('Cannot connect to Gmail: ' . imap_last_error());
 
-$emails = imap_search($inbox, 'FROM "kristak.martin44@gmail.com"');
+$emails = imap_search($inbox, 'FROM "---@gmail.com"');
 
 /* if any emails found, iterate through each email */
 if($emails) {
