@@ -202,6 +202,8 @@ function add_model($mysqli, $vin, $manufacturer, $model, $storageConsignee, $ent
 }
 
 function print_models($mysqli, $vin) {	
+	if ($vin == "") 
+		return; 
 	if (!$mysqli->connect_errno) {
 		$sql = "SELECT * FROM models where vin like '%" . $vin . "%'"; 		
 		if ($result = $mysqli->query($sql)) {  // vykonaj dopyt		

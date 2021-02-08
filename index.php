@@ -61,7 +61,8 @@ if (isset($_SESSION['username'])) {
 <li><a href="protocol.php?type=skoda">Škoda</a> </li> 
 </ul>
 <?php
-
+	/*if ((!isset($_POST["send"])) && (!isset($_POST["hladat"]))) 
+		include("mail-script.php"); */
 }  else {
 ?>
 
