@@ -17,10 +17,10 @@ if (!isset($_SESSION["username"])) {
 				<input type="button" class="rad" value="Fotografia <?php echo $x;?>" onclick="document.getElementById('<?php echo $name; ?>').click();" />
 				<?php 
 				if (file_exists("protocol_data/" . $name . ".jpg")) {
-					echo '<img src="protocol_data/' . $name . '.jpg" alt="Photo1" class="rad" width="100" height="100">'; 				
+					echo '<img src="protocol_data/' . $name . '.jpg" alt="Photo1" class="rad" width="100">'; 				
 				}
 				else if (file_exists("protocol_data/" . $name . ".png")) {
-					echo '<img src="protocol_data/' . $name . '.png" alt="Photo1" class="rad" width="100" height="100">'; 				
+					echo '<img src="protocol_data/' . $name . '.png" alt="Photo1" class="rad" width="100" >'; 				
 				} ?>
 			</p>
 			<?php } ?>
@@ -70,7 +70,7 @@ if (!isset($_SESSION["username"])) {
 	}
 
 	input[type="submit"], input[type="button"] {
-		background-color: #f85f6a;
+		background-color: #00538b;
 		color: white;
 		font-weight: bold;
 		padding: 20px;
@@ -80,7 +80,7 @@ if (!isset($_SESSION["username"])) {
 		cursor: pointer;
 }
 input[type="submit"]:hover, input[type="button"]:hover{
-  background-color: #c54b53;
+  background-color: #012a46;
 }
 .fail {
   font-size: 50px;
