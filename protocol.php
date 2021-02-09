@@ -57,7 +57,7 @@ if (!isset($_POST["submit"])) {
     justify-content: center;
 }
 a {
-  background-color: #f85f6a;
+  background-color: #00538B;
   font-weight: bold;
   margin: 10px;
   padding: 20px;
@@ -66,6 +66,10 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: white;
+}
+
+a:hover{
+    background-color: #012a46;
 }
 .fail {
   font-size: 50px;
