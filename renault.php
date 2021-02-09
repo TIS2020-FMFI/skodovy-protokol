@@ -812,7 +812,6 @@
 }
 
 	#next {
-  background-color: #f85f6a;
   font-weight: bold;
   margin: 10px;
   padding: 20px;
@@ -822,6 +821,11 @@
   text-decoration: none;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #00538b;
+}
+
+#next:hover {
+	background-color: #012a46;
 }
 
 
