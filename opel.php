@@ -7393,7 +7393,7 @@
 	<img src="<?php echo $base64?>">
   <div id="o-back">
     <form method="post">			
-	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="20" maxlength="60"> <!-- upravene -->
+	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="20" maxlength="60" required> <!-- upravene -->
 	
 
 	<br>
@@ -7406,7 +7406,7 @@
 <input name="waybill" type="text" id="waybill" value="<?php if (isset($_POST["waybill"])) echo $_POST["waybill"]; ?>" size="20" maxlength="60">
 <input name="remarks" type="text" id="remarks" value="<?php if (isset($_POST["remarks"])) echo $_POST["remarks"]; ?>" size="20" maxlength="60">
 <input name="remarkss" type="text" id="remarkss" value="<?php if (isset($_POST["remarkss"])) echo $_POST["remarkss"]; ?>" size="20" maxlength="60">
-<input name="vin" type="text" id="vin" value="<?php if (isset($_POST["vin"])) echo $_POST["vin"]; else if (isset($_GET["vin"])) echo $_GET["vin"]; ?>" size="15" maxlength="15">
+<input name="vin" type="text" id="vin" value="<?php if (isset($_POST["vin"])) echo $_POST["vin"]; else if (isset($_GET["vin"])) echo $_GET["vin"]; ?>" size="15" minlength="15" maxlength="15" required>
 	
 
 <!-- transportation section dole -->
