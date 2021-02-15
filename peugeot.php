@@ -3482,10 +3482,10 @@
 	<img src="<?php echo $base64?>">
   <div id="o-back">
     <form method="post">			
-	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="45" maxlength="45">
+	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="45" maxlength="45" required>
 	<input name="colour" type="text" id="colour" value="<?php if (isset($_POST["colour"])) echo $_POST["colour"]; ?>" size="45" maxlength="45">
 	<input name="point" type="text" id="point" value="<?php if (isset($_POST["point"])) echo $_POST["point"]; ?>" size="25" maxlength="25">
-	<input name="vin" type="text" id="vin" value="<?php if (isset($_POST["vin"])) echo $_POST["vin"]; else if (isset($_GET["vin"])) echo $_GET["vin"]; ?>" size="20" minlength="17" maxlength="17">
+	<input name="vin" type="text" id="vin" value="<?php if (isset($_POST["vin"])) echo $_POST["vin"]; else if (isset($_GET["vin"])) echo $_GET["vin"]; ?>" size="20" minlength="17" maxlength="17" required>
 	<input name="e-1" type="text" id="e-1" value="<?php if (isset($_POST["e-1"])) echo $_POST["e-1"]; ?>" size="4" maxlength="4">
 	<input name="a-cd-1" type="text" id="a-cd-1" value="<?php if (isset($_POST["a-cd-1"])) echo $_POST["a-cd-1"]; ?>" size="5" maxlength="5">
 	<input name="a-ld-1" type="text" id="a-ld-1" value="<?php if (isset($_POST["a-ld-1"])) echo $_POST["a-ld-1"]; ?>" size="5" maxlength="5">

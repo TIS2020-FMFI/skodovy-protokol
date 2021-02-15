@@ -617,8 +617,8 @@ canvas#signature1 {
 <div id="o-back">
     <form method="post">			
 	<input name="vdc" type="text" id="vdc" value="<?php if (isset($_POST["vdc"])) echo $_POST["vdc"]; ?>" size="20" maxlength="20">
-	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="20" maxlength="20">
-	<input name="vin" type="text" id="vin"  value="<?php if (isset($_POST["vin"])) echo  $_POST["vin"]; else if (isset($_GET["vin"])) echo  $_GET["vin"]; ?>" size="20" minlength="17" maxlength="17">
+	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="20" maxlength="20" required>
+	<input name="vin" type="text" id="vin"  value="<?php if (isset($_POST["vin"])) echo  $_POST["vin"]; else if (isset($_GET["vin"])) echo  $_GET["vin"]; ?>" size="20" minlength="17" maxlength="17" required>
 	
 	<input name="plant" type="text" class="loc" id="plant" value="<?php if (isset($_POST["plant"])) echo $_POST["plant"]; ?>" size="20" maxlength="20">
 	<input name="portexit" type="text" class="loc" id="portexit" value="<?php if (isset($_POST["portexit"])) echo $_POST["portexit"]; ?>" size="20" maxlength="20"> 

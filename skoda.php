@@ -406,9 +406,9 @@
 	<img id="bckground" src="<?php echo $base64?>">
   <div id="o-back">
     <form method="post">			
-	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="20" maxlength="20">
+	<input name="model" type="text" id="model" value="<?php if (isset($_POST["model"])) echo $_POST["model"]; else if (isset($_GET["model"])) echo $_GET["model"]; ?>" size="20" maxlength="20" required>
 	<input name="color" type="text" id="color" value="<?php if (isset($_POST["color"])) echo $_POST["color"]; ?>" size="20" maxlength="20">
-	<input name="vin" type="text" id="vin"  value="<?php if (isset($_POST["vin"])) echo  $_POST["vin"]; else if (isset($_GET["vin"])) echo $_GET["vin"]; ?>" size="20" minlength="17" maxlength="17">
+	<input name="vin" type="text" id="vin"  value="<?php if (isset($_POST["vin"])) echo  $_POST["vin"]; else if (isset($_GET["vin"])) echo $_GET["vin"]; ?>" size="20" minlength="17" maxlength="17" required>
 	<input name="AM1" type="text" class="r1 am" id="AM1" value="<?php if (isset($_POST["AM1"])) echo $_POST["AM1"]; ?>" size="4" maxlength="4">
 	<input name="AM2" type="text" class="r2 am" id="AM2" value="<?php if (isset($_POST["AM2"])) echo $_POST["AM2"]; ?>" size="4" maxlength="4">
 	<input name="AM3" type="text" class="r3 am" id="AM3" value="<?php if (isset($_POST["AM3"])) echo $_POST["AM3"]; ?>" size="4" maxlength="4">
